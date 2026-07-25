@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Global Week in Review — Dashboard</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <style>
   :root{
     --bg:#0d1220; --panel:#151c30; --panel2:#1a2340; --line:#26304f;
@@ -125,9 +125,12 @@ const $ = id => document.getElementById(id);
 const fmt = n => n>=1000 ? n.toLocaleString('en-US',{maximumFractionDigits:2}) : String(n);
 const clsFor = s => /^[+↑]|firmer|higher|Leader|^Up/i.test(s) ? 'up' : /^[−\-↓]|softer|lower|Down/i.test(s) ? 'dn' : 'fl';
 
-Chart.defaults.color = '#93a0bd';
-Chart.defaults.borderColor = 'rgba(38,48,79,.6)';
-Chart.defaults.font.size = 11;
+const HAS_CHART = typeof Chart !== 'undefined';
+if(HAS_CHART){
+  Chart.defaults.color = '#93a0bd';
+  Chart.defaults.borderColor = 'rgba(38,48,79,.6)';
+  Chart.defaults.font.size = 11;
+}
 
 const labels = WEEKS.map(w => w.id);
 let charts = [];
@@ -139,6 +142,7 @@ function line(ctx, datasets, opts={}){
 }
 
 function buildTrends(){
+  if(!HAS_CHART) return;
   const m = k => WEEKS.map(w => w.metrics[k] ?? null);
   const norm = k => { const s=m(k), b=s.find(v=>v!=null); return s.map(v=>v==null?null:+(v/b*100).toFixed(2)); };
   line($('chIdx'), [
@@ -181,11 +185,13 @@ function render(w){
   $('m7read').textContent = w.mag7Read;
   const withPct = w.mag7.filter(s=>s.wkPct!=null);
   $('m7note').textContent = withPct.length<w.mag7.length ? 'Chart shows names with a verified weekly %; see table for the rest.' : '';
-  if(m7Chart) m7Chart.destroy();
-  m7Chart = new Chart($('chM7'), {type:'bar',
-    data:{labels:withPct.map(s=>s.tk), datasets:[{data:withPct.map(s=>s.wkPct),
-      backgroundColor:withPct.map(s=>s.wkPct>=0?'rgba(55,201,139,.7)':'rgba(240,89,107,.7)')}]},
-    options:{responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}});
+  if(HAS_CHART){
+    if(m7Chart) m7Chart.destroy();
+    m7Chart = new Chart($('chM7'), {type:'bar',
+      data:{labels:withPct.map(s=>s.tk), datasets:[{data:withPct.map(s=>s.wkPct),
+        backgroundColor:withPct.map(s=>s.wkPct>=0?'rgba(55,201,139,.7)':'rgba(240,89,107,.7)')}]},
+      options:{responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}});
+  }
 
   $('themes').innerHTML = w.themes.map(t=>
     `<div class="theme"><h4>${t.t}</h4><p>${t.b}</p><div class="read"><b>Read:</b> ${t.r}</div></div>`).join('');
@@ -195,11 +201,13 @@ function render(w){
     `<tr><td>${s.n}</td><td class="${clsFor(s.m)}">${s.m}</td><td style="color:var(--dim)">${s.d}</td></tr>`).join('');
   $('secRead').textContent = w.sectorsRead;
   const sp = w.sectors.filter(s=>s.pct!=null);
-  if(secChart) secChart.destroy();
-  secChart = new Chart($('chSec'), {type:'bar',
-    data:{labels:sp.map(s=>s.n.replace(/\s*\(.*\)/,'')), datasets:[{data:sp.map(s=>s.pct),
-      backgroundColor:sp.map(s=>s.pct>=0?'rgba(55,201,139,.7)':'rgba(240,89,107,.7)')}]},
-    options:{indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}});
+  if(HAS_CHART){
+    if(secChart) secChart.destroy();
+    secChart = new Chart($('chSec'), {type:'bar',
+      data:{labels:sp.map(s=>s.n.replace(/\s*\(.*\)/,'')), datasets:[{data:sp.map(s=>s.pct),
+        backgroundColor:sp.map(s=>s.pct>=0?'rgba(55,201,139,.7)':'rgba(240,89,107,.7)')}]},
+      options:{indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}});
+  }
 
   // Regime
   $('regLabel').textContent = w.regime.label;
