@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Week in Review — Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg:#0d1220; --panel:#151c30; --panel2:#1a2340; --line:#26304f;
+    --txt:#e8ecf6; --dim:#93a0bd; --faint:#5c6a8c;
+    --up:#37c98b; --dn:#f0596b; --amber:#d9a441; --blue:#5b8def;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{background:var(--bg); color:var(--txt); font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; padding:28px 20px 60px;}
+  .wrap{max-width:1180px; margin:0 auto;}
+  header{display:flex; flex-wrap:wrap; gap:14px; align-items:baseline; justify-content:space-between; margin-bottom:6px;}
+  h1{font-size:26px; letter-spacing:.3px;}
+  h1 .accent{color:var(--amber);}
+  .sub{color:var(--dim); font-size:13px; margin-bottom:18px;}
+  select{background:var(--panel2); color:var(--txt); border:1px solid var(--line); border-radius:8px; padding:8px 12px; font-size:14px;}
+  .tldr{background:linear-gradient(135deg,#1c2340,#181f36); border:1px solid var(--amber); border-radius:12px; padding:16px 18px; margin:14px 0 24px; font-size:14.5px;}
+  .tldr b{color:var(--amber);}
+  .kpis{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; margin-bottom:26px;}
+  .kpi{background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px 14px;}
+  .kpi .lbl{font-size:11.5px; color:var(--dim); text-transform:uppercase; letter-spacing:.6px;}
+  .kpi .val{font-size:19px; font-weight:700; margin:2px 0;}
+  .kpi .chg{font-size:12.5px; font-weight:600;}
+  .up{color:var(--up);} .dn{color:var(--dn);} .fl{color:var(--dim);}
+  h2{font-size:17px; margin:30px 0 12px; color:var(--txt); border-left:3px solid var(--amber); padding-left:10px;}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .grid4{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px;}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px;}
+  .card h3{font-size:13px; color:var(--dim); text-transform:uppercase; letter-spacing:.7px; margin-bottom:10px;}
+  .chartbox{position:relative; height:220px;}
+  table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  th{color:var(--faint); font-size:11.5px; text-transform:uppercase; letter-spacing:.5px; text-align:left; padding:6px 8px; border-bottom:1px solid var(--line);}
+  td{padding:7px 8px; border-bottom:1px solid rgba(38,48,79,.5); vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .theme{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px; margin-bottom:12px;}
+  .theme h4{font-size:15px; margin-bottom:6px;}
+  .theme p{color:var(--dim); font-size:13.5px; margin-bottom:8px;}
+  .read{background:rgba(217,164,65,.08); border-left:3px solid var(--amber); padding:8px 12px; border-radius:0 8px 8px 0; font-size:13.5px;}
+  .read b{color:var(--amber);}
+  ul.plain{list-style:none;}
+  ul.plain li{padding:6px 0 6px 16px; position:relative; font-size:13.5px; color:var(--dim); border-bottom:1px solid rgba(38,48,79,.4);}
+  ul.plain li:last-child{border-bottom:none;}
+  ul.plain li::before{content:"▸"; position:absolute; left:0; color:var(--amber);}
+  .pill{display:inline-block; padding:2px 10px; border-radius:20px; font-size:11.5px; font-weight:600;}
+  .pill.bull{background:rgba(55,201,139,.15); color:var(--up);}
+  .pill.bear{background:rgba(240,89,107,.15); color:var(--dn);}
+  .pill.neut{background:rgba(147,160,189,.15); color:var(--dim);}
+  .note{color:var(--faint); font-size:12px; margin-top:8px; font-style:italic;}
+  footer{margin-top:40px; color:var(--faint); font-size:12px; border-top:1px solid var(--line); padding-top:14px;}
+  @media(max-width:800px){ .grid2{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Global <span class="accent">Week in Review</span></h1>
+    <div>
+      <label for="weekSel" style="color:var(--dim);font-size:13px;margin-right:8px;">Week ending</label>
+      <select id="weekSel"></select>
+    </div>
+  </header>
+  <div class="sub" id="subLine"></div>
+
+  <div class="tldr"><b>TL;DR — </b><span id="tldr"></span></div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <h2>Weekly trends</h2>
+  <div class="grid4">
+    <div class="card"><h3>Equity indices (indexed, first week = 100)</h3><div class="chartbox"><canvas id="chIdx"></canvas></div></div>
+    <div class="card"><h3>US Treasury yields (%)</h3><div class="chartbox"><canvas id="chYld"></canvas></div></div>
+    <div class="card"><h3>Gold ($/oz) &amp; Brent ($/bbl)</h3><div class="chartbox"><canvas id="chCmd"></canvas></div></div>
+    <div class="card"><h3>Bitcoin ($) &amp; VIX</h3><div class="chartbox"><canvas id="chBtc"></canvas></div></div>
+  </div>
+
+  <h2>Mag7 scoreboard</h2>
+  <div class="grid2">
+    <div class="card"><h3>Week move (%)</h3><div class="chartbox"><canvas id="chM7"></canvas></div><div class="note" id="m7note"></div></div>
+    <div class="card"><h3>Detail</h3><table id="m7tbl"><thead><tr><th>Name</th><th>Price</th><th>Week</th><th>Mkt cap</th><th>P/E</th></tr></thead><tbody></tbody></table></div>
+  </div>
+  <div class="card" style="margin-top:12px;"><div class="read"><b>Read:</b> <span id="m7read"></span></div></div>
+
+  <h2>The big picture — what the week meant</h2>
+  <div id="themes"></div>
+
+  <h2>Sector rotation</h2>
+  <div class="grid2">
+    <div class="card"><h3>Weekly sector moves (%)</h3><div class="chartbox"><canvas id="chSec"></canvas></div></div>
+    <div class="card"><h3>Leaders &amp; laggards</h3><table id="secTbl"><thead><tr><th>Sector</th><th>Week</th><th>Driver</th></tr></thead><tbody></tbody></table>
+      <div class="read" style="margin-top:10px;"><b>Read:</b> <span id="secRead"></span></div></div>
+  </div>
+
+  <h2>Regime &amp; risk ranges</h2>
+  <div class="grid2">
+    <div class="card"><h3 id="regLabel"></h3><p style="color:var(--dim);font-size:13.5px;" id="regNote"></p>
+      <div class="read" style="margin-top:10px;"><b>Where we sit:</b> <span id="regWhere"></span></div></div>
+    <div class="card"><h3>Immediate-term risk ranges</h3><table id="rngTbl"><thead><tr><th>Instrument</th><th>Range</th><th>Trend</th></tr></thead><tbody></tbody></table></div>
+  </div>
+
+  <h2>Positioning &amp; options</h2>
+  <div class="card"><p style="color:var(--dim);font-size:14px;" id="posTxt"></p></div>
+
+  <h2>Market snapshot (full table)</h2>
+  <div class="card"><table id="snapTbl"><thead><tr><th>Instrument</th><th>Fri close</th><th>Week</th><th>Note</th></tr></thead><tbody></tbody></table></div>
+
+  <div class="grid4" style="margin-top:26px;">
+    <div class="card"><h3>Corporate news</h3><ul class="plain" id="corpUl"></ul></div>
+    <div class="card"><h3>Macro data</h3><ul class="plain" id="macroUl"></ul></div>
+    <div class="card"><h3>Geopolitics</h3><ul class="plain" id="geoUl"></ul></div>
+  </div>
+
+  <footer>
+    Built from the weekly "Global Week in Review" report. Figures are for the week ending Friday close unless noted; several items are flagged directional/unconfirmed in the source report. Verify live prices before acting. Not investment advice.
+  </footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const fmt = n => n>=1000 ? n.toLocaleString('en-US',{maximumFractionDigits:2}) : String(n);
+const clsFor = s => /^[+↑]|firmer|higher|Leader|^Up/i.test(s) ? 'up' : /^[−\-↓]|softer|lower|Down/i.test(s) ? 'dn' : 'fl';
+
+Chart.defaults.color = '#93a0bd';
+Chart.defaults.borderColor = 'rgba(38,48,79,.6)';
+Chart.defaults.font.size = 11;
+
+const labels = WEEKS.map(w => w.id);
+let charts = [];
+function line(ctx, datasets, opts={}){
+  charts.push(new Chart(ctx, {type:'line', data:{labels, datasets},
+    options:Object.assign({responsive:true, maintainAspectRatio:false,
+      plugins:{legend:{labels:{boxWidth:10, boxHeight:10}}},
+      elements:{line:{tension:.3}, point:{radius:4}}}, opts)}));
+}
+
+function buildTrends(){
+  const m = k => WEEKS.map(w => w.metrics[k] ?? null);
+  const norm = k => { const s=m(k), b=s.find(v=>v!=null); return s.map(v=>v==null?null:+(v/b*100).toFixed(2)); };
+  line($('chIdx'), [
+    {label:'S&P 500', data:norm('spx'), borderColor:'#5b8def', backgroundColor:'#5b8def'},
+    {label:'Nasdaq', data:norm('nasdaq'), borderColor:'#37c98b', backgroundColor:'#37c98b'},
+    {label:'Dow', data:norm('dow'), borderColor:'#d9a441', backgroundColor:'#d9a441'}
+  ]);
+  line($('chYld'), [
+    {label:'10Y', data:m('us10y'), borderColor:'#5b8def', backgroundColor:'#5b8def'},
+    {label:'2Y', data:m('us2y'), borderColor:'#f0596b', backgroundColor:'#f0596b'}
+  ]);
+  line($('chCmd'), [
+    {label:'Gold', data:m('gold'), borderColor:'#d9a441', backgroundColor:'#d9a441', yAxisID:'y'},
+    {label:'Brent', data:m('brent'), borderColor:'#37c98b', backgroundColor:'#37c98b', yAxisID:'y1'}
+  ], {scales:{y:{position:'left'}, y1:{position:'right', grid:{drawOnChartArea:false}}}});
+  line($('chBtc'), [
+    {label:'Bitcoin', data:m('btc'), borderColor:'#e8a33d', backgroundColor:'#e8a33d', yAxisID:'y'},
+    {label:'VIX', data:m('vix'), borderColor:'#f0596b', backgroundColor:'#f0596b', yAxisID:'y1'}
+  ], {scales:{y:{position:'left'}, y1:{position:'right', grid:{drawOnChartArea:false}}}});
+}
+
+let m7Chart=null, secChart=null;
+function render(w){
+  $('subLine').textContent = `Everything that mattered this week. Week ending ${w.weekEnding} US close · Published ${w.published} · All times GMT+8`;
+  $('tldr').textContent = w.tldr;
+
+  const KPI = [['S&P 500','spx','s&p'],['Nasdaq','nasdaq','nasdaq'],['Dow','dow','dow'],
+    ['US 10Y','us10y','10y'],['DXY','dxy','dxy'],['Gold','gold','gold'],
+    ['Brent','brent','brent'],['Bitcoin','btc','bitcoin'],['VIX','vix','vix']];
+  $('kpis').innerHTML = KPI.map(([lbl,k,term])=>{
+    const row = w.snapshot.find(r=>r[0].toLowerCase().includes(term))||[];
+    const mv = row[2]||''; const val = w.metrics[k];
+    const disp = k==='us10y' ? val+'%' : fmt(val);
+    return `<div class="kpi"><div class="lbl">${lbl}</div><div class="val">${disp}</div><div class="chg ${clsFor(mv)}">${mv}</div></div>`;
+  }).join('');
+
+  // Mag7
+  $('m7tbl').querySelector('tbody').innerHTML = w.mag7.map(s=>
+    `<tr><td><b>${s.n}</b> <span style="color:var(--faint)">${s.tk}</span></td><td>$${fmt(s.p)}</td><td class="${clsFor(s.wk)}">${s.wk}</td><td>${s.cap}</td><td>${s.pe}</td></tr>`).join('');
+  $('m7read').textContent = w.mag7Read;
+  const withPct = w.mag7.filter(s=>s.wkPct!=null);
+  $('m7note').textContent = withPct.length<w.mag7.length ? 'Chart shows names with a verified weekly %; see table for the rest.' : '';
+  if(m7Chart) m7Chart.destroy();
+  m7Chart = new Chart($('chM7'), {type:'bar',
+    data:{labels:withPct.map(s=>s.tk), datasets:[{data:withPct.map(s=>s.wkPct),
+      backgroundColor:withPct.map(s=>s.wkPct>=0?'rgba(55,201,139,.7)':'rgba(240,89,107,.7)')}]},
+    options:{responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}});
+
+  $('themes').innerHTML = w.themes.map(t=>
+    `<div class="theme"><h4>${t.t}</h4><p>${t.b}</p><div class="read"><b>Read:</b> ${t.r}</div></div>`).join('');
+
+  // Sectors
+  $('secTbl').querySelector('tbody').innerHTML = w.sectors.map(s=>
+    `<tr><td>${s.n}</td><td class="${clsFor(s.m)}">${s.m}</td><td style="color:var(--dim)">${s.d}</td></tr>`).join('');
+  $('secRead').textContent = w.sectorsRead;
+  const sp = w.sectors.filter(s=>s.pct!=null);
+  if(secChart) secChart.destroy();
+  secChart = new Chart($('chSec'), {type:'bar',
+    data:{labels:sp.map(s=>s.n.replace(/\s*\(.*\)/,'')), datasets:[{data:sp.map(s=>s.pct),
+      backgroundColor:sp.map(s=>s.pct>=0?'rgba(55,201,139,.7)':'rgba(240,89,107,.7)')}]},
+    options:{indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}});
+
+  // Regime
+  $('regLabel').textContent = w.regime.label;
+  $('regNote').textContent = w.regime.note;
+  $('regWhere').textContent = w.regime.where;
+  $('rngTbl').querySelector('tbody').innerHTML = w.regime.ranges.map(r=>{
+    const cls = /bull/i.test(r[2])?'bull':/bear/i.test(r[2])?'bear':'neut';
+    return `<tr><td>${r[0]}</td><td>${r[1]}</td><td><span class="pill ${cls}">${r[2]}</span></td></tr>`;}).join('');
+
+  $('posTxt').textContent = w.positioning;
+
+  $('snapTbl').querySelector('tbody').innerHTML = w.snapshot.map(r=>
+    `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td class="${clsFor(r[2])}">${r[2]}</td><td style="color:var(--dim)">${r[3]}</td></tr>`).join('');
+
+  $('corpUl').innerHTML = w.corporate.map(x=>`<li>${x}</li>`).join('');
+  $('macroUl').innerHTML = w.macro.map(x=>`<li>${x}</li>`).join('');
+  $('geoUl').innerHTML = w.geo.map(x=>`<li>${x}</li>`).join('');
+}
+
+// init
+const sel = $('weekSel');
+WEEKS.slice().reverse().forEach(w=>{
+  const o = document.createElement('option'); o.value=w.id; o.textContent=w.weekEnding; sel.appendChild(o);
+});
+sel.addEventListener('change', ()=>render(WEEKS.find(w=>w.id===sel.value)));
+buildTrends();
+render(WEEKS[WEEKS.length-1]);
+</script>
+</body>
+</html>
