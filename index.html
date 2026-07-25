@@ -71,6 +71,7 @@
     <div>
       <label for="weekSel" style="color:var(--dim);font-size:13px;margin-right:8px;">Week ending</label>
       <select id="weekSel"></select>
+      <a id="pdfBtn" href="#" download style="display:none; text-decoration:none; background:var(--panel2); color:var(--txt); border:1px solid var(--line); border-radius:8px; padding:8px 12px; font-size:14px; margin-left:8px;">⬇ PDF</a>
       <button id="themeBtn" title="Toggle light/dark">☀️</button>
     </div>
   </header>
@@ -181,6 +182,10 @@ let m7Chart=null, secChart=null;
 function render(w){
   $('subLine').textContent = `Everything that mattered this week. Week ending ${w.weekEnding} US close · Published ${w.published} · All times GMT+8`;
   $('tldr').textContent = w.tldr;
+
+  const pb = $('pdfBtn');
+  if(w.pdf){ pb.style.display='inline-block'; pb.href=w.pdf; pb.setAttribute('download', w.pdfName || (w.id+'.pdf')); pb.title='Download the full report PDF for this week'; }
+  else pb.style.display='none';
 
   const KPI = [['S&P 500','spx','s&p'],['Nasdaq','nasdaq','nasdaq'],['Dow','dow','dow'],
     ['US 10Y','us10y','10y'],['DXY','dxy','dxy'],['Gold','gold','gold'],

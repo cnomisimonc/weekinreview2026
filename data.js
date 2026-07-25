@@ -7,6 +7,8 @@ const WEEKS = [
   id: "2026-07-17",
   weekEnding: "Friday 17 July 2026",
   published: "Saturday 18 July 2026",
+  pdf: "reports/2026-07-17.pdf",
+  pdfName: "Global Week in Review_2026-07-18.pdf",
   tldr: "A crowded-momentum unwind — not a broad risk-off — dragged the cap-weighted indices lower (Nasdaq −2.9%) as TSMC's capex hike reignited AI-overspend fears and Netflix was punished for a soft guide, even as 8 of 11 sectors rose. Soft CPI flipped the Fed from hike-risk to cuts-back-on-the-table, while a US–Iran oil spike (WTI +10%) powered energy and knocked gold −3.4%. Banks printed a record quarter.",
   metrics: { spx:7457.69, nasdaq:25520.24, dow:52146.42, us10y:4.55, us2y:4.18, dxy:100.76, gold:3980, silver:55.58, brent:85, wti:80.86, btc:63800, vix:18.77 },
   snapshot: [
@@ -106,6 +108,8 @@ const WEEKS = [
   id: "2026-07-24",
   weekEnding: "Friday 24 July 2026",
   published: "Saturday 25 July 2026",
+  pdf: "reports/2026-07-24.pdf",
+  pdfName: "Global Week in Review_2026-07-25.pdf",
   tldr: "The week the AI trade cracked and the Fed-hike scare came back. Alphabet's record ~$205B capex guide and Tesla's margin miss triggered an ~$800B mega-cap wipeout on Thursday — the worst day for Big Tech since April 2025. Brent vaulted above $100 (first time since May) as the US-Iran war entered its third week, and record-low jobless claims (187k, lowest since 1969) plus a services-PMI beat pushed 2Y/10Y yields up ~16–19bp and flipped rate markets to pricing a possible July/September hike, not a cut. Value and energy held; the Nasdaq fell 2.1%, its second straight weekly loss. Credit stayed calm — this was a rotation and a rates scare, not a crisis.",
   metrics: { spx:7411.98, nasdaq:24975.82, dow:51947.25, us10y:4.71, us2y:4.37, dxy:101.5, gold:4050, silver:58, brent:96.78, wti:89.31, btc:65030, vix:18.6 },
   snapshot: [
