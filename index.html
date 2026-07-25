@@ -28,6 +28,9 @@
   select{background:var(--panel2); color:var(--txt); border:1px solid var(--line); border-radius:8px; padding:8px 12px; font-size:14px;}
   #themeBtn{background:var(--panel2); color:var(--txt); border:1px solid var(--line); border-radius:8px; padding:8px 12px; font-size:14px; cursor:pointer; margin-left:8px;}
   #themeBtn:hover{border-color:var(--amber);}
+  #viewTabs{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-right:8px; vertical-align:middle;}
+  .vtab{background:var(--panel2); color:var(--dim); border:none; padding:8px 14px; font-size:14px; cursor:pointer;}
+  .vtab.active{background:var(--amber); color:#1d2537; font-weight:700;}
   .tldr{background:linear-gradient(135deg,#1c2340,#181f36); border:1px solid var(--amber); border-radius:12px; padding:16px 18px; margin:14px 0 24px; font-size:14.5px;}
   .tldr b{color:var(--amber);}
   .kpis{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; margin-bottom:26px;}
@@ -69,6 +72,10 @@
   <header>
     <h1>Global <span class="accent">Week in Review</span></h1>
     <div>
+      <span id="viewTabs">
+        <button class="vtab active" data-v="review">In Review</button>
+        <button class="vtab" data-v="ahead">Week Ahead</button>
+      </span>
       <label for="weekSel" style="color:var(--dim);font-size:13px;margin-right:8px;">Week ending</label>
       <select id="weekSel"></select>
       <a id="pdfBtn" href="#" download style="display:none; text-decoration:none; background:var(--panel2); color:var(--txt); border:1px solid var(--line); border-radius:8px; padding:8px 12px; font-size:14px; margin-left:8px;">⬇ PDF</a>
@@ -79,6 +86,7 @@
 
   <div class="tldr"><b>TL;DR — </b><span id="tldr"></span></div>
 
+  <div id="reviewView">
   <div class="kpis" id="kpis"></div>
 
   <h2>Weekly trends</h2>
@@ -124,6 +132,43 @@
     <div class="card"><h3>Macro data</h3><ul class="plain" id="macroUl"></ul></div>
     <div class="card"><h3>Geopolitics</h3><ul class="plain" id="geoUl"></ul></div>
   </div>
+  </div><!-- /reviewView -->
+
+  <div id="aheadView" style="display:none;">
+    <div class="card" id="aheadNA" style="display:none;"><p style="color:var(--dim);">The Week Ahead report for this weekend isn't in the archive (it publishes Sundays and is added on the next rebuild).</p></div>
+    <div id="aheadContent">
+      <h2>Setup snapshot — where we closed Friday</h2>
+      <div class="card"><table id="aSetupTbl"><thead><tr><th>Instrument</th><th>Fri close</th><th>Session</th><th>Into Monday</th></tr></thead><tbody></tbody></table><div class="note" id="aSetupNote"></div></div>
+
+      <h2>The big picture — what to watch</h2>
+      <div id="aThemes"></div>
+
+      <h2>Economic calendar — the week ahead (GMT+8)</h2>
+      <div class="card"><table id="aCalTbl"><thead><tr><th>Day</th><th>Releases</th><th>Why it matters</th></tr></thead><tbody></tbody></table></div>
+
+      <div class="grid2" style="margin-top:16px;">
+        <div class="card"><h3>Central banks &amp; policy</h3><table id="aCbTbl"><thead><tr><th>Bank</th><th>Event</th><th>Expectation</th><th>The question</th></tr></thead><tbody></tbody></table></div>
+        <div class="card"><h3>Earnings on deck</h3><table id="aEarnTbl"><thead><tr><th>Day (US)</th><th>Companies</th><th>What the market wants</th></tr></thead><tbody></tbody></table></div>
+      </div>
+
+      <h2>Regime &amp; risk ranges — the map for the week</h2>
+      <div class="grid2">
+        <div class="card"><h3 id="aRegLabel"></h3><p style="color:var(--dim);font-size:13.5px;" id="aRegNote"></p>
+          <div class="read" style="margin-top:10px;"><b>Where we sit:</b> <span id="aRegWhere"></span></div></div>
+        <div class="card"><h3>Immediate-term risk ranges</h3><table id="aRngTbl"><thead><tr><th>Instrument</th><th>Range</th><th>Trend</th></tr></thead><tbody></tbody></table></div>
+      </div>
+
+      <h2>Positioning &amp; themes</h2>
+      <div class="card"><p style="color:var(--dim);font-size:14px;" id="aPosTxt"></p></div>
+
+      <div class="grid4" style="margin-top:26px;">
+        <div class="card"><h3>Catalysts &amp; events</h3><ul class="plain" id="aCatUl"></ul></div>
+        <div class="card"><h3>Geopolitics — what's live</h3><ul class="plain" id="aGeoUl"></ul></div>
+        <div class="card"><h3>Asia setup — Monday open</h3><p style="color:var(--dim);font-size:13.5px;" id="aAsia"></p></div>
+        <div class="card"><h3>Beyond the markets</h3><ul class="plain" id="aBeyondUl"></ul></div>
+      </div>
+    </div>
+  </div><!-- /aheadView -->
 
   <footer>
     Built from the weekly "Global Week in Review" report. Figures are for the week ending Friday close unless noted; several items are flagged directional/unconfirmed in the source report. Verify live prices before acting. Not investment advice.
@@ -245,13 +290,67 @@ function render(w){
   $('geoUl').innerHTML = w.geo.map(x=>`<li>${x}</li>`).join('');
 }
 
+let view = 'review';
+function renderAhead(a){
+  $('aSetupTbl').querySelector('tbody').innerHTML = a.setup.map(r=>
+    `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td class="${clsFor(r[2])}">${r[2]}</td><td style="color:var(--dim)">${r[3]}</td></tr>`).join('');
+  $('aSetupNote').textContent = a.setupNote || '';
+  $('aThemes').innerHTML = a.themes.map(t=>
+    `<div class="theme"><h4>${t.t}</h4><p>${t.b}</p><div class="read"><b>Watch:</b> ${t.w}</div></div>`).join('');
+  $('aCalTbl').querySelector('tbody').innerHTML = a.calendar.map(r=>
+    `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td style="color:var(--dim)">${r[2]}</td></tr>`).join('');
+  $('aCbTbl').querySelector('tbody').innerHTML = a.cbs.map(r=>
+    `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td><td style="color:var(--dim)">${r[3]}</td></tr>`).join('');
+  $('aEarnTbl').querySelector('tbody').innerHTML = a.earnings.map(r=>
+    `<tr><td><b>${r[0]}</b></td><td>${r[1]}</td><td style="color:var(--dim)">${r[2]}</td></tr>`).join('');
+  $('aRegLabel').textContent = a.regime.label;
+  $('aRegNote').textContent = a.regime.note;
+  $('aRegWhere').textContent = a.regime.where;
+  $('aRngTbl').querySelector('tbody').innerHTML = a.regime.ranges.map(r=>{
+    const cls = /bull/i.test(r[2])?'bull':/bear/i.test(r[2])?'bear':'neut';
+    return `<tr><td>${r[0]}</td><td>${r[1]}</td><td><span class="pill ${cls}">${r[2]}</span></td></tr>`;}).join('');
+  $('aPosTxt').textContent = a.positioning;
+  $('aCatUl').innerHTML = a.catalysts.map(x=>`<li>${x}</li>`).join('');
+  $('aGeoUl').innerHTML = a.geo.map(x=>`<li>${x}</li>`).join('');
+  $('aAsia').textContent = a.asia;
+  $('aBeyondUl').innerHTML = a.beyond.map(x=>`<li>${x}</li>`).join('');
+}
+
+function renderView(){
+  const w = current, isAhead = view==='ahead', pb = $('pdfBtn');
+  $('reviewView').style.display = isAhead ? 'none' : 'block';
+  $('aheadView').style.display = isAhead ? 'block' : 'none';
+  document.querySelectorAll('.vtab').forEach(b=>b.classList.toggle('active', b.dataset.v===view));
+  if(isAhead){
+    if(w.ahead){
+      $('aheadNA').style.display='none'; $('aheadContent').style.display='block';
+      renderAhead(w.ahead);
+      $('subLine').textContent = `Everything coming up. Week of ${w.ahead.weekOf} · Published ${w.ahead.published} · All times GMT+8`;
+      $('tldr').textContent = w.ahead.tldr;
+      if(w.ahead.pdf){ pb.style.display='inline-block'; pb.href=w.ahead.pdf; pb.setAttribute('download', w.ahead.pdfName||''); }
+      else pb.style.display='none';
+    }else{
+      $('aheadNA').style.display='block'; $('aheadContent').style.display='none';
+      $('subLine').textContent = `Week of the Monday after ${w.weekEnding}`;
+      $('tldr').textContent = 'Week Ahead report not yet available for this weekend.';
+      pb.style.display='none';
+    }
+  }else{
+    $('subLine').textContent = `Everything that mattered this week. Week ending ${w.weekEnding} US close · Published ${w.published} · All times GMT+8`;
+    $('tldr').textContent = w.tldr;
+    if(w.pdf){ pb.style.display='inline-block'; pb.href=w.pdf; pb.setAttribute('download', w.pdfName||''); }
+    else pb.style.display='none';
+  }
+}
+
 // init
 let current = WEEKS[WEEKS.length-1];
 const sel = $('weekSel');
 WEEKS.slice().reverse().forEach(w=>{
   const o = document.createElement('option'); o.value=w.id; o.textContent=w.weekEnding; sel.appendChild(o);
 });
-sel.addEventListener('change', ()=>{ current = WEEKS.find(w=>w.id===sel.value); render(current); });
+sel.addEventListener('change', ()=>{ current = WEEKS.find(w=>w.id===sel.value); render(current); renderView(); });
+document.querySelectorAll('.vtab').forEach(b=>b.addEventListener('click', ()=>{ view=b.dataset.v; renderView(); }));
 
 // theme
 const btn = $('themeBtn');
@@ -266,6 +365,7 @@ function setTheme(t, rebuild){
     if(secChart){ secChart.destroy(); secChart=null; }
     buildTrends();
     render(current);
+    renderView();
   }
 }
 btn.addEventListener('click', ()=>setTheme(isLight()?'dark':'light', true));
@@ -276,6 +376,7 @@ applyChartDefaults();
 
 buildTrends();
 render(current);
+renderView();
 </script>
 </body>
 </html>

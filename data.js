@@ -102,7 +102,89 @@ const WEEKS = [
     "US–Iran / Strait of Hormuz: fragile on-off ceasefire kept an oil risk premium in place — the week's swing factor for crude, inflation and yields.",
     "Russia/Ukraine: Senate deal to advance a sanctions bill incl. secondary tariffs on buyers of Russian oil — a new oil-supply wildcard.",
     "US–China: trade truce holding; next hard marker is the mid-August truce expiry."
-  ]
+  ],
+  ahead: {
+    published: "Sunday 19 July 2026",
+    weekOf: "Mon 20 July 2026",
+    pdf: "reports/2026-07-17-ahead.pdf",
+    pdfName: "Global Week Ahead_2026-07-19.pdf",
+    tldr: "Two things define the week: the Iran / Strait of Hormuz oil shock and a wall of mega-cap earnings. Wednesday 22 Jul is the pivot — Alphabet, Tesla, IBM and ServiceNow all report after the US close, straight into a chip tape already down ~11% on the week. The ECB decides Thursday (hold at 2.25% the base case), and the whole week trades under the shadow of a 28–29 Jul FOMC where — remarkably — the market is now debating a hike, not a cut. Regime is #Quad3: favour energy, cash and USD; fade high-beta tech strength.",
+    setup: [
+      ["S&P 500","7,533.77","−0.51%","Futures reopen Mon 06:00; gap risk on weekend Iran headlines"],
+      ["Nasdaq Composite","25,881.95","−1.47%","Semis the epicentre; NDX led lower"],
+      ["Dow Jones","52,552.97","−0.20%","Energy cushioned the blue chips"],
+      ["US 10Y yield","4.55%","higher","~16-mo high zone; bear-steepening on oil"],
+      ["US 2Y yield","4.18%","higher","16-mo high; front end pricing Fed-hike risk"],
+      ["DXY (dollar)","100.83","firm","Haven + rate bid; USD the winner in Quad 3"],
+      ["Gold (spot)","~$3,995","−3.4% wk","Lower highs as real yields/USD climb"],
+      ["Brent crude","~$86","+","Hormuz supply premium in the price"],
+      ["WTI crude","$81.02","+","Above $81; energy the week's leadership"],
+      ["Bitcoin","$63,140","lower","Risk-off + strong USD weighing"],
+      ["VIX","18.57","+11%","1-week high; still below panic"]
+    ],
+    setupNote: "Tokyo is CLOSED Monday 20 Jul (Marine Day) — thinner Asia liquidity into the open.",
+    themes: [
+      { t:"The oil / Hormuz supply shock is the master variable", b:"The 2026 Strait of Hormuz crisis is live and escalating. Brent near $86 / WTI above $81 with a fat war premium; earlier phases spiked Brent past $126. Every risk asset is now a derivative of the tanker headlines.", w:"A weekend escalation gaps oil up and equities down at the Monday 06:00 futures reopen. Energy and defensives are the hedge; long-duration tech is the funding source. Size for both tails." },
+      { t:"The semiconductor rout — capitulation or the start?", b:"The SOX shed ~11% on the week and sits ~24% below its record. Wednesday night's mega-cap prints (Alphabet, Tesla) land into an already-broken chip tape.", w:"Whether AI-capex commentary from Alphabet stabilises or accelerates the semis bleed. A soft Mag-7 guide risks a Thursday gap-down; a clean beat could spark a violent oversold bounce." },
+      { t:"The Fed dragged hawkish by energy — into 28–29 Jul", b:"June CPI cooled, yet the oil shock flipped the conversation: 2Y at a 16-month high and traders pricing hold-to-hike odds, not cuts. Blackout week — data and oil do all the talking.", w:"The 2s10s and the front end. Bear-steepening = Quad-3 confirmation; a bull-flatten on de-escalation is the pain trade for energy longs." },
+      { t:"The dollar is quietly winning — that's the tell", b:"DXY 100.83 with gold making lower highs is the classic Quad-3 signature (oil up + dollar up). A firm USD tightens global conditions.", w:"USDJPY and EM FX. A dollar breakout adds a second tightening impulse on top of oil — a cross-check on the equity tape all week." },
+      { t:"ECB Thursday: hawkish CB meets an oil shock", b:"After June's surprise hike to 2.25%, markets price ~88% hold with a 2.50% hike as the tail. Oil cuts both ways for Europe.", w:"EUR and Bunds at 19:45/20:30. Hawkish hold = EUR bid, European equities capped; a dovish lean extends the USD trade." },
+      { t:"Positioning fragile, not yet panicked", b:"VIX popped 11% to 18.57 — off the lows, nowhere near capitulation. Mega-cap earnings + war headlines stacked = sharp two-way moves.", w:"VIX through 20–22 signals genuine de-risking and often marks a tradable low; failure to spike on bad news flags complacency." }
+    ],
+    calendar: [
+      ["Mon 20","China LPR (09:15) · Japan holiday · US Leading Index (22:00)","LPR unchanged expected; Tokyo closed (thin liquidity); recession-watch gauge"],
+      ["Tue 21","Philadelphia Fed Non-Mfg Survey (20:30)","Regional services read into the soft-landing debate"],
+      ["Wed 22","No major data","Airtime belongs to earnings — Alphabet/Tesla night"],
+      ["Thu 23","ECB decision (19:45, Lagarde 20:30) · US jobless claims (20:30)","Hold at 2.25% base case; labour still firm"],
+      ["Fri 24","EZ/UK flash PMIs (~15:00) · US flash PMIs (21:45) · New home sales (22:00)","First July growth read; watch prices-paid on oil"]
+    ],
+    cbs: [
+      ["ECB","Thu 23 Jul 19:45 / 20:30","Hold at 2.25% (~88%)","Energy pass-through language; hike to 2.50% is the tail"],
+      ["PBOC","Mon 20 Jul 09:15","LPR unchanged","A surprise cut = pro-cyclical signal for HK/China"],
+      ["Fed","Blackout — meets 28–29 Jul","Two-way risk","Market debating hold-to-hike, a stark reversal from cuts"],
+      ["BOJ","No meeting (end-July)","—","Yen sensitive to USD move and oil terms of trade"]
+    ],
+    earnings: [
+      ["Tue 21","GM · 3M (pre)","Tariff/EV cost guidance; industrial demand pulse"],
+      ["Wed 22","Alphabet · Tesla · IBM · ServiceNow (AMC); GE Vernova, AT&T, CME, PM (pre)","AI-capex guide + Search/Cloud resilience — the tape's key print; TSLA margins/robotaxi"],
+      ["Thu 23","Intel (AMC)","Foundry turnaround + guide into a ~24%-off-highs chip rout"],
+      ["Fri 24","American Express · Verizon (pre)","High-end consumer credit health; defensive yield"]
+    ],
+    catalysts: [
+      "FOMC overhang (28–29 Jul): every tape this week front-runs it — a live hike debate makes each oil print a policy input.",
+      "Iran / Hormuz headline risk — 24/7; the dominant discretionary catalyst.",
+      "Post-OpEx dealer gamma resets into a cleaner, potentially more volatile week.",
+      "San Diego Comic-Con (Wed 22 – Sun 26): media/streaming catalyst with Netflix's guide-down fresh."
+    ],
+    regime: {
+      label:"#Quad3 — growth slowing, inflation re-accelerating",
+      note:"Anchored to Hedgeye's published 'Oil Up, Dollar Up = #Quad3' framework; ranges derived from Friday closes — confirm against the live Early Look.",
+      ranges: [
+        ["S&P 500","7,410 – 7,635","Bearish"],
+        ["Nasdaq Composite","25,300 – 26,450","Bearish"],
+        ["US 10Y yield","4.42% – 4.63%","Bullish (yields up)"],
+        ["US 2Y yield","4.05% – 4.28%","Bullish (yields up)"],
+        ["DXY (USD)","100.0 – 101.7","Bullish"],
+        ["Gold","$3,860 – $4,120","Bearish"],
+        ["WTI crude","$77.50 – $84.50","Bullish"],
+        ["Brent crude","$82.00 – $89.50","Bullish"],
+        ["VIX","16.5 – 22.0","Bullish (vol up)"],
+        ["Bitcoin","$60,000 – $67,500","Bearish"]
+      ],
+      where:"Deep in Quad 3, driven by an exogenous oil shock. It flips only if (a) Hormuz de-escalates and oil air-pockets lower, or (b) growth rolls hard enough to tip Quad 3 into Quad 4 — which would flip the trade from long energy/USD to long bonds/USD, short everything cyclical. Until then, respect the ranges and trade the edges."
+    },
+    positioning:"Semis and AI-capex names remain the most crowded long even after an ~11% weekly drawdown. Leadership: energy and select defensives. VIX 18.57 — elevated, not panicked; no credit stress yet. Tells: the 2Y (tightening thermostat), a DXY breakout, semis' reaction to Alphabet/Tesla, gold's refusal to rally on war, and oil gaps on Hormuz headlines.",
+    geo: [
+      "Iran / Strait of Hormuz: the defining macro event — escalated into the weekend; earlier phases spiked Brent past $126; ceasefire attempts have failed.",
+      "Prediction markets (stale, ~mid-June): Hormuz traffic normalisation ~65% by 31 Jul, ~90% by year-end — a slow reopening expected, not a clean resolution."
+    ],
+    asia:"Asia opens Monday into a risk-off Friday close with Tokyo shut for Marine Day — thin liquidity, no Japan lead. Dominant tell: oil. A weekend Hormuz escalation gaps energy up and pressures HK tech and Korean/Taiwanese semis. China's LPR at 09:15 is the one data point. Net: a defensive, oil-led open — watch Hang Seng, KOSPI, TAIEX, and CME S&P futures at the 06:00 reopen.",
+    beyond: [
+      "Tour de France final week — Stage 16 ITT Tue, back-to-back Alpe d'Huez finishes Fri/Sat, Paris Sun 26.",
+      "San Diego Comic-Con Thu 23–Sun 26 — studio/streaming slate reveals.",
+      "SpaceX Falcon 9 cadence continues; confirm windows live."
+    ]
+  }
 },
 {
   id: "2026-07-24",
@@ -201,6 +283,83 @@ const WEEKS = [
     "Trade: Section 122 10% duty expired 24 Jul; Canada hit with 50% Section 338 tariffs on autos/alcohol/dairy (eff. 19 Aug); Brazil drew a 25% Section 301 duty.",
     "Russia-Ukraine: Zelenskyy replaced military chief Syrskyi (21 Jul) after days of Kyiv protests.",
     "FOMC 28–29 Jul pricing: Kalshi Hold 92% / Hike ~8% / Cut ~4%; September hike odds ~80%."
-  ]
+  ],
+  ahead: {
+    published: "Sunday 26 July 2026",
+    weekOf: "Mon 27 July 2026",
+    pdf: "reports/2026-07-24-ahead.pdf",
+    pdfName: "Global Week Ahead_2026-07-26.pdf",
+    tldr: "The whole week bends around one 48-hour window. The FOMC decision (Thu 30 Jul, 02:00 GMT+8) — a hawkish hold expected at 3.50–3.75% under Chair Warsh, no dot plot — collides with the mega-cap gauntlet (MSFT & META Thu; AAPL & AMZN Fri) and the Q2 GDP + PCE prints (Thu night). Overlaid: a live oil/Iran shock with Brent hovering near $100 and the Strait of Hormuz in play. This is a two-tail week — an AI-capex wobble or a hawkish Warsh could snap the S&P's record streak, while a dovish tilt + clean earnings extends it. Keep risk small into Wednesday night.",
+    setup: [
+      ["S&P 500","7,411.98","+0.05%","Flat finish; chip drag vs. defensives. Futures steady Sun night"],
+      ["Nasdaq Composite","24,975.82","−0.64%","Semis the sore spot (SanDisk −11%); capex angst into MSFT/META"],
+      ["Dow Jones","51,947.25","+0.46%","Value/defensive bid; best relative of the majors"],
+      ["US 10Y yield","4.67%","lower","Bid on Iran/haven flows; FOMC & GDP the pivots"],
+      ["US 2Y yield","~3.90% (confirm)","rangebound","Anchored to a hawkish-hold Fed at 3.50–3.75%"],
+      ["DXY","~100.9 (confirm)","firm","Haven bid vs. hawkish ECB/BoJ; two-way into FOMC"],
+      ["Gold (spot)","~$4,030","below $4,100","Consolidating under record zone ahead of the Fed"],
+      ["Brent crude","$98.38","−2.3%","Off the >$100 spike; Hormuz/Red Sea risk premium live"],
+      ["WTI crude","$92.19","lower","Same war premium; supply-shock tail still fat"],
+      ["Bitcoin","~$65,760","+1.1%","'Clarity Act' + Fed-hold bid"]
+    ],
+    setupNote: "2Y, DXY, silver and VIX levels flagged for live confirmation.",
+    themes: [
+      { t:"The Fed: a hawkish hold, with a hike whispered", b:"FOMC decides 02:00 GMT+8 Thu 30 Jul; Warsh presser 02:30. Consensus and prediction markets favour a hold at 3.50–3.75% (~80–95% no-change) but a stubborn ~1-in-3 tail prices a hike. No SEP this meeting — the statement wording carries the tape.", w:"The 2Y and front-end SOFR for hawkish repricing. A 'not pre-committing' Warsh keeps the dollar bid and caps duration; any nod to soft labour data (57k June payrolls) is the dovish release valve." },
+      { t:"Mega-cap earnings: AI capex on trial", b:"Microsoft & Meta after Wed close (~04:00–05:00 GMT+8 Thu), Apple & Amazon after Thu close. After soft Alphabet/Tesla reactions, the market is hunting for capex discipline and AI monetisation, not just beats.", w:"Guidance on AI capex and Azure/AWS growth is the swing factor for the whole Nasdaq. 'Spend more, monetise later' risks a semis-led drawdown; evidence of ROI re-rates the complex. Hedge index beta." },
+      { t:"The growth-inflation double-header: Q2 GDP + PCE", b:"Advance Q2 GDP and PCE prices land Thu 30 Jul, 20:30 GMT+8 — hours after the Fed. The cleanest read yet on whether the oil shock is bleeding into a stagflationary mix.", w:"Hot PCE + soft GDP is the stagflation signature — bearish long duration and cyclicals, bullish gold and the dollar. A benign PCE hands the doves the mic." },
+      { t:"The oil/Iran risk premium", b:"Brent slipped to $98 Friday but the war premium is intact: Houthi Red Sea strikes and Hormuz headlines (>20% of seaborne oil) keep a fat supply-shock tail.", w:"Brent $100 is the psychological line. Break-and-hold above re-arms the inflation trade and pressures the Fed's hold; a de-escalation headline is the fastest tailwind for equities and bonds." },
+      { t:"BoJ & China data into the Asia bell", b:"BoJ concludes Fri 31 Jul — hold at 1.00% expected after June's 31-year-high hike, with upgraded FY26 GDP. China NBS PMIs Fri 09:30 set the Asia risk tone.", w:"A hawkish BoJ 'tactical pause' keeps USD/JPY and JGBs jumpy; a sub-50 China mfg PMI weighs on commodities and regional beta." },
+      { t:"Month-end mechanics", b:"Fri 31 Jul: rebalancing flows, Q2 Employment Cost Index, and a bunched Eurozone flash CPI/GDP slate amplify moves into an event-heavy close. July has been a record month for the S&P.", w:"Pension/index rebalance flows can overwhelm fundamentals on the 31st. Expect elevated closing-auction volume; fade or follow with tight risk." }
+    ],
+    calendar: [
+      ["Mon 27","US Durable Goods (Jun); Dallas Fed mfg","Capex demand pulse before the mega-cap prints"],
+      ["Tue 28","CB Consumer Confidence; JOLTS (22:00)","Labour demand + household mood into the Fed"],
+      ["Wed 29","ADP payrolls (20:15); FOMC begins","Private-jobs warm-up for the decision"],
+      ["Thu 30","FOMC 02:00 + Warsh presser 02:30; Q2 GDP (adv.) + PCE prices + claims 20:30","The week's fulcrum; then the stagflation tell"],
+      ["Fri 31","ECI (Q2); Personal Income/PCE; China NBS PMIs 09:30; BoJ decision; EZ flash HICP/GDP","Wage pressure + month-end; Asia risk tone; ECB Sept debate"]
+    ],
+    cbs: [
+      ["US Federal Reserve","Decision Thu 30 Jul 02:00; presser 02:30","Hold 3.50–3.75%","How hawkish is Warsh? Any 2026 hike still live?"],
+      ["Bank of Japan","Decision Fri 31 Jul; Outlook Report","Hold 1.00%","Is the pause tactical? FY26 GDP upgrade path"],
+      ["ECB (context)","No meeting — held 23 Jul at 2.25%","2.25%","Lagarde flagged a possible Sept move; watch HICP"]
+    ],
+    earnings: [
+      ["Tue 28","Visa · Coca-Cola · Boeing · PayPal +many","Payments volume; staples pricing power; BA cash burn"],
+      ["Wed 29","Microsoft & Meta — after close","Azure growth + AI capex; Meta ad strength vs. capex guide"],
+      ["Thu 30","Apple & Amazon — after close; Exxon, Chevron (confirm)","iPhone/services + China; AWS margin; energy cash returns"],
+      ["Fri 31","Supermajors (confirm)","Supermajor FCF at Brent ~$100"]
+    ],
+    catalysts: [
+      "Month-end (Fri 31 Jul): index rebalancing, closing-auction flows, ECI + Eurozone slate.",
+      "Crypto/regulation: 'Clarity Act' momentum behind Bitcoin >$65k — watch legislative/ETF-flow headlines.",
+      "Energy/OPEC+ chatter: production or Hormuz-security headlines move the whole inflation complex intraday.",
+      "Post-July-opex positioning; heavy single-stock gamma around the mega-cap prints."
+    ],
+    regime: {
+      label:"#Quad3 — 'flation now, stag on a lag'",
+      note:"Directional, from the most recent verified Hedgeye commentary (July 2026); the live feed was not reachable. Quad 3 playbook: gold, energy/commodities, long-duration Treasuries; caution on high-multiple growth. Oil-shock overlay pulls toward Quad 3→4 risk if growth rolls faster than inflation cools.",
+      ranges: [
+        ["S&P 500 (7,412)","Buy low / sell high of range","Bullish TREND, stretched"],
+        ["Nasdaq (24,976)","Wider band on capex risk","Bullish TREND, fragile"],
+        ["US 10Y (4.67%)","Lower-end bias on haven bid","Neutral/lower"],
+        ["Gold (~$4,030)","Rangebound ±5% under records","Bullish TREND"],
+        ["Brent ($98)","$90s with $100 pivot","Bullish TREND (war premium)"],
+        ["Bitcoin (~$65.7k)","High-beta, wide band","Bullish TREND"]
+      ],
+      where:"Late-cycle and stretched: equities at/near records into a stagflationary Quad 3 with a fat oil tail. What flips it: a hawkish Warsh + hot PCE pushing real rates up; an AI-capex disappointment cracking the Nasdaq TREND; or a Hormuz escalation spiking Brent through $100. A dovish Fed + clean earnings + oil de-escalation is the bullish counter that extends the streak."
+    },
+    positioning:"Crowded: mega-cap AI/semis leadership and the record S&P streak — concentration risk is the single biggest tell into four mega-cap prints. FOMC + GDP/PCE + mega-caps in 48h is a classic vol-of-vol setup: expect a pre-Fed VIX bid and post-event crush if outcomes are benign. Watch IG/HY spreads on any hawkish surprise. Tells: SOX leadership, the 2Y on Fed wording, Brent $100, USD/JPY on BoJ, closing-auction volume into month-end.",
+    geo: [
+      "The 2026 Iran war remains the dominant macro overlay: Houthi Red Sea/Bab-al-Mandeb blockade threats, reported Iranian fire toward Jordan/Kuwait, recurring Hormuz closure risk.",
+      "Escalation = instant risk-off, Brent >$100, bid to gold/USD/Treasuries; de-escalation = fastest tailwind for equities and duration.",
+      "Polymarket Fed-July 'no change' swung ~74–95% through the week, settling ~80–85% into the meeting."
+    ],
+    asia:"Asia likely opens cautious-to-mixed Monday: Friday was a split tape (Dow up, Nasdaq down) and futures were steady over the weekend. With the Fed, mega-caps and GDP/PCE all mid-to-late week, expect low-conviction, range-bound trade early as desks de-risk. Intraday tells: Brent vs. $100 at the open, USD/JPY into the Fri BoJ, semis/SOX sympathy, weekend Hormuz headlines. China names trade the Fri NBS PMI in anticipation.",
+    beyond: [
+      "Mega-cap earnings double as product-signal events — the week's real 'launches' are on the calls.",
+      "Busy late-July launch cadence (SpaceX Starlink/Falcon 9) — confirm schedules live.",
+      "Peak northern-summer sport & festival season — colour, low direct market impact."
+    ]
+  }
 }
 ];
