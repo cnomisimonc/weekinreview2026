@@ -399,7 +399,17 @@ const WEEKS = [
     window: "Mon 20 – Sun 26 Jul 2026",
     readings: [
       { t:"One Hundred Years in the U.S. Stock Markets", d:"20 Jul", g:"Economics/Investing", u:null, x:"Hendrik Bessembinder (ASU W.P. Carey) analyzes investment outcomes for 29,754 common stocks listed on U.S. public markets between January 1926 and December 2025, using data from the Center for Research in Security Prices (CRSP) database…" },
-      { t:"China Is Preparing For $38,000 Gold", d:"23 Jul", g:"Economics/Commodities", u:"https://www.youtube.com/watch?v=dFjvcY9Tth0", x:"For the first time, a gold ETF has become the largest ETF in China, surpassing the country's equivalent of the S&P 500 — the Guan Yu Gold ETF holds $13 billion in assets vs. $12 billion for the primary stock-based ETF…" }
+      { t:"China Is Preparing For $38,000 Gold", d:"23 Jul", g:"Economics/Commodities", u:"https://www.youtube.com/watch?v=dFjvcY9Tth0", x:"For the first time, a gold ETF has become the largest ETF in China, surpassing the country's equivalent of the S&P 500 — the Guan Yu Gold ETF holds $13 billion in assets vs. $12 billion for the primary stock-based ETF…" },
+      { t:"China's Banks Halt Paper Gold: Risk or Real Price Shift?", d:"26 Jul", g:"Economics/Commodities", u:"https://investingnews.com/china-halts-paper-gold-trading/", x:"Major Chinese banks — ICBC, Postal Savings Bank of China, Ping An Bank, China Guangfa Bank and China Construction Bank — are discontinuing retail paper gold products linked to the Shanghai Gold Exchange after settlement on July 24, 2026. Retail clients were advised to close positions, liquidate, or take physical delivery before the deadline…" },
+      { t:"How America's 250-year China dream became its greatest strategic challenge", d:"26 Jul", g:"Politics/International Relations", u:"https://www.scmp.com/news/china/article/3361843/how-americas-250-year-china-dream-became-its-greatest-strategic-challenge", x:"In February 1784 the Empress of China, a converted privateer, departed New York for Canton — the start of a 250-year relationship in which America has repeatedly reinvented its perception of China: a coveted market, an admired civilization, a missionary project, and now its greatest strategic rival…" },
+      { t:"Tokenized Stocks Hit Records as US Access Opens", d:"26 Jul", g:"Economics/Investing", u:null, x:"The tokenized-equity market reached a record $2.3 billion in mid-July, nearly doubling March's $1 billion milestone. On July 21, Ondo recorded 514.5 million tokenized shares outstanding with 93,880 holders; Backed Finance hit a $579.4 million tokenized market cap. Ondo's broker-dealer, Oasis Pro Markets, was authorized to sell tokenized equities, ETFs and funds to US investors under SEC and FINRA oversight…" },
+      { t:"The Gold-Miner Paradox | July 2026", d:"26 Jul", g:"Economics/Investing", u:null, x:"As of July 24, 2026, gold miners have had a far tougher market than the metal itself — a gold-miner paradox testing investor confidence in mining equities. Miners are operating businesses subject to wages, diesel, political risk and capex; operating leverage means a gold rise brings disproportionately higher profits while declines magnify losses…" },
+      { t:"Liang Wenfeng Investor Call, 20 May 2026 · Full, Unabridged", d:"26 Jul", g:"Upload", u:null, x:"" },
+      { t:"DeepSeek Investor Call — Lessons Learned", d:"26 Jul", g:"Upload", u:null, x:"" },
+      { t:"What the New Kimi K3 Model Really Means for the U.S.-China AI Race — The Information", d:"26 Jul", g:"Technology/AI", u:null, x:"Beijing-based Moonshot released Kimi K3, the world's largest open-source model at 2.8 trillion parameters. It topped Arena's coding leaderboard, outperforming OpenAI's GPT-5.6 and Anthropic's Claude Fable 5 — challenging the assumption that Chinese labs rely solely on distillation of top U.S. models to advance…" },
+      { t:"Made in Europe vs Made in America vs Made in China", d:"26 Jul", g:"Upload", u:null, x:"Heyokha Brothers report, July 10, 2026. Made in Europe is defined not as traditional reshoring but as ensuring European institutions — banks, governments, manufacturers — can function if access to foreign cloud, AI or semiconductor technology is interrupted. In June 2026 the European Commission introduced a technology-sovereignty package: the Cloud and AI Development Act, Chips Act 2.0, and an open-source strategy…" },
+      { t:"Outlook", d:"26 Jul", g:"Economics/Investing", u:null, x:"The vehicle remarketing (salvage) industry has grown for decades: the U.S. fleet has grown ~2% annually since the 1970s, average vehicle age has risen, and older vehicles are more easily declared total losses. Total-loss frequency has jumped from 1 in 25 accident vehicles in the 1980s to roughly 1 in 4 today, while modern cars carry high-value sensors and cameras…" },
+      { t:"Global Week in Review — Dashboard", d:"26 Jul", g:"Economics", u:"https://weekinreview2026.pages.dev/", x:"The dashboard itself, saved as a reference card — for the week of Monday, July 20 to Sunday, July 26, 2026 it recorded the week's saved research and new knowledge cards, anchored by the Bessembinder hundred-year stock study and the China gold rotation…" }
     ],
     cards: [
       { t:"Johnson & Johnson", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Johnson_&_Johnson" },
@@ -407,7 +417,31 @@ const WEEKS = [
       { t:"Altria", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Altria" },
       { t:"Home Depot", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Home_Depot" },
       { t:"Jamieson Greer", g:"Person", u:"https://en.wikipedia.org/wiki/Jamieson_Greer" },
-      { t:"Zocdoc", g:"Web Site", u:"https://en.wikipedia.org/wiki/Zocdoc" }
+      { t:"Zocdoc", g:"Web Site", u:"https://en.wikipedia.org/wiki/Zocdoc" },
+      { t:"Center for Research in Security Prices", g:"Organization", u:"https://en.wikipedia.org/wiki/Center_for_Research_in_Security_Prices" },
+      { t:"Associated Press", g:"Organization", u:"https://en.wikipedia.org/wiki/Associated_Press" },
+      { t:"W. P. Carey School of Business", g:"Organization/Educational Organization", u:"https://en.wikipedia.org/wiki/W._P._Carey_School_of_Business" },
+      { t:"Technoprobe", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Technoprobe" },
+      { t:"STMicroelectronics", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/STMicroelectronics" },
+      { t:"Infineon Technologies", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Infineon_Technologies" },
+      { t:"ASM International", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/ASM_International" },
+      { t:"Moonshot AI", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Moonshot_AI" },
+      { t:"Endeavour Mining", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Endeavour_Mining" },
+      { t:"Evolution Mining", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Evolution_Mining" },
+      { t:"AngloGold Ashanti", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/AngloGold_Ashanti" },
+      { t:"NovaGold Resources", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/NovaGold_Resources" },
+      { t:"VanEck", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/VanEck" },
+      { t:"Securitize, Inc.", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Securitize,_Inc." },
+      { t:"OKX", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/OKX" },
+      { t:"China Construction Bank", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/China_Construction_Bank" },
+      { t:"Postal Savings Bank of China", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Postal_Savings_Bank_of_China" },
+      { t:"Ping An Bank", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Ping_An_Bank" },
+      { t:"China Guangfa Bank", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/China_Guangfa_Bank" },
+      { t:"Industrial and Commercial Bank of China", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Industrial_and_Commercial_Bank_of_China" },
+      { t:"Google Cloud Platform", g:"Software Application", u:"https://en.wikipedia.org/wiki/Google_Cloud_Platform" },
+      { t:"Microsoft Azure", g:"Software Application", u:"https://en.wikipedia.org/wiki/Microsoft_Azure" },
+      { t:"Qwen", g:"Software Application", u:"https://en.wikipedia.org/wiki/Qwen" },
+      { t:"Kimi (AI)", g:"Software Application", u:"https://en.wikipedia.org/wiki/Kimi_(AI)" }
     ]
   }
 }
