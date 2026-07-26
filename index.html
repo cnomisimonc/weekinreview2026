@@ -36,9 +36,11 @@
   .chip a:hover{color:var(--amber);}
   .chipcat{color:var(--faint); font-size:11px; text-transform:uppercase; letter-spacing:.5px; margin:10px 0 4px;}
   .rmeta{color:var(--faint); font-size:12px; font-style:italic; margin-bottom:6px;}
-  #topBtn{position:fixed; right:16px; bottom:16px; z-index:1000; display:none; background:var(--amber); color:#1d2537; border:none; border-radius:24px; padding:12px 18px; font-size:15px; font-weight:700; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.35); min-width:48px; min-height:48px;}
-  #topBtn:hover{filter:brightness(1.08);}
-  @media (max-width:640px){ #topBtn{right:14px; bottom:calc(14px + env(safe-area-inset-bottom));} }
+  details.fullsum{margin-top:8px;}
+  details.fullsum summary{cursor:pointer; color:var(--amber); font-size:13px; font-weight:600; list-style:none;}
+  details.fullsum summary::before{content:"▸ ";}
+  details.fullsum[open] summary::before{content:"▾ ";}
+  .fulltxt{white-space:pre-wrap; color:var(--dim); font-size:13px; line-height:1.6; max-height:440px; overflow:auto; margin-top:8px; padding:10px 12px; background:var(--panel2); border-radius:8px; border:1px solid var(--line);}
   .theme h4 a{color:var(--txt); text-decoration:none;}
   .theme h4 a:hover{color:var(--amber);}
   .tldr{background:linear-gradient(135deg,#1c2340,#181f36); border:1px solid var(--amber); border-radius:12px; padding:16px 18px; margin:14px 0 24px; font-size:14.5px;}
@@ -197,9 +199,8 @@
   </footer>
 </div>
 
-<button id="topBtn" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
-
 <script src="data.js"></script>
+<script src="fulltext.js"></script>
 <script>
 const $ = id => document.getElementById(id);
 const fmt = n => n>=1000 ? n.toLocaleString('en-US',{maximumFractionDigits:2}) : String(n);
@@ -341,10 +342,13 @@ function renderAhead(a){
 }
 
 function renderRecall(r){
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
   $('rReadings').innerHTML = r.readings.map(i=>{
     const title = i.u ? `<a href="${i.u}" target="_blank" rel="noopener">${i.t}</a>` : i.t;
-    const sum = i.s && i.s.length ? `<details class="rsum" style="margin-top:8px;"><summary style="cursor:pointer;color:var(--dim);font-size:.85em;">Detailed summary</summary>${i.s.map(sec=>`${sec.h?`<h5 style="margin:10px 0 4px;">${sec.h}</h5>`:''}<ul style="margin:4px 0 8px;padding-left:18px;">${sec.b.map(b=>`<li style="margin:3px 0;">${b}</li>`).join('')}</ul>`).join('')}</details>` : '';
-    return `<div class="theme"><h4>${title}</h4><div class="rmeta">${i.g} · added ${i.d}</div>${i.x?`<p>${i.x}</p>`:''}${sum}</div>`;
+    const key = i.t.replace(/[’‘]/g,"'").trim();
+    const full = (typeof RECALL_FULL!=='undefined') && RECALL_FULL[key];
+    const det = full ? `<details class="fullsum"><summary>Full Recall detailed summary</summary><div class="fulltxt">${esc(full)}</div></details>` : '';
+    return `<div class="theme"><h4>${title}</h4><div class="rmeta">${i.g} · added ${i.d}</div>${i.x?`<p>${i.x}</p>`:''}${det}</div>`;
   }).join('') || '<div class="card"><p style="color:var(--dim)">No readings saved this week.</p></div>';
   const groups = {};
   r.cards.forEach(c=>{ (groups[c.g] = groups[c.g]||[]).push(c); });
@@ -430,9 +434,6 @@ applyChartDefaults();
 buildTrends();
 render(current);
 renderView();
-
-const topBtn = $('topBtn');
-window.addEventListener('scroll', ()=>{ topBtn.style.display = window.scrollY > 500 ? 'block' : 'none'; }, {passive:true});
 </script>
 </body>
 </html>
