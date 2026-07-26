@@ -77,6 +77,22 @@
   .note{color:var(--faint); font-size:12px; margin-top:8px; font-style:italic;}
   footer{margin-top:40px; color:var(--faint); font-size:12px; border-top:1px solid var(--line); padding-top:14px;}
   @media(max-width:800px){ .grid2{grid-template-columns:1fr;} }
+  #mobileBar{display:none; position:fixed; left:0; right:0; bottom:0; z-index:1000;
+    background:var(--panel); border-top:1px solid var(--line);
+    padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+    box-shadow:0 -4px 16px rgba(0,0,0,.25); gap:8px; align-items:stretch;}
+  .mtab{flex:1; background:var(--panel2); color:var(--dim); border:1px solid var(--line); border-radius:10px;
+    padding:12px 4px; font-size:14px; font-weight:600; cursor:pointer; text-align:center;}
+  .mtab.active{background:var(--amber); color:#1d2537; border-color:var(--amber);}
+  .mico{flex:0 0 48px; display:flex; align-items:center; justify-content:center; background:var(--panel2);
+    color:var(--txt); border:1px solid var(--line); border-radius:10px; font-size:17px; cursor:pointer; text-decoration:none;}
+  @media(max-width:700px){
+    #mobileBar{display:flex;}
+    #viewTabs, #pdfBtn, #themeBtn{display:none !important;}
+    body{padding-bottom:84px;}
+    header{gap:8px;}
+    h1{font-size:22px;}
+  }
 </style>
 </head>
 <body>
@@ -193,6 +209,14 @@
       <div class="card" id="rCards"></div>
     </div>
   </div><!-- /recallView -->
+
+  <div id="mobileBar">
+    <button class="mtab active" data-v="review">Review</button>
+    <button class="mtab" data-v="ahead">Ahead</button>
+    <button class="mtab" data-v="recall">Recall</button>
+    <a id="mPdfBtn" class="mico" href="#" download title="Download PDF">⬇</a>
+    <button id="mThemeBtn" class="mico" title="Toggle light/dark">☀️</button>
+  </div>
 
   <footer>
     Built from the weekly "Global Week in Review" report. Figures are for the week ending Friday close unless noted; several items are flagged directional/unconfirmed in the source report. Verify live prices before acting. Not investment advice.
@@ -358,12 +382,18 @@ function renderRecall(r){
   ).join('') || '<p style="color:var(--dim)">No new cards this week.</p>';
 }
 
+function syncMobilePdf(){
+  const pb=$('pdfBtn'), mp=$('mPdfBtn');
+  if(!mp) return;
+  if(pb.style.display==='none'){ mp.style.display='none'; }
+  else{ mp.style.display='flex'; mp.href=pb.getAttribute('href'); mp.setAttribute('download', pb.getAttribute('download')||''); }
+}
 function renderView(){
   const w = current, isAhead = view==='ahead', isRecall = view==='recall', pb = $('pdfBtn');
   $('reviewView').style.display = (isAhead||isRecall) ? 'none' : 'block';
   $('aheadView').style.display = isAhead ? 'block' : 'none';
   $('recallView').style.display = isRecall ? 'block' : 'none';
-  document.querySelectorAll('.vtab').forEach(b=>b.classList.toggle('active', b.dataset.v===view));
+  document.querySelectorAll('.vtab, .mtab').forEach(b=>b.classList.toggle('active', b.dataset.v===view));
   if(isRecall){
     pb.style.display='none';
     if(w.recall){
@@ -376,6 +406,7 @@ function renderView(){
       $('subLine').textContent = `Recall activity for the week ending ${w.weekEnding}`;
       $('tldr').textContent = 'No Recall export captured for this week yet.';
     }
+    syncMobilePdf();
     return;
   }
   if(isAhead){
@@ -398,6 +429,7 @@ function renderView(){
     if(w.pdf){ pb.style.display='inline-block'; pb.href=w.pdf; pb.setAttribute('download', w.pdfName||''); }
     else pb.style.display='none';
   }
+  syncMobilePdf();
 }
 
 // init
@@ -407,13 +439,14 @@ WEEKS.slice().reverse().forEach(w=>{
   const o = document.createElement('option'); o.value=w.id; o.textContent=w.weekEnding; sel.appendChild(o);
 });
 sel.addEventListener('change', ()=>{ current = WEEKS.find(w=>w.id===sel.value); render(current); renderView(); });
-document.querySelectorAll('.vtab').forEach(b=>b.addEventListener('click', ()=>{ view=b.dataset.v; renderView(); }));
+document.querySelectorAll('.vtab, .mtab').forEach(b=>b.addEventListener('click', ()=>{ view=b.dataset.v; renderView(); window.scrollTo({top:0}); }));
 
 // theme
 const btn = $('themeBtn');
 function setTheme(t, rebuild){
   document.body.classList.toggle('light', t==='light');
   btn.textContent = t==='light' ? '🌙' : '☀️';
+  const mb=$('mThemeBtn'); if(mb) mb.textContent = btn.textContent;
   try{ localStorage.setItem('wir-theme', t); }catch(e){}
   if(rebuild && HAS_CHART){
     applyChartDefaults();
@@ -426,6 +459,7 @@ function setTheme(t, rebuild){
   }
 }
 btn.addEventListener('click', ()=>setTheme(isLight()?'dark':'light', true));
+$('mThemeBtn').addEventListener('click', ()=>setTheme(isLight()?'dark':'light', true));
 let saved=null; try{ saved = localStorage.getItem('wir-theme'); }catch(e){}
 if(!saved) saved = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
 setTheme(saved, false);
