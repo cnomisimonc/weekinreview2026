@@ -338,7 +338,8 @@ function renderAhead(a){
 function renderRecall(r){
   $('rReadings').innerHTML = r.readings.map(i=>{
     const title = i.u ? `<a href="${i.u}" target="_blank" rel="noopener">${i.t}</a>` : i.t;
-    return `<div class="theme"><h4>${title}</h4><div class="rmeta">${i.g} · added ${i.d}</div>${i.x?`<p>${i.x}</p>`:''}</div>`;
+    const sum = i.s && i.s.length ? `<details class="rsum" style="margin-top:8px;"><summary style="cursor:pointer;color:var(--dim);font-size:.85em;">Detailed summary</summary>${i.s.map(sec=>`${sec.h?`<h5 style="margin:10px 0 4px;">${sec.h}</h5>`:''}<ul style="margin:4px 0 8px;padding-left:18px;">${sec.b.map(b=>`<li style="margin:3px 0;">${b}</li>`).join('')}</ul>`).join('')}</details>` : '';
+    return `<div class="theme"><h4>${title}</h4><div class="rmeta">${i.g} · added ${i.d}</div>${i.x?`<p>${i.x}</p>`:''}${sum}</div>`;
   }).join('') || '<div class="card"><p style="color:var(--dim)">No readings saved this week.</p></div>';
   const groups = {};
   r.cards.forEach(c=>{ (groups[c.g] = groups[c.g]||[]).push(c); });
