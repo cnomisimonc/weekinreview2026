@@ -36,6 +36,9 @@
   .chip a:hover{color:var(--amber);}
   .chipcat{color:var(--faint); font-size:11px; text-transform:uppercase; letter-spacing:.5px; margin:10px 0 4px;}
   .rmeta{color:var(--faint); font-size:12px; font-style:italic; margin-bottom:6px;}
+  #topBtn{position:fixed; right:16px; bottom:16px; z-index:1000; display:none; background:var(--amber); color:#1d2537; border:none; border-radius:24px; padding:12px 18px; font-size:15px; font-weight:700; cursor:pointer; box-shadow:0 4px 14px rgba(0,0,0,.35); min-width:48px; min-height:48px;}
+  #topBtn:hover{filter:brightness(1.08);}
+  @media (max-width:640px){ #topBtn{right:14px; bottom:calc(14px + env(safe-area-inset-bottom));} }
   .theme h4 a{color:var(--txt); text-decoration:none;}
   .theme h4 a:hover{color:var(--amber);}
   .tldr{background:linear-gradient(135deg,#1c2340,#181f36); border:1px solid var(--amber); border-radius:12px; padding:16px 18px; margin:14px 0 24px; font-size:14.5px;}
@@ -193,6 +196,8 @@
     Built from the weekly "Global Week in Review" report. Figures are for the week ending Friday close unless noted; several items are flagged directional/unconfirmed in the source report. Verify live prices before acting. Not investment advice.
   </footer>
 </div>
+
+<button id="topBtn" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
 
 <script src="data.js"></script>
 <script>
@@ -425,6 +430,9 @@ applyChartDefaults();
 buildTrends();
 render(current);
 renderView();
+
+const topBtn = $('topBtn');
+window.addEventListener('scroll', ()=>{ topBtn.style.display = window.scrollY > 500 ? 'block' : 'none'; }, {passive:true});
 </script>
 </body>
 </html>
