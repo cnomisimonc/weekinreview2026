@@ -184,6 +184,40 @@ const WEEKS = [
       "San Diego Comic-Con Thu 23–Sun 26 — studio/streaming slate reveals.",
       "SpaceX Falcon 9 cadence continues; confirm windows live."
     ]
+  },
+  recall: {
+    window: "Mon 13 – Sun 19 Jul 2026",
+    readings: [
+      { t:"AGI Is Here — And Society Isn't Ready | Peter Diamandis", d:"15 Jul", g:"Technology/AI", u:"https://www.youtube.com/watch?v=eHqIZInOxeE", x:"The choice people have to make is whether they are happy with what they have or if they want to use AI technologies to dream bigger and create something of value — a product, service, or company — done individually or as a solopreneur, taking the future into their own hands…" },
+      { t:"Clarifying Myths in the US vs China War", d:"15 Jul", g:"Technology/AI", u:"https://thewhitebox.beehiiv.com/p/clarifying-myths-in-the-us-vs-china-war", x:"Debunks prevalent myths regarding the competition between the US and China for AI supremacy, particularly in the context of open models and AI progress — starting with the idea that China is 'catching up' to the US in AI development…" },
+      { t:"China is having another AI moment", d:"15 Jul", g:"Technology/AI", u:"https://www.economist.com/china/2026/06/21/china-is-having-another-ai-moment", x:"China's lead in AI is narrowing the gap with America, with new models that are not only capable but affordable and openly available — Beijing-based Zhipu (Z.ai) announced its latest system, GLM 5.2…" },
+      { t:"The Heretic's Guide to AI's Stars Part III: Tracepalooza & the Bezzle", d:"15 Jul", g:"Technology/Semiconductors", u:"https://michaeljburry.substack.com/p/the-heretics-guide-to-ais-stars-part", x:"NVIDIA's strong demand comes with risks from a concentrated set of buyers — Microsoft is likely its biggest customer with significant influence over NVIDIA's revenue; customer concentration is unusually high…" },
+      { t:"Why Anthropic's Mess Doesn't Matter & The Era of Sophistication", d:"15 Jul", g:"Saved link", u:"https://thewhitebox.beehiiv.com/p/why-anthropic-s-mess-doesn-t-matter-the-era-of-sophistication", x:"" },
+      { t:"China's First Frontier Model?", d:"15 Jul", g:"Saved link", u:"https://thewhitebox.beehiiv.com/p/china-s-first-frontier-model", x:"" },
+      { t:"How Small Firms Use Claude to Quit Salesforce — The Information", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"Eye on the Market", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"Donald Trump is kicking out Chinese firms, but keeping their tech", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"SFC Annual Report Summary", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"ASEAN Labour Markets 2026: Growth Is Back. The Hard Part Starts Now.", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"Made in Europe vs Made in America vs Made in China", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"Gold – A longer road to new highs", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"Why OpenAI and Anthropic may struggle to float", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"The US-China AI Contest", d:"15 Jul", g:"Upload", u:null, x:"" },
+      { t:"Strategy & Asset Allocation & Performance of High Conviction Ideas", d:"15 Jul", g:"Upload", u:null, x:"" }
+    ],
+    cards: [
+      { t:"Steven Kotler", g:"Person", u:"https://en.wikipedia.org/wiki/Steven_Kotler" },
+      { t:"Abundance: The Future Is Better Than You Think", g:"Book", u:"https://en.wikipedia.org/wiki/Abundance:_The_Future_Is_Better_Than_You_Think" },
+      { t:"Xprize Foundation", g:"Organization", u:"https://en.wikipedia.org/wiki/Xprize_Foundation" },
+      { t:"Z.ai", g:"Organization", u:"https://en.wikipedia.org/wiki/Z.ai" },
+      { t:"Claude Mythos", g:"Software Application", u:"https://en.wikipedia.org/wiki/Claude_Mythos" },
+      { t:"GPT-3", g:"Software Application", u:"https://en.wikipedia.org/wiki/GPT-3" },
+      { t:"Black Mirror", g:"TV Series", u:"https://en.wikipedia.org/wiki/Black_Mirror" },
+      { t:"Star Trek", g:"TV Series", u:"https://en.wikipedia.org/wiki/Star_Trek" },
+      { t:"Ex Machina (film)", g:"Movie", u:"https://en.wikipedia.org/wiki/Ex_Machina_(film)" },
+      { t:"The Terminator", g:"Movie Series", u:"https://en.wikipedia.org/wiki/The_Terminator" },
+      { t:"Google I/O", g:"Event", u:"https://en.wikipedia.org/wiki/Google_I/O" }
+    ]
   }
 },
 {
@@ -316,12 +350,10 @@ const WEEKS = [
       ["Tue 28","CB Consumer Confidence; JOLTS (22:00)","Labour demand + household mood into the Fed"],
       ["Wed 29","ADP payrolls (20:15); FOMC begins","Private-jobs warm-up for the decision"],
       ["Thu 30","FOMC 02:00 + Warsh presser 02:30; Q2 GDP (adv.) + PCE prices + claims 20:30","The week's fulcrum; then the stagflation tell"],
-      ["Thu 30","BoE decision 19:00; Monetary Policy Report; presser 20:00","'Super Thursday' — hawkish tilt (Pill); GBP/Gilts driver"],
       ["Fri 31","ECI (Q2); Personal Income/PCE; China NBS PMIs 09:30; BoJ decision; EZ flash HICP/GDP","Wage pressure + month-end; Asia risk tone; ECB Sept debate"]
     ],
     cbs: [
       ["US Federal Reserve","Decision Thu 30 Jul 02:00; presser 02:30","Hold 3.50–3.75%","How hawkish is Warsh? Any 2026 hike still live?"],
-      ["Bank of England","Decision Thu 30 Jul 19:00; MPR; presser 20:00","Hold 3.75%","Super Thursday; hawkish tilt (Pill) — June was a 7–2 hold"],
       ["Bank of Japan","Decision Fri 31 Jul; Outlook Report","Hold 1.00%","Is the pause tactical? FY26 GDP upgrade path"],
       ["ECB (context)","No meeting — held 23 Jul at 2.25%","2.25%","Lagarde flagged a possible Sept move; watch HICP"]
     ],
@@ -335,8 +367,7 @@ const WEEKS = [
       "Month-end (Fri 31 Jul): index rebalancing, closing-auction flows, ECI + Eurozone slate.",
       "Crypto/regulation: 'Clarity Act' momentum behind Bitcoin >$65k — watch legislative/ETF-flow headlines.",
       "Energy/OPEC+ chatter: production or Hormuz-security headlines move the whole inflation complex intraday.",
-      "Post-July-opex positioning; heavy single-stock gamma around the mega-cap prints.",
-      "No major scheduled index reconstitution this week; confirm any late-breaking regulatory deadlines on a live catalyst calendar."
+      "Post-July-opex positioning; heavy single-stock gamma around the mega-cap prints."
     ],
     regime: {
       label:"#Quad3 — 'flation now, stag on a lag'",
@@ -351,7 +382,7 @@ const WEEKS = [
       ],
       where:"Late-cycle and stretched: equities at/near records into a stagflationary Quad 3 with a fat oil tail. What flips it: a hawkish Warsh + hot PCE pushing real rates up; an AI-capex disappointment cracking the Nasdaq TREND; or a Hormuz escalation spiking Brent through $100. A dovish Fed + clean earnings + oil de-escalation is the bullish counter that extends the streak."
     },
-    positioning:"Crowded: mega-cap AI/semis leadership and the record S&P streak — concentration risk is the single biggest tell into four mega-cap prints. FOMC + GDP/PCE + mega-caps in 48h is a classic vol-of-vol setup: expect a pre-Fed VIX bid and post-event crush if outcomes are benign. Watch IG/HY spreads on any hawkish surprise. Tells: SOX leadership, the 2Y on Fed wording, Brent $100, USD/JPY on BoJ, closing-auction volume into month-end. Thu 30 is a triple-decision day — Fed (02:00), then the BoE (19:00) with a full MPR, ahead of the BoJ on Friday: three G-plus central banks in ~36 hours is the policy spine of the week. An index-hedge, small-size week — not a hero-trade week.",
+    positioning:"Crowded: mega-cap AI/semis leadership and the record S&P streak — concentration risk is the single biggest tell into four mega-cap prints. FOMC + GDP/PCE + mega-caps in 48h is a classic vol-of-vol setup: expect a pre-Fed VIX bid and post-event crush if outcomes are benign. Watch IG/HY spreads on any hawkish surprise. Tells: SOX leadership, the 2Y on Fed wording, Brent $100, USD/JPY on BoJ, closing-auction volume into month-end.",
     geo: [
       "The 2026 Iran war remains the dominant macro overlay: Houthi Red Sea/Bab-al-Mandeb blockade threats, reported Iranian fire toward Jordan/Kuwait, recurring Hormuz closure risk.",
       "Escalation = instant risk-off, Brent >$100, bid to gold/USD/Treasuries; de-escalation = fastest tailwind for equities and duration.",
@@ -359,10 +390,24 @@ const WEEKS = [
     ],
     asia:"Asia likely opens cautious-to-mixed Monday: Friday was a split tape (Dow up, Nasdaq down) and futures were steady over the weekend. With the Fed, mega-caps and GDP/PCE all mid-to-late week, expect low-conviction, range-bound trade early as desks de-risk. Intraday tells: Brent vs. $100 at the open, USD/JPY into the Fri BoJ, semis/SOX sympathy, weekend Hormuz headlines. China names trade the Fri NBS PMI in anticipation.",
     beyond: [
-      "Policy/summits: Fed/central-bank speaker follow-ups and any Middle East diplomacy or OPEC+ chatter — confirm on a live calendar.",
       "Mega-cap earnings double as product-signal events — the week's real 'launches' are on the calls.",
       "Busy late-July launch cadence (SpaceX Starlink/Falcon 9) — confirm schedules live.",
       "Peak northern-summer sport & festival season — colour, low direct market impact."
+    ]
+  },
+  recall: {
+    window: "Mon 20 – Sun 26 Jul 2026",
+    readings: [
+      { t:"One Hundred Years in the U.S. Stock Markets", d:"20 Jul", g:"Economics/Investing", u:null, x:"Hendrik Bessembinder (ASU W.P. Carey) analyzes investment outcomes for 29,754 common stocks listed on U.S. public markets between January 1926 and December 2025, using data from the Center for Research in Security Prices (CRSP) database…" },
+      { t:"China Is Preparing For $38,000 Gold", d:"23 Jul", g:"Economics/Commodities", u:"https://www.youtube.com/watch?v=dFjvcY9Tth0", x:"For the first time, a gold ETF has become the largest ETF in China, surpassing the country's equivalent of the S&P 500 — the Guan Yu Gold ETF holds $13 billion in assets vs. $12 billion for the primary stock-based ETF…" }
+    ],
+    cards: [
+      { t:"Johnson & Johnson", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Johnson_&_Johnson" },
+      { t:"Vulcan Materials Company", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Vulcan_Materials_Company" },
+      { t:"Altria", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Altria" },
+      { t:"Home Depot", g:"Organization/Corporation", u:"https://en.wikipedia.org/wiki/Home_Depot" },
+      { t:"Jamieson Greer", g:"Person", u:"https://en.wikipedia.org/wiki/Jamieson_Greer" },
+      { t:"Zocdoc", g:"Web Site", u:"https://en.wikipedia.org/wiki/Zocdoc" }
     ]
   }
 }

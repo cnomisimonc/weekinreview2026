@@ -31,6 +31,13 @@
   #viewTabs{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-right:8px; vertical-align:middle;}
   .vtab{background:var(--panel2); color:var(--dim); border:none; padding:8px 14px; font-size:14px; cursor:pointer;}
   .vtab.active{background:var(--amber); color:#1d2537; font-weight:700;}
+  .chip{display:inline-block; background:var(--panel2); border:1px solid var(--line); border-radius:20px; padding:4px 12px; margin:3px 4px 3px 0; font-size:12.5px;}
+  .chip a{color:var(--txt); text-decoration:none;}
+  .chip a:hover{color:var(--amber);}
+  .chipcat{color:var(--faint); font-size:11px; text-transform:uppercase; letter-spacing:.5px; margin:10px 0 4px;}
+  .rmeta{color:var(--faint); font-size:12px; font-style:italic; margin-bottom:6px;}
+  .theme h4 a{color:var(--txt); text-decoration:none;}
+  .theme h4 a:hover{color:var(--amber);}
   .tldr{background:linear-gradient(135deg,#1c2340,#181f36); border:1px solid var(--amber); border-radius:12px; padding:16px 18px; margin:14px 0 24px; font-size:14.5px;}
   .tldr b{color:var(--amber);}
   .kpis{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; margin-bottom:26px;}
@@ -75,6 +82,7 @@
       <span id="viewTabs">
         <button class="vtab active" data-v="review">In Review</button>
         <button class="vtab" data-v="ahead">Week Ahead</button>
+        <button class="vtab" data-v="recall">Recall</button>
       </span>
       <label for="weekSel" style="color:var(--dim);font-size:13px;margin-right:8px;">Week ending</label>
       <select id="weekSel"></select>
@@ -169,6 +177,17 @@
       </div>
     </div>
   </div><!-- /aheadView -->
+
+  <div id="recallView" style="display:none;">
+    <div class="card" id="recallNA" style="display:none;"><p style="color:var(--dim);">No Recall items captured for this week yet — they're added from the weekly Recall export on the Saturday rebuild.</p></div>
+    <div id="recallContent">
+      <h2>Readings &amp; research saved this week</h2>
+      <div id="rReadings"></div>
+
+      <h2>New knowledge cards</h2>
+      <div class="card" id="rCards"></div>
+    </div>
+  </div><!-- /recallView -->
 
   <footer>
     Built from the weekly "Global Week in Review" report. Figures are for the week ending Friday close unless noted; several items are flagged directional/unconfirmed in the source report. Verify live prices before acting. Not investment advice.
@@ -316,11 +335,39 @@ function renderAhead(a){
   $('aBeyondUl').innerHTML = a.beyond.map(x=>`<li>${x}</li>`).join('');
 }
 
+function renderRecall(r){
+  $('rReadings').innerHTML = r.readings.map(i=>{
+    const title = i.u ? `<a href="${i.u}" target="_blank" rel="noopener">${i.t}</a>` : i.t;
+    return `<div class="theme"><h4>${title}</h4><div class="rmeta">${i.g} · added ${i.d}</div>${i.x?`<p>${i.x}</p>`:''}</div>`;
+  }).join('') || '<div class="card"><p style="color:var(--dim)">No readings saved this week.</p></div>';
+  const groups = {};
+  r.cards.forEach(c=>{ (groups[c.g] = groups[c.g]||[]).push(c); });
+  $('rCards').innerHTML = Object.keys(groups).sort().map(g=>
+    `<div class="chipcat">${g}</div>` + groups[g].map(c=>
+      `<span class="chip">${c.u?`<a href="${c.u}" target="_blank" rel="noopener">${c.t}</a>`:c.t}</span>`).join('')
+  ).join('') || '<p style="color:var(--dim)">No new cards this week.</p>';
+}
+
 function renderView(){
-  const w = current, isAhead = view==='ahead', pb = $('pdfBtn');
-  $('reviewView').style.display = isAhead ? 'none' : 'block';
+  const w = current, isAhead = view==='ahead', isRecall = view==='recall', pb = $('pdfBtn');
+  $('reviewView').style.display = (isAhead||isRecall) ? 'none' : 'block';
   $('aheadView').style.display = isAhead ? 'block' : 'none';
+  $('recallView').style.display = isRecall ? 'block' : 'none';
   document.querySelectorAll('.vtab').forEach(b=>b.classList.toggle('active', b.dataset.v===view));
+  if(isRecall){
+    pb.style.display='none';
+    if(w.recall){
+      $('recallNA').style.display='none'; $('recallContent').style.display='block';
+      renderRecall(w.recall);
+      $('subLine').textContent = `Saved to Recall ${w.recall.window} · app.recall.it`;
+      $('tldr').textContent = `${w.recall.readings.length} readings & research items saved and ${w.recall.cards.length} new knowledge cards added this week.`;
+    }else{
+      $('recallNA').style.display='block'; $('recallContent').style.display='none';
+      $('subLine').textContent = `Recall activity for the week ending ${w.weekEnding}`;
+      $('tldr').textContent = 'No Recall export captured for this week yet.';
+    }
+    return;
+  }
   if(isAhead){
     if(w.ahead){
       $('aheadNA').style.display='none'; $('aheadContent').style.display='block';
