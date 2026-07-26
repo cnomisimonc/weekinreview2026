@@ -316,10 +316,12 @@ const WEEKS = [
       ["Tue 28","CB Consumer Confidence; JOLTS (22:00)","Labour demand + household mood into the Fed"],
       ["Wed 29","ADP payrolls (20:15); FOMC begins","Private-jobs warm-up for the decision"],
       ["Thu 30","FOMC 02:00 + Warsh presser 02:30; Q2 GDP (adv.) + PCE prices + claims 20:30","The week's fulcrum; then the stagflation tell"],
+      ["Thu 30","BoE decision 19:00; Monetary Policy Report; presser 20:00","'Super Thursday' — hawkish tilt (Pill); GBP/Gilts driver"],
       ["Fri 31","ECI (Q2); Personal Income/PCE; China NBS PMIs 09:30; BoJ decision; EZ flash HICP/GDP","Wage pressure + month-end; Asia risk tone; ECB Sept debate"]
     ],
     cbs: [
       ["US Federal Reserve","Decision Thu 30 Jul 02:00; presser 02:30","Hold 3.50–3.75%","How hawkish is Warsh? Any 2026 hike still live?"],
+      ["Bank of England","Decision Thu 30 Jul 19:00; MPR; presser 20:00","Hold 3.75%","Super Thursday; hawkish tilt (Pill) — June was a 7–2 hold"],
       ["Bank of Japan","Decision Fri 31 Jul; Outlook Report","Hold 1.00%","Is the pause tactical? FY26 GDP upgrade path"],
       ["ECB (context)","No meeting — held 23 Jul at 2.25%","2.25%","Lagarde flagged a possible Sept move; watch HICP"]
     ],
@@ -333,7 +335,8 @@ const WEEKS = [
       "Month-end (Fri 31 Jul): index rebalancing, closing-auction flows, ECI + Eurozone slate.",
       "Crypto/regulation: 'Clarity Act' momentum behind Bitcoin >$65k — watch legislative/ETF-flow headlines.",
       "Energy/OPEC+ chatter: production or Hormuz-security headlines move the whole inflation complex intraday.",
-      "Post-July-opex positioning; heavy single-stock gamma around the mega-cap prints."
+      "Post-July-opex positioning; heavy single-stock gamma around the mega-cap prints.",
+      "No major scheduled index reconstitution this week; confirm any late-breaking regulatory deadlines on a live catalyst calendar."
     ],
     regime: {
       label:"#Quad3 — 'flation now, stag on a lag'",
@@ -348,7 +351,7 @@ const WEEKS = [
       ],
       where:"Late-cycle and stretched: equities at/near records into a stagflationary Quad 3 with a fat oil tail. What flips it: a hawkish Warsh + hot PCE pushing real rates up; an AI-capex disappointment cracking the Nasdaq TREND; or a Hormuz escalation spiking Brent through $100. A dovish Fed + clean earnings + oil de-escalation is the bullish counter that extends the streak."
     },
-    positioning:"Crowded: mega-cap AI/semis leadership and the record S&P streak — concentration risk is the single biggest tell into four mega-cap prints. FOMC + GDP/PCE + mega-caps in 48h is a classic vol-of-vol setup: expect a pre-Fed VIX bid and post-event crush if outcomes are benign. Watch IG/HY spreads on any hawkish surprise. Tells: SOX leadership, the 2Y on Fed wording, Brent $100, USD/JPY on BoJ, closing-auction volume into month-end.",
+    positioning:"Crowded: mega-cap AI/semis leadership and the record S&P streak — concentration risk is the single biggest tell into four mega-cap prints. FOMC + GDP/PCE + mega-caps in 48h is a classic vol-of-vol setup: expect a pre-Fed VIX bid and post-event crush if outcomes are benign. Watch IG/HY spreads on any hawkish surprise. Tells: SOX leadership, the 2Y on Fed wording, Brent $100, USD/JPY on BoJ, closing-auction volume into month-end. Thu 30 is a triple-decision day — Fed (02:00), then the BoE (19:00) with a full MPR, ahead of the BoJ on Friday: three G-plus central banks in ~36 hours is the policy spine of the week. An index-hedge, small-size week — not a hero-trade week.",
     geo: [
       "The 2026 Iran war remains the dominant macro overlay: Houthi Red Sea/Bab-al-Mandeb blockade threats, reported Iranian fire toward Jordan/Kuwait, recurring Hormuz closure risk.",
       "Escalation = instant risk-off, Brent >$100, bid to gold/USD/Treasuries; de-escalation = fastest tailwind for equities and duration.",
@@ -356,6 +359,7 @@ const WEEKS = [
     ],
     asia:"Asia likely opens cautious-to-mixed Monday: Friday was a split tape (Dow up, Nasdaq down) and futures were steady over the weekend. With the Fed, mega-caps and GDP/PCE all mid-to-late week, expect low-conviction, range-bound trade early as desks de-risk. Intraday tells: Brent vs. $100 at the open, USD/JPY into the Fri BoJ, semis/SOX sympathy, weekend Hormuz headlines. China names trade the Fri NBS PMI in anticipation.",
     beyond: [
+      "Policy/summits: Fed/central-bank speaker follow-ups and any Middle East diplomacy or OPEC+ chatter — confirm on a live calendar.",
       "Mega-cap earnings double as product-signal events — the week's real 'launches' are on the calls.",
       "Busy late-July launch cadence (SpaceX Starlink/Falcon 9) — confirm schedules live.",
       "Peak northern-summer sport & festival season — colour, low direct market impact."
