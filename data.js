@@ -74,7 +74,7 @@ const WEEKS = [
     { tk:"META", n:"Meta",      p:664.54, wk:"−2.9% (wk)",  wkPct:-2.9,  cap:"~$1.7T", pe:"23.5" },
     { tk:"TSLA", n:"Tesla",     p:391.06, wk:"−0.9% (Fri)", wkPct:null,  cap:"~$1.5T", pe:"370" }
   ],
-  mag7Read:"Split tape: Apple and Microsoft up, the rest down on the AI/chip wobble — Alphabet worst (Gemini model delay). The Mag7 shed ~$2T of market cap month-to-date (combined ~$23.1T). Leadership is narrowing within the group even as it broadens across the market. Clean Mon–Fri weekly % wasn't published per name; Friday-day moves shown where the weekly print wasn't verifiable.",
+  mag7Read: "The Mag7 is no longer one trade. On earnings, cloud-monetizers (MSFT, AMZN) were rewarded while capex-spenders (GOOGL, META) and Apple were punished — though all except Apple joined Friday's broad bounce, and Nvidia round-tripped. Only Apple's memory-cost '100-year flood' left a lasting hole, its worst single-day drop in ~16 months, erasing much of a YTD lead that had been the best in the group. Intra-group dispersion is the widest in years — a stock-picker's tape hiding inside a cap-weighted index. Hedgeye's momentum signals agree: only MSFT bullish, AMZN neutral, the rest bearish/mixed. Data note: prices are verified regular-session closes for Friday 31 Jul (S&P Global Market Intelligence via stockanalysis.com). The week column is computed close-over-close against the prior week's entry; Friday's own close-over-close moves were NVDA +2.9%, AAPL −7.4%, MSFT +3.0%, AMZN +15.3%, GOOGL +6.7%, META +3.3%, TSLA +0.8%, so the larger weekly figures for MSFT, AMZN and GOOGL reflect the full post-print re-rating, not Friday alone.",
   sectors: [
     { n:"Energy (XLE)", m:"Leader", pct:null, d:"The oil spike — the standout" },
     { n:"Consumer Staples (XLP)", m:"Up", pct:null, d:"Defensive bid" },
@@ -459,7 +459,7 @@ const WEEKS = [
   themes: [
     {
       t: "① The AI-capex verdict split Big Tech",
-      b: "Microsoft rose ~8–9% (Azure +43%, RPO $678B, 30M Copilot seats) and Amazon ~8–10% (AWS +37%, first $200.6B quarter). Alphabet fell ~15% despite Cloud +82%, and Meta ~10% despite revenue +28% — both punished for AI capex. Apple slid on a memory/chip crunch and soft China/Services.",
+      b: "Microsoft rose ~8–9% (Azure +43%, RPO $678B, 30M Copilot seats) and Amazon surged +15.3% on Friday alone (AWS +37%, first $200.6B quarter). Alphabet fell ~15% despite Cloud +82%, and Meta ~10% despite revenue +28% — both punished for AI capex. Apple slid on a memory/chip crunch and soft China/Services.",
       r: "Owning 'AI infrastructure' is no longer a free pass — the market now demands ROIC visibility. Barbell toward hyperscalers monetizing cloud (MSFT, AMZN) and fade those still spending into the promise."
     },
     {
@@ -512,13 +512,13 @@ const WEEKS = [
     where: "Friday was explicitly framed as 'Day 1 of a bounce' off immediate-term oversold in tech — XLK closed ≈166 versus its 165–181 range. The SPX TREND is bullish but Nasdaq and XLK TREND are bearish: own the index, rent the tech bounce. McCullough cut his XLK short to minimum size near the lows and will stop out only on a close back above $180; he added Energy via XLE and CRAK and stays long healthcare, REITs, dividends and precious-adjacent. Net: respect the bounce, but the TREND signals still say growth/tech is guilty until it recaptures its levels."
   },
   mag7: [
-    { tk:"NVDA", n:"Nvidia", p:198.97, wk:"−3.8%", wkPct:-3.8, cap:"≈$4.83T", pe:"~40" },
-    { tk:"AAPL", n:"Apple", p:312.20, wk:"−6.3%", wkPct:-6.3, cap:"≈$4.94T (27 Jul peak)", pe:"~36" },
-    { tk:"MSFT", n:"Microsoft", p:414.14, wk:"+8.5%", wkPct:8.5, cap:"≈$3.08T", pe:"~37" },
-    { tk:"AMZN", n:"Amazon", p:253.00, wk:"+9.0%", wkPct:9.0, cap:"≈$2.73T", pe:"~35" },
-    { tk:"GOOGL", n:"Alphabet", p:271.78, wk:"−15.0%", wkPct:-15.0, cap:"≈$3.32T", pe:"~27" },
-    { tk:"META", n:"Meta", p:535.67, wk:"−10.0%", wkPct:-10.0, cap:"≈$1.36T", pe:"~28" },
-    { tk:"TSLA", n:"Tesla", p:306.00, wk:"−2.2%", wkPct:-2.2, cap:"~$0.98T", pe:"~297" }
+    { tk:"NVDA", n:"Nvidia", p:200.75, wk:"−2.9%", wkPct:-2.9, cap:"≈$4.9T", pe:"~40" },
+    { tk:"AAPL", n:"Apple", p:308.91, wk:"−7.2%", wkPct:-7.2, cap:"≈$4.5T", pe:"~36" },
+    { tk:"MSFT", n:"Microsoft", p:464.72, wk:"+21.7%", wkPct:21.7, cap:"≈$3.5T", pe:"~37" },
+    { tk:"AMZN", n:"Amazon", p:271.58, wk:"+17.0%", wkPct:17.0, cap:"≈$2.9T", pe:"~35" },
+    { tk:"GOOGL", n:"Alphabet", p:356.13, wk:"+11.4%", wkPct:11.4, cap:"≈$4.3T", pe:"~27" },
+    { tk:"META", n:"Meta", p:556.71, wk:"−6.5%", wkPct:-6.5, cap:"≈$1.4T", pe:"~28" },
+    { tk:"TSLA", n:"Tesla", p:311.20, wk:"−0.6%", wkPct:-0.6, cap:"≈$1.0T", pe:"~297" }
   ],
   mag7Read: "The Mag7 is no longer one trade. Cloud-monetizers (MSFT, AMZN) were rewarded; capex-spenders (GOOGL, META) and hardware (NVDA, AAPL) were punished. Intra-group dispersion is the widest in years — a stock-picker's tape hiding inside a cap-weighted index. Hedgeye's momentum signals agree: only MSFT bullish, AMZN neutral, the rest bearish/mixed. Data note: the source report verified only NVDA's close and the AAPL/NVDA caps; other closes and caps were flagged 'verify live', so prices above are reconstructed from last week's verified closes and the source's stated week moves. Alphabet's −15% and Tesla's move are the source's post-print reactions (both reported the prior week), so they overlap the 24 July entry — treat those two bars as reaction-to-print, not clean week-on-week.",
   sectors: [
@@ -534,13 +534,13 @@ const WEEKS = [
   positioning: "VIX spiked from ≈16.6 (22 Jul) to ≈20.7 (29 Jul) as the tech unwind peaked, then faded to ≈16.4 by Friday; the July range was 14.96–20.88. Hedgeye's VIX TREND is bearish (15.77–20.56) — vol keeps trending lower despite the pops. Credit split by duration, not quality: high-yield spreads stayed contained (HYG neutral, 78.97–79.76) while investment grade (LQD, 105.7–107.3) was pressured as the long end sold off. Net read: this was a positioning/factor purge, not a systemic event — credit calm, VIX spike round-tripped. Use vol spikes to add to Quad3 winners; the pain is concentrated in crowded growth, not the broad market.",
   corporate: [
     "Microsoft (29 Jul): beat; Azure +43%, RPO $678B, 30M Copilot seats; stock +~8–9% — the only Mag7 name with a bullish Hedgeye TREND.",
-    "Meta (29 Jul): revenue $60.8B (+28%) but an EPS miss and heavy AI capex; stock −~10%.",
-    "Amazon (30 Jul): first $200.6B quarter, AWS +37% (fastest since 2021), capex ~$220B; stock +~8–10%.",
-    "Apple (30 Jul): record June-quarter revenue $109.4B but Services and China soft amid a memory/chip crunch; stock fell (−7.2% Friday).",
+    "Meta (29 Jul): revenue $60.8B (+28%) but an EPS miss and heavy AI capex; stock −8% on the 30 Jul session, then +3.3% Friday (−6.5% on the week).",
+    "Amazon (30 Jul): first $200.6B quarter, AWS +37% (fastest since 2021), capex ~$220B; stock +15.3% Friday — the earnings reaction, and the best Mag7 week (+17.0%).",
+    "Apple (30 Jul): record June-quarter revenue $109.4B but Services and China soft amid a memory-cost '100-year flood'; stock −7.4% Friday, its worst single-day drop in ~16 months, and likely ceded the #1 market-cap spot back to Nvidia.",
     "Alphabet (prior week): Cloud +82% but capex worries drove the stock −~15% off the print.",
     "Tesla (prior week): shares dropped post-earnings; valuation the richest in the group (~297x).",
-    "Semis broadly weak: Nvidia, AMD and Intel sold off mid-week on AI-spend and geopolitics; NVDA closed $198.97 (−0.9% on the day).",
-    "Apple reclaimed the world's most valuable company title (27 Jul) at ≈$4.94T, edging Nvidia's ≈$4.83T."
+    "Semis broadly weak mid-week on AI-spend and geopolitics, but Nvidia round-tripped: NVDA closed Friday at $200.75 (+2.9% on the day, −2.9% on the week).",
+    "Apple held the world's most valuable company title on 27 Jul but likely ceded it back on Friday after its −7.4% slump left it at ≈$4.5T against Nvidia's ≈$4.9T."
   ],
   macro: [
     "US Q2 GDP (advance): 1.5% annualized, a step down from Q1. Net: the 'slowing' half of Quad3 is confirmed — growth momentum is fading even before the rate hit fully bites.",
@@ -566,16 +566,16 @@ const WEEKS = [
       ["S&P 500", "7,489.72", "+0.7%", "Sits near top of Hedgeye range; upside thinner than downside"],
       ["Nasdaq Composite", "25,373.85", "+1.0%", "Bearish TREND intact — Day-1 bounce must prove itself"],
       ["Dow Jones Ind.", "52,485.03", "+0.53%", "4th straight winning month; cyclicals firmer than mega-tech"],
-      ["US 10Y yield", "≈4.67%", "rising", "Yields the pressure valve; a break >4.71% pinches multiples"],
-      ["US 2Y yield", "≈4.29%", "rising", "Fed on hold — a hike scare, not a cut, was priced last week"],
-      ["DXY (US$ index)", "≈99.8", "−0.2%", "Bullish TREND; range 99.76–102.01"],
-      ["Gold (spot)", "≈$4,110", "−1.2%", "Held the $4,000 line; bearish immediate-term TREND"],
-      ["Silver (spot)", "≈$58.01", "−1.7%", "Range 55–60; still a high-beta inflation proxy"],
-      ["Brent crude", "≈$89.57", "+0.6%", "Hormuz premium; OPEC+ decides Sunday"],
-      ["WTI crude", "≈$84.23", "+0.8%", "Bullish TREND, wide 79–93 range = the swing factor"],
-      ["Bitcoin", "≈$63,829", "−1.4%", "Slipped toward $63k; ETH bearish, a risk-off tell"]
+      ["US 10Y yield", "≈4.74%", "rising", "Pushed above Hedgeye's 4.71 range top — the pressure valve is open"],
+      ["US 2Y yield", "≈4.29%", "flat", "Fed on hold — a hike scare, not a cut, was priced last week"],
+      ["DXY (US$ index)", "≈99.79", "−0.2%", "Bullish TREND; sitting on the 99.76 range floor"],
+      ["Gold (spot)", "≈$4,043", "−1.5%", "Held the $4,000 line; bearish immediate-term TREND"],
+      ["Silver (spot)", "≈$58.53", "−0.8%", "Range 55–60; still a high-beta inflation proxy"],
+      ["Brent crude", "≈$90.12", "+1.0%", "Hormuz premium; OPEC+ decides Sunday"],
+      ["WTI crude", "≈$84.67", "+1.0%", "Bullish TREND, wide 79–93 range = the swing factor"],
+      ["Bitcoin", "≈$63,018", "−1.4%", "Slipped to ≈$63k; ETH bearish, a risk-off tell"]
     ],
-    setupNote: "Index closes are official. Yields, gold, silver, oil and bitcoin are Friday levels (some intraday) — verify live before acting.",
+    setupNote: "All levels are verified 31 July closes/settles — indices, futures settles, end-of-day yields and DXY, and BTC end-of-day. Re-confirm live before acting.",
     themes: [
       {
         t: "Payrolls Friday is the whole week's fulcrum",
@@ -605,7 +605,7 @@ const WEEKS = [
       {
         t: "Central banks step back — the data leads",
         b: "No Fed and no ECB this week. With policy on hold, hard data (ISMs, payrolls) and oil — not central-bank speak — will drive rates and the dollar.",
-        w: "A rising 10Y (range 4.59–4.71) is the equity-multiple pressure valve; a break above 4.71 is the tell that bonds, not earnings, set the tape."
+        w: "The 10Y already closed ≈4.74%, above the top of Hedgeye's 4.59–4.71 range — the equity-multiple pressure valve is open. A sustained hold above 4.71% is the tell that bonds, not earnings, set the tape."
       }
     ],
     calendar: [
