@@ -419,4 +419,267 @@ const WEEKS = [
     ]
   }
 }
+,
+{
+  id: "2026-07-31",
+  weekEnding: "Friday 31 July 2026",
+  published: "Saturday 1 August 2026",
+  pdf: "reports/2026-07-31.pdf",
+  pdfName: "Global Week in Review_2026-08-01.pdf",
+  tldr: "A stagflationary week that stocks shrugged off. US Q2 GDP slowed to 1.5% while June core PCE held at 3.3%, and a Fed under new Chair Kevin Warsh held at 3.50–3.75% on a divided 9–3 vote with three hawkish dissents — driving the 30Y to its highest since 2007 and the 10Y back above 4.7%. Yet indices rallied into month-end as the AI-capex reckoning split Big Tech: Microsoft (+8–9%) and Amazon (+8–10%) soared on cloud, while Alphabet and Meta were punished for spending and Apple slid on a memory crunch and soft China. July was the worst month for levered consensus hedge-fund positioning since 2023 — TMT memory −30.5%, high-beta momentum −30.9% — while GARP software, healthcare and REITs paid. Leadership rotated hard into energy, healthcare and defensives, and Hedgeye's Nowcast flipped July's #Quad4 to #Quad3 for August as oil and commodities re-accelerate inflation.",
+  metrics: {
+    spx: 7489.72,
+    nasdaq: 25373.85,
+    dow: 52485.03,
+    us10y: 4.70,
+    us2y: 4.31,
+    dxy: 100.19,
+    gold: 4086,
+    silver: 58,
+    brent: 88,
+    wti: 85,
+    btc: 63870,
+    vix: 16.4
+  },
+  snapshot: [
+    ["S&P 500", "7,489.72", "+1.05%", "Bounced into month-end on MSFT/AMZN; July finished ~flat (≈−0.6% MTD)"],
+    ["Nasdaq Composite", "25,373.85", "+1.59%", "Round-tripped a vicious mid-week AI/semis drawdown; TREND still bearish"],
+    ["Dow Jones Ind.", "52,485.03", "+1.04%", "Fourth straight winning month; value/defensive tilt helped"],
+    ["US 10Y Treasury", "≈4.70%", "higher", "Highest since Jan 2025 on sticky inflation + heavy supply"],
+    ["US 2Y Treasury", "≈4.31%", "~flat", "Anchored by the Fed's hold at 3.50–3.75%"],
+    ["US 30Y Treasury", "≈5.25%", "higher", "Highest since 2007 — the week's loudest macro signal"],
+    ["Dollar (DXY)", "100.19", "~flat", "Capped by suspected Japanese yen intervention; TREND bullish"],
+    ["Gold (spot)", "≈$4,086", "+~1%", "Held the ≈$4,100 shelf; Hedgeye TREND bearish (extended)"],
+    ["Silver (spot)", "≈$58", "+~2%", "Briefly >$59 on Mideast headlines; supply-tight, TREND bearish"],
+    ["Brent crude", "≈$88", "~flat", "+~20% in July on Iran/Hormuz; eased late-week on US airstrike pause"],
+    ["WTI crude", "≈$85", "~flat", "Mid-$80s; the macro pivot for inflation and the Fed's September call"],
+    ["Bitcoin", "≈$63,870", "−~2%", "Slid into month-end though broad crypto had its best month in a year"],
+    ["VIX", "≈16.4", "lower", "Spiked to ≈20.7 on 29 Jul, then round-tripped; July range 14.96–20.88"]
+  ],
+  themes: [
+    {
+      t: "① The AI-capex verdict split Big Tech",
+      b: "Microsoft rose ~8–9% (Azure +43%, RPO $678B, 30M Copilot seats) and Amazon ~8–10% (AWS +37%, first $200.6B quarter). Alphabet fell ~15% despite Cloud +82%, and Meta ~10% despite revenue +28% — both punished for AI capex. Apple slid on a memory/chip crunch and soft China/Services.",
+      r: "Owning 'AI infrastructure' is no longer a free pass — the market now demands ROIC visibility. Barbell toward hyperscalers monetizing cloud (MSFT, AMZN) and fade those still spending into the promise."
+    },
+    {
+      t: "② A factor unwind, not an index crash",
+      b: "Per Hedgeye, July was the worst month for levered consensus hedge-fund positioning since 2023: TMT memory −30.5%, GS high-beta momentum −30.9%, AI data centers −19.4%. The same month paid GARP software +8.4%, US healthcare +5.3% and REITs +4.5%. Even on down-momentum days, 71% of SPY names were green.",
+      r: "This is a crowded-trade purge, not a market breakdown. Fade strength in momentum/growth; own dividends, healthcare, energy and equal-weight."
+    },
+    {
+      t: "③ Rates repriced higher — stagflation, not disinflation",
+      b: "The 30Y hit its highest since 2007 and the 10Y topped 4.7%, its highest since January 2025 — the collision of sticky 3.3% core PCE, slowing 1.5% growth and a hawkish Warsh Fed.",
+      r: "Duration is a source of risk, not safety. The long end is doing the Fed's tightening; long bonds remain a poor hedge in a Quad3 tape."
+    },
+    {
+      t: "④ Oil is the macro pivot",
+      b: "Brent gained ~20% in July on Iran / Strait-of-Hormuz escalation before a late-week US airstrike pause eased the spike and helped equities bounce.",
+      r: "Energy is simultaneously the inflation driver and the leadership trade. Own the cash-flow (XLE, refiners); the commodity itself is the swing factor for the September Fed decision."
+    },
+    {
+      t: "⑤ The Fed held — but the hawks are restless",
+      b: "The FOMC held 3.50–3.75% on a 9–3 vote, with three officials (incl. Logan, Hammack) dissenting for hikes. Warsh shortened the statement and stressed conditions over guidance; markets now price the first 2026 hike for September.",
+      r: "'Higher for longer' has mutated into 'maybe higher.' Front-end carry is fine; the tail risk is a hawkish surprise, not a cut."
+    },
+    {
+      t: "⑥ Regime shift: Quad4 → Quad3",
+      b: "Hedgeye's US monthly Nowcast was #Quad4 for July (growth and inflation both slowing) and flips to #Quad3 for August (growth slowing, inflation re-accelerating) on the commodity breakout.",
+      r: "Quad3 favors energy, gold/precious, commodities and value/quality; it punishes long-duration growth and long bonds. Position for the inflation re-acceleration."
+    }
+  ],
+  regime: {
+    label: "#Quad4 (July) → #Quad3 (August) — 'growth slowing, inflation re-accelerating'",
+    note: "Hedgeye's own Risk Range™ signals this week, sourced to the Early Look 'Crash, Bounce, Then?' (31 Jul, 07:38 ET ≈ 19:38 GMT+8) and 'Quad Candy vs. Crowded Carnage' (29 Jul). Unlike the prior two weeks, the subscriber feed was reachable — these are Hedgeye's published levels, not derived bands.",
+    ranges: [
+      ["US 10Y Yield", "4.59 – 4.71", "Bullish"],
+      ["S&P 500 (SPX)", "7,316 – 7,538", "Bullish"],
+      ["Nasdaq Comp (COMPQ)", "24,314 – 25,569", "Bearish"],
+      ["Russell 2000 (RUT)", "2,904 – 2,990", "Bullish"],
+      ["Technology (XLK)", "165 – 181", "Bearish"],
+      ["Health Care (XLV)", "159 – 168", "Bullish"],
+      ["Real Estate (XLRE)", "44.99 – 46.40", "Bullish"],
+      ["High Yield (HYG)", "78.97 – 79.76", "Neutral"],
+      ["Inv. Grade (LQD)", "105.7 – 107.3", "Bearish"],
+      ["Volatility (VIX)", "15.77 – 20.56", "Bearish"],
+      ["US Dollar (DXY)", "99.76 – 102.01", "Bullish"],
+      ["WTI Crude", "79.27 – 92.90", "Bullish"],
+      ["Natural Gas", "2.61 – 2.93", "Bearish"],
+      ["Gold (spot)", "3,991 – 4,139", "Bearish"],
+      ["Copper (spot)", "6.19 – 6.59", "Bullish"],
+      ["Silver (spot)", "55 – 60", "Bearish"]
+    ],
+    where: "Friday was explicitly framed as 'Day 1 of a bounce' off immediate-term oversold in tech — XLK closed ≈166 versus its 165–181 range. The SPX TREND is bullish but Nasdaq and XLK TREND are bearish: own the index, rent the tech bounce. McCullough cut his XLK short to minimum size near the lows and will stop out only on a close back above $180; he added Energy via XLE and CRAK and stays long healthcare, REITs, dividends and precious-adjacent. Net: respect the bounce, but the TREND signals still say growth/tech is guilty until it recaptures its levels."
+  },
+  mag7: [
+    { tk:"NVDA", n:"Nvidia", p:198.97, wk:"−3.8%", wkPct:-3.8, cap:"≈$4.83T", pe:"~40" },
+    { tk:"AAPL", n:"Apple", p:312.20, wk:"−6.3%", wkPct:-6.3, cap:"≈$4.94T (27 Jul peak)", pe:"~36" },
+    { tk:"MSFT", n:"Microsoft", p:414.14, wk:"+8.5%", wkPct:8.5, cap:"≈$3.08T", pe:"~37" },
+    { tk:"AMZN", n:"Amazon", p:253.00, wk:"+9.0%", wkPct:9.0, cap:"≈$2.73T", pe:"~35" },
+    { tk:"GOOGL", n:"Alphabet", p:271.78, wk:"−15.0%", wkPct:-15.0, cap:"≈$3.32T", pe:"~27" },
+    { tk:"META", n:"Meta", p:535.67, wk:"−10.0%", wkPct:-10.0, cap:"≈$1.36T", pe:"~28" },
+    { tk:"TSLA", n:"Tesla", p:306.00, wk:"−2.2%", wkPct:-2.2, cap:"~$0.98T", pe:"~297" }
+  ],
+  mag7Read: "The Mag7 is no longer one trade. Cloud-monetizers (MSFT, AMZN) were rewarded; capex-spenders (GOOGL, META) and hardware (NVDA, AAPL) were punished. Intra-group dispersion is the widest in years — a stock-picker's tape hiding inside a cap-weighted index. Hedgeye's momentum signals agree: only MSFT bullish, AMZN neutral, the rest bearish/mixed. Data note: the source report verified only NVDA's close and the AAPL/NVDA caps; other closes and caps were flagged 'verify live', so prices above are reconstructed from last week's verified closes and the source's stated week moves. Alphabet's −15% and Tesla's move are the source's post-print reactions (both reported the prior week), so they overlap the 24 July entry — treat those two bars as reaction-to-print, not clean week-on-week.",
+  sectors: [
+    { n:"Energy (XLE)", m:"#1 weekly rank", pct:6.0, d:"Top weekly sector on the oil breakout (Brent +~20% in July); KM bought XLE and CRAK. Source gave rank, not a weekly %, so the bar is directional." },
+    { n:"Health Care (XLV)", m:"+5.3% (Jul)", pct:5.3, d:"Led the daily ETF re-rank (+12); Hedgeye TREND bullish 159–168" },
+    { n:"Real Estate (XLRE)", m:"+4.5% (Jul)", pct:4.5, d:"Quad3 bond-proxy winner; TREND bullish 44.99–46.40" },
+    { n:"Equal-weight (RSP)", m:"+9 re-rank", pct:2.0, d:"Breadth beat cap-weight — 71% of SPY names green even on down-momentum days" },
+    { n:"Financials (XLF)", m:"firmer", pct:1.5, d:"Value/cyclical bid alongside industrials as the rotation ran" },
+    { n:"Industrials (XLI)", m:"firmer", pct:1.2, d:"Cyclical leg of the rotation out of long-duration growth" },
+    { n:"Technology (XLK)", m:"laggard", pct:-4.0, d:"Memory −30.5% and AI data centers −19.4% in July; TREND bearish 165–181, closed ≈166" }
+  ],
+  sectorsRead: "Leadership is rotating from long-duration growth to value/quality/commodity-linked — the textbook Quad3 playbook (energy, healthcare, REITs, dividends). KM put money where the model is, buying XLE/CRAK. Data note: the source reported July monthly sector returns and daily ETF re-ranks rather than clean weekly percentages; figures labelled '(Jul)' are monthly, and the unlabelled bars are directional from the source's rank ordering.",
+  positioning: "VIX spiked from ≈16.6 (22 Jul) to ≈20.7 (29 Jul) as the tech unwind peaked, then faded to ≈16.4 by Friday; the July range was 14.96–20.88. Hedgeye's VIX TREND is bearish (15.77–20.56) — vol keeps trending lower despite the pops. Credit split by duration, not quality: high-yield spreads stayed contained (HYG neutral, 78.97–79.76) while investment grade (LQD, 105.7–107.3) was pressured as the long end sold off. Net read: this was a positioning/factor purge, not a systemic event — credit calm, VIX spike round-tripped. Use vol spikes to add to Quad3 winners; the pain is concentrated in crowded growth, not the broad market.",
+  corporate: [
+    "Microsoft (29 Jul): beat; Azure +43%, RPO $678B, 30M Copilot seats; stock +~8–9% — the only Mag7 name with a bullish Hedgeye TREND.",
+    "Meta (29 Jul): revenue $60.8B (+28%) but an EPS miss and heavy AI capex; stock −~10%.",
+    "Amazon (30 Jul): first $200.6B quarter, AWS +37% (fastest since 2021), capex ~$220B; stock +~8–10%.",
+    "Apple (30 Jul): record June-quarter revenue $109.4B but Services and China soft amid a memory/chip crunch; stock fell (−7.2% Friday).",
+    "Alphabet (prior week): Cloud +82% but capex worries drove the stock −~15% off the print.",
+    "Tesla (prior week): shares dropped post-earnings; valuation the richest in the group (~297x).",
+    "Semis broadly weak: Nvidia, AMD and Intel sold off mid-week on AI-spend and geopolitics; NVDA closed $198.97 (−0.9% on the day).",
+    "Apple reclaimed the world's most valuable company title (27 Jul) at ≈$4.94T, edging Nvidia's ≈$4.83T."
+  ],
+  macro: [
+    "US Q2 GDP (advance): 1.5% annualized, a step down from Q1. Net: the 'slowing' half of Quad3 is confirmed — growth momentum is fading even before the rate hit fully bites.",
+    "US June core PCE: 3.3% y/y (from 3.4%), headline 3.7%, core +0.1% m/m; energy fell 5.9% (gasoline −9.2%) on a temporary Mideast ceasefire. Net: still well above target and the energy relief looks temporary — disinflation has stalled just as oil re-accelerates.",
+    "FOMC (28–29 Jul): held 3.50–3.75%, 9–3, three hawkish dissents; Warsh's statement notably shorter. Net: no cuts on the horizon; the market now prices the first 2026 hike for September and the risk is a hawkish surprise.",
+    "China July manufacturing PMI: 49.2 (from 50.3) — back in contraction, ending a four-month growth run; high-tech mfg 53.3 held up. Net: demand is soft and stimulus pressure on Beijing builds — a disinflationary global offset, not yet a reflation signal.",
+    "Eurozone Q2 GDP: +0.4% q/q, +1.0% y/y — a beat. Net: Europe is firmer than feared, which keeps the ECB's tightening bias and a September hike live."
+  ],
+  geo: [
+    "The US–Iran confrontation escalated through July: Iranian strikes on commercial vessels drew US CENTCOM strikes on Iranian targets; Trump declared the June Islamabad truce over (8 Jul) and tit-for-tat strikes followed, with US operations pushing deeper into Iran and Iranian missiles targeting regional US positions.",
+    "Strait of Hormuz disruption drove oil +~20% before a late-week US airstrike pause cooled both crude and equity nerves.",
+    "Prediction markets (Polymarket): the Iran complex is heavily traded — ~191 Iran markets (36 on oil); the 'US × Iran ceasefire by…?' market has >$280M of volume, and 'Strait of Hormuz traffic returns to normal by 31 July?' was among the most active. Specific live odds not captured — verify on Polymarket.",
+    "Read: oil is hostage to headlines. A durable ceasefire is the single biggest disinflationary catalyst (bearish energy longs, bullish duration/growth); renewed escalation is the Quad3 accelerant. Keep the book barbelled to survive either tape.",
+    "Trade: the Aug 1 reciprocal-tariff deadline lands with fresh country rates (recent deals cut India to ~18%, Taiwan to ≤15%) just as earnings guidance is being set."
+  ],
+  ahead: {
+    published: "Sunday 2 August 2026",
+    weekOf: "Mon 3 August 2026",
+    pdf: "reports/2026-07-31-ahead.pdf",
+    pdfName: "Global Week Ahead_2026-08-02.pdf",
+    tldr: "A jobs-week, earnings-heavy tape sitting on top of a live oil shock. Friday's July payrolls (Fri 20:30 GMT+8) is the single print that defines the week, with ISM Manufacturing (Mon) and ISM Services + ADP (Wed) as the build-up. OPEC+ meets Sunday while the US–Iran / Strait of Hormuz conflict keeps crude — and therefore the inflation path — on a knife's edge. Earnings peak with Palantir (Mon), AMD and Caterpillar (Tue), Disney and Eli Lilly (Wed). Hedgeye's Nowcast has just flipped to August #Quad3 (inflation re-accelerating): the map says keep fading crowded AI/Tech into Energy, Healthcare and REITs. No Fed, no ECB — the data leads.",
+    setup: [
+      ["S&P 500", "7,489.72", "+0.7%", "Sits near top of Hedgeye range; upside thinner than downside"],
+      ["Nasdaq Composite", "25,373.85", "+1.0%", "Bearish TREND intact — Day-1 bounce must prove itself"],
+      ["Dow Jones Ind.", "52,485.03", "+0.53%", "4th straight winning month; cyclicals firmer than mega-tech"],
+      ["US 10Y yield", "≈4.67%", "rising", "Yields the pressure valve; a break >4.71% pinches multiples"],
+      ["US 2Y yield", "≈4.29%", "rising", "Fed on hold — a hike scare, not a cut, was priced last week"],
+      ["DXY (US$ index)", "≈99.8", "−0.2%", "Bullish TREND; range 99.76–102.01"],
+      ["Gold (spot)", "≈$4,110", "−1.2%", "Held the $4,000 line; bearish immediate-term TREND"],
+      ["Silver (spot)", "≈$58.01", "−1.7%", "Range 55–60; still a high-beta inflation proxy"],
+      ["Brent crude", "≈$89.57", "+0.6%", "Hormuz premium; OPEC+ decides Sunday"],
+      ["WTI crude", "≈$84.23", "+0.8%", "Bullish TREND, wide 79–93 range = the swing factor"],
+      ["Bitcoin", "≈$63,829", "−1.4%", "Slipped toward $63k; ETH bearish, a risk-off tell"]
+    ],
+    setupNote: "Index closes are official. Yields, gold, silver, oil and bitcoin are Friday levels (some intraday) — verify live before acting.",
+    themes: [
+      {
+        t: "Payrolls Friday is the whole week's fulcrum",
+        b: "June was a soft +57k with unemployment at 4.2%. After a Fed that stayed on hold — and even flirted with a hike — a hot number revives the higher-for-longer/inflation fear while a cold one revives growth-scare talk.",
+        w: "A print with a rising unemployment rate is the more dangerous surprise into #Quad3 — it pairs slowing growth with re-accelerating inflation. Keep dry powder for the 20:30 release."
+      },
+      {
+        t: "Oil is the macro swing factor — two catalysts this weekend",
+        b: "Brent ≈$89, WTI ≈$84 with a wide bullish range (WTI 79–93). The US–Iran conflict keeps a war premium in crude even as tankers resume transit, and OPEC+ meets Sunday 2 Aug to set September output (August was a +188k bpd hike).",
+        w: "Crude is the transmission line into the whole #Quad3 thesis. An OPEC+ hold or Hormuz escalation that lifts oil keeps long Energy (XLE/CRAK) working; a supply surprise that cracks oil would relieve the inflation trade fast."
+      },
+      {
+        t: "The AI/momentum unwind: crash → bounce → then?",
+        b: "July was the worst month for levered-consensus hedge-fund positioning since 2023 — TMT Memory −30.5%, high-beta momentum −30.9%, AI Data Centers −19.4%. Friday was Day-1 of a bounce (AMZN, MSFT), but Nasdaq and XLK TREND signals are still bearish.",
+        w: "A bounce that fails at the TRADE momentum level (XLK ≈$180) is a re-short signal; a close back above TREND stops you out. Don't confuse a Day-1 rip with a trend reversal."
+      },
+      {
+        t: "Earnings breadth test beyond mega-cap tech",
+        b: "With Alphabet, Amazon, Microsoft and Apple behind us, the baton passes to Palantir (AI-sentiment bellwether), AMD (AI silicon), Caterpillar (global industrial + tariff read), Eli Lilly (obesity franchise) and Disney.",
+        w: "PLTR Tuesday-morning HK time sets the AI mood; a soft AMD/PLTR guide would re-arm the Tech unwind, while strong CAT/industrials support the rotation-into-cyclicals story."
+      },
+      {
+        t: "Tariffs back on the front burner",
+        b: "The Aug 1 reciprocal-tariff deadline has fresh country rates taking effect (recent deals cut India to ~18%, Taiwan to ≤15%). New effective rates land just as earnings guidance is being set.",
+        w: "Tariff headlines are a margin- and inflation-story at once — watch industrial and retail guidance (CAT, MCD) for cost-pass-through language."
+      },
+      {
+        t: "Central banks step back — the data leads",
+        b: "No Fed and no ECB this week. With policy on hold, hard data (ISMs, payrolls) and oil — not central-bank speak — will drive rates and the dollar.",
+        w: "A rising 10Y (range 4.59–4.71) is the equity-multiple pressure valve; a break above 4.71 is the tell that bonds, not earnings, set the tape."
+      }
+    ],
+    calendar: [
+      ["Mon 3", "China Caixin Mfg PMI 09:45 (prev 51.7); Germany retail sales 14:00; Swiss CPI 14:30; US ISM Manufacturing 22:00 (prev 53.3)", "First read on China factory momentum; ISM is the growth/inflation build-up into payrolls week"],
+      ["Tue 4", "NZ employment / unemployment Q2 (Wed 06:45, prev 5.3%)", "Quiet US session — the tape trades earnings (CAT, MRK, MCD, PFE, AMD) not data"],
+      ["Wed 5", "China Caixin Services PMI 09:45 (prev 54.1); US ADP payrolls 20:15 (prev +98k); US ISM Services 22:00 (prev 54.0)", "ADP is the payrolls appetizer; ISM Services prices-paid is the #Quad3 tell"],
+      ["Thu 6", "Australia trade 09:30; RBNZ inflation-expectations Q3 11:00; Eurozone retail sales 17:00; Bank of England ~20:00 (TENTATIVE — verify)", "BoE date is unconfirmed: one preview flagged a possible cut from 3.75%, but the Bank's own 2026 calendar lists 17 Sep"],
+      ["Fri 7", "US Non-Farm Payrolls / Unemployment / AHE 20:30 (prev +57k · 4.2% · +0.3%); Canada employment 20:30 (prev 6.5%)", "THE event of the week — defines rates, USD and risk appetite"]
+    ],
+    cbs: [
+      ["US Federal Reserve", "No meeting — held 28–29 Jul at 3.50–3.75% (9–3, three hawkish dissents)", "On hold", "Market prices the first 2026 hike for September; is a hawkish surprise the real tail?"],
+      ["Bank of England", "Thu 6 Aug ~20:00 — TENTATIVE, verify", "3.75% (a cut was flagged by one preview)", "Is the traditional early-August MPC slot live, or is the next decision 17 Sep as the Bank's calendar states?"],
+      ["ECB", "No meeting this week", "2.00–2.25%", "Eurozone Q2 GDP beat (+0.4% q/q) keeps a September move live"],
+      ["RBNZ", "No decision — Q3 inflation-expectations survey Thu 11:00", "prev 2.53%", "A live input for the NZD and the next RBNZ move"],
+      ["RBA", "No decision — next meeting 11–12 Aug", "3.60% (verify)", "Near-horizon item, not this week's"]
+    ],
+    earnings: [
+      ["Mon 3", "Palantir (PLTR) — after US close (~Tue 05:00 HK)", "AI-sentiment bellwether: commercial-US growth and a guide that justifies the multiple"],
+      ["Tue 4", "Caterpillar, Merck, McDonald's, Pfizer — BMO; AMD, Amgen — AMC", "CAT = global industrial + tariff read; AMD = AI/data-center silicon demand and margins"],
+      ["Wed 5", "Eli Lilly, Disney, Novo Nordisk, CVS — BMO; Uber, Shopify, AppLovin, Western Digital, SanDisk", "LLY/NVO = obesity-drug trajectory; DIS = parks + streaming profitability; consumer resilience via UBER/SHOP"],
+      ["Thu–Fri", "Balance of S&P 500 reporters (financials, industrials, consumer)", "Breadth: can non-mega-cap earnings carry the rotation?"]
+    ],
+    catalysts: [
+      "OPEC+ meeting, Sunday 2 Aug — sets September output. August was a +188k bpd hike; with the Hormuz premium in crude, the size of any further unwind of cuts is the key oil catalyst as the week opens.",
+      "US reciprocal tariffs — fresh country rates effective around the Aug 1 deadline (India ~18%, Taiwan ≤15%). A margin- and inflation-story at once.",
+      "Peak earnings week — the single biggest micro catalyst; PLTR and AMD are the AI-unwind's live wires.",
+      "US July payrolls (Fri 20:30) — the macro event of the week.",
+      "Two weekend oil catalysts (OPEC+ and Hormuz headlines) mean the Monday Asia open can gap on crude before a single US data point prints — weekend position sizing matters."
+    ],
+    regime: {
+      label: "#Quad3 (August) — growth slowing, inflation re-accelerating",
+      note: "Hedgeye's US Nowcast just shifted from July #Quad4 (growth and inflation both slowing — the month that punished levered momentum, memory and AI exposures) to August #Quad3, driven by the breakout in oil and major commodities. Playbook: new value in Energy (XLE, CRAK); stay long GARP software, Healthcare (XLV), REITs (XLRE) and defensives; keep fading crowded growth/AI and short Korea (EWY). Ranges below are Hedgeye's published levels from the 31 Jul Early Look.",
+      ranges: [
+        ["UST 10Y Yield", "4.59 – 4.71", "Bullish"],
+        ["S&P 500 (SPX)", "7,316 – 7,538", "Bullish"],
+        ["Nasdaq Comp (COMPQ)", "24,314 – 25,569", "Bearish"],
+        ["Russell 2000 (RUT)", "2,904 – 2,990", "Bullish"],
+        ["Technology (XLK)", "165 – 181", "Bearish"],
+        ["Health Care (XLV)", "159 – 168", "Bullish"],
+        ["Real Estate (XLRE)", "44.99 – 46.40", "Bullish"],
+        ["Volatility (VIX)", "15.77 – 20.56", "Bearish"],
+        ["US Dollar (DXY)", "99.76 – 102.01", "Bullish"],
+        ["WTI Crude", "79.27 – 92.90", "Bullish"],
+        ["Gold (spot)", "3,991 – 4,139", "Bearish"],
+        ["Silver (spot)", "55 – 60", "Bearish"],
+        ["Copper (spot)", "6.19 – 6.59", "Bullish"],
+        ["Natural Gas", "2.61 – 2.93", "Bearish"]
+      ],
+      where: "The S&P closed 7,489 — near the top of its 7,316–7,538 range (upside ~+0.6% vs downside ~−2.3%), an asymmetric, sell-the-rip setup. Nasdaq's bearish TREND and the XLK bearish signal say Friday's rip is Day-1, not a reversal, until XLK closes back above its ~$180 TRADE / $176 TREND levels. What flips the regime: a genuine crack in oil (WTI back below the low-70s) would take the air out of the #Quad3 inflation call and re-open the door to Tech; conversely, oil pressing the $93 top plus a hot payrolls would harden #Quad3 and extend the rotation into Energy, value and defensives."
+    },
+    positioning: "What's crowded and stretched: levered-long AI, memory and high-beta momentum — the trades that just suffered their worst month since 2023 (TMT Memory −30.5%, momentum −30.9%). A Day-1 bounce doesn't de-crowd them. What's working: GARP software, Healthcare (+5.3% in July), REITs (+4.5%), and now Energy on the oil breakout — the #Quad3 winners. Vol and credit: VIX 15.77–20.56 with a bearish TREND (Hedgeye leans to lower vol), but the range top near 20+ is where hedges get paid if payrolls or oil surprises; HY (HYG) neutral, IG (LQD) bearish — credit is the confirmation to watch under a rotation. The tell is whether the bounce broadens (breadth, cyclicals, small caps holding their bullish ranges) or narrows back into a failing mega-cap rip. Fade the latter.",
+    geo: [
+      "US–Iran / Strait of Hormuz is the dominant live risk. A 60-day ceasefire broke down into roughly two weeks of fighting; US strikes were put 'on hold' around 27 Jul with talks looming, but the Hormuz crisis is unresolved and tankers are transiting a contested zone. Any re-escalation is a direct oil spike — and therefore a direct #Quad3 accelerant.",
+      "Trade and tariffs: the Aug 1 reciprocal-tariff deadline keeps trade policy live, with new effective rates and fresh country deals (India ~18%, Taiwan ≤15%).",
+      "Prediction markets (verify live): Polymarket runs active books on the Aug 1 tariff outcomes, the September Fed decision, and 2026 US recession odds (which oscillated roughly 28–40% earlier in the year). With the Fed having flirted with a hike, market-implied near-term cut odds are low — check live before citing a number.",
+      "The cleanest real-time gauge of the Iran risk is crude itself. A weekend Hormuz headline is the most likely source of a Monday Asia gap."
+    ],
+    asia: "Asia comes in off a violent mean-reversion. Korea's KOSPI surged +17.9% Friday — its largest single-day gain on record (Samsung +28%, SK Hynix +30%) — after crashing ~17% over the prior three sessions; Japan's Nikkei is still −11.6% over the month and only just flashing oversold. With Wall Street closing firm Friday, Asia should open with a risk-on bias, but Hedgeye's framing is explicit: this is Day-1 of a bounce, not a confirmed reversal (Hedgeye is short EWY). Intraday tells: does KOSPI/Nikkei hold the morning gap or fade it; USD/JPY direction; and crude on the OPEC+/Hormuz headlines. A gap-up that fades by the HK afternoon is the momentum-unwind reasserting.",
+    beyond: [
+      "Policy and summits: OPEC+ ministers (Sun 2 Aug) headline the weekend; US tariff implementation dominates the trade-policy calendar.",
+      "Earnings culture-watch: Disney (Wed) doubles as a read on parks, streaming and the consumer; McDonald's (Tue) is the classic value-consumer tell.",
+      "Sport and culture: northern-hemisphere football pre-season and the summer sporting calendar are in full swing; the European club season ramps later in August.",
+      "No first-tier space launch, index reconstitution or major product keynote is confirmed for this specific week at time of writing — verify closer to the day."
+    ]
+  },
+  recall: {
+    window: "Mon 27 Jul – Sun 2 Aug 2026",
+    readings: [
+      { t:"How Bridgewater Built an AI Analyst That Does Hours of Expert Research in Minutes", d:"31 Jul", g:"Technology/AI", u:"https://www.youtube.com/watch?v=lXZb21CfeIY", x:"Introduction: 50 years of written-down investment logic as an AI advantage (00:06) Brendan McManus serves as the team lead of the applied AI team at Bridgewater Associates, a systematic macro hedge fund. He has been with Bridgewater for nearly ten years, transitioning from a software engineer to a systematic investor and researcher, with a recent focus on integrating technology and investing. Michael Ran and Santi Weight serve as the investor lea…" },
+      { t:"Simon's Daily — The Journey · Heyokha Brothers", d:"31 Jul", g:"Economics/Investing", u:"https://simondaily2026.pages.dev", x:"The \"3D\" framework — demolition of the old monetary order through de-dollarisation, de-globalisation and decentralisation — and the \"ABC\" framework — the build-out of AI, blockchain and compute — represent a single investment trade rather than opposing forces. Market trends demonstrate that the physical assets required for the AI build-out, such as critical minerals, energy and hardware, are the shared substrate where resource nationalism and com…" },
+      { t:"An interview with Elon Musk", d:"27 Jul", g:"Technology", u:"", x:"Interview Context and Overview Zanny Minton Beddoes, editor-in-chief of The Economist, interviewed Elon Musk for her video show, The Insider. The interview took place at a Tesla factory in Texas following the IPO of SpaceX. The conversation lasted over 90 minutes and covered the timeline for artificial intelligence to surpass human intelligence, the rapid development of China, Musk's interest in Europe, and his reflections on his recent involveme…" },
+      { t:"Research Daily", d:"27 Jul", g:"Economics/Investing", u:"https://researchdaily2026.pages.dev", x:"AI Investment and Corporate Capital Expenditure Earnings pressure: major tech companies face significant pressure to demonstrate AI return on investment. Year-to-date performance for Meta (−9.8%) and Microsoft (−21%) reflects this, while Apple is noted as an outlier with lower AI spending. Funding the compute: the industry narrative has shifted from identifying the \"best model\" to securing funding for compute resources. Goldman Sachs' Greenwood i…" }
+    ],
+    cards: []
+  }
+}
 ];
