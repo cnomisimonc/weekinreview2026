@@ -682,4 +682,268 @@ const WEEKS = [
     cards: []
   }
 }
+,
+{
+  id: "2026-08-07",
+  weekEnding: "Friday 7 August 2026",
+  published: "Saturday 8 August 2026",
+  pdf: "reports/2026-08-07.pdf",
+  pdfName: "Global Week in Review_2026-08-08.pdf",
+  tldr: "Bad news was good news. A shock −23k July payrolls print (vs +83k expected) flipped the Fed conversation from 'will they hike?' to 'hold, maybe cut,' and stocks ripped to record highs — S&P +3.6%, Nasdaq +5.2% — led by mega-cap software and a chip-sector bounce. Government payrolls fell 53k, wage growth cooled to +3.2% y/y (slowest since May 2021) and unemployment ticked to 4.1%; CME FedWatch moved to ~60% for a September hold while Polymarket flirted with a 25bp cut. Yields and the dollar softened (10Y −10bp to 4.65%, DXY near a 7-week low), gold broke out +7.1% to ~$4,400 in a textbook bullish phase transition, and silver ran +9.9%. But the catch is the calm: VIX collapsed to 14.9, IG spreads sit at ~77bp (bottom decile since the GFC) and Hedgeye flags 8 of 9 major Risk Ranges with more downside than upside. Hedgeye stayed in #Quad3 — and with the tape pinned to the top of its range and inflation still hot, this is a chase you fade, not follow.",
+  metrics: {
+    spx: 7757.64,
+    nasdaq: 26690.62,
+    dow: 54036.93,
+    us10y: 4.65,
+    us2y: 4.19,
+    dxy: 99.98,
+    gold: 4400,
+    silver: 63.5,
+    brent: 83.55,
+    wti: 77.2,
+    btc: 64883,
+    vix: 14.9
+  },
+  snapshot: [
+    ["S&P 500", "7,757.64", "+3.6%", "Record closing high; second straight up week (+13.3% YTD)"],
+    ["Nasdaq Composite", "26,690.62", "+5.2%", "Chip/AI bounce led; closed 26,691 against a 26,701 range ceiling"],
+    ["Dow Jones Ind.", "54,036.93", "+3.0%", "Record territory; Financials logged 14 new highs"],
+    ["US 10Y Treasury", "4.65%", "−10 bp", "Yields fell as hike fears eased; still +47 bp YTD"],
+    ["US 2Y Treasury", "4.19%", "−9 bp", "2s10s at +46 bp, a touch steeper; +72 bp YTD"],
+    ["Dollar (DXY)", "≈99.98", "~flat", "Near a seven-week low; Hedgeye TREND bearish 99.01–100.71"],
+    ["Gold (spot)", "≈$4,399.7", "+7.1%", "Bullish breakout across TRADE and TREND — Hedgeye's #1 Quad3 long"],
+    ["Silver (spot)", "≈$63.50", "+9.9%", "Outran gold on the week; still −10.1% YTD"],
+    ["Brent crude", "≈$83.55", "−5.0%", "Fell on Hormuz de-escalation hopes, bounced Friday; +37.3% YTD"],
+    ["WTI crude", "≈$77.2", "≈−5%", "Tracks Brent; weekly % approximate (see source note)"],
+    ["Bitcoin", "≈$64,883", "+3.3%", "Bounced but still −25.9% YTD — 2026's standout risk-asset laggard"],
+    ["VIX", "14.90", "−~7%", "Crushed from the ~20.7 late-July spike; near its 14.74 range floor"]
+  ],
+  themes: [
+    {
+      t: "① A weak jobs print, not strong growth, powered the melt-up",
+      b: "July nonfarm payrolls fell 23,000 — the first outright decline in months and a big miss versus +83k consensus — with government payrolls down 53,000, wage growth cooling to +3.2% y/y (slowest since May 2021) and unemployment ticking to 4.1%. Equities rallied precisely because the data was soft.",
+      r: "This is a defensive rally dressed as an offensive one. You are buying easing-hope, not accelerating earnings — own what wins when growth slows and policy softens (gold, quality software, healthcare), not deep-cyclical beta."
+    },
+    {
+      t: "② The Fed debate flipped from hikes to holds",
+      b: "Out of the end-July FOMC (held at 3.50–3.75% under Chair Kevin Warsh), futures had priced a real chance of a September HIKE on sticky inflation. The jobs miss gutted that: CME FedWatch moved to ~60% for a hold (from ~45% a day earlier and ~33% a week earlier), Kalshi put a hold at ~65%, and Polymarket even flirted with a 25 bp September cut (~51%).",
+      r: "Front-end yields did the work — 2s −9 bp, 10s −10 bp. The pain trade is now a dovish surprise; lean toward a steeper curve and stay humble about the 'higher-for-longer re-hike' thesis that dominated a week ago."
+    },
+    {
+      t: "③ Software and memory led; semiconductors were the fault line",
+      b: "Microsoft (Azure +43% y/y, cloud past a $100B annual run-rate) and SanDisk (NAND upcycle) were rewarded; AMD beat (revenue +50%, data-center +107%) yet fell on a lofty bar, and Palantir posted +81% revenue growth but dropped on 'agentic-AI eats SaaS' fears. Nvidia rallied +12.9% into its 26 Aug print.",
+      r: "Leadership is narrowing to software and memory, not blanket semis. Reaction, not results, is the tell — when blowouts sell off (AMD, PLTR), the bar is the risk. Respect single-name Signals over the 'AI' label."
+    },
+    {
+      t: "④ Gold broke out while Bitcoin stayed broken",
+      b: "Gold jumped +7.1% to ~$4,400 in a textbook bullish phase transition (higher-lows, repeated higher-highs, TRADE and TREND breakouts); silver ran +9.9%. Bitcoin bounced +3.3% but is still −25.9% YTD.",
+      r: "In #Quad3 (growth slowing, inflation sticky), real-asset stores of value beat digital beta. Gold is Hedgeye's #1 Quad3 allocation; crypto's YTD drawdown says the marginal risk dollar is rotating toward hard assets."
+    },
+    {
+      t: "⑤ Volatility got crushed — and that is the catch",
+      b: "VIX fell to 14.9, off the ~20.7 spike of late July, as the tape melted up. Credit is priced for perfection: IG spreads ~77 bp (bottom decile since the GFC) and HY OAS ~2.7% (versus a 20-year ~4.9% average). Hedgeye flags 8 of 9 major Risk Ranges with more downside than upside.",
+      r: "Cheap vol + record-tight credit + an extended tape = asymmetric downside. This is the level to buy protection, not to add unhedged length."
+    },
+    {
+      t: "⑥ Beneath the calm, a Korean semiconductor unwind is a warning",
+      b: "Even as US indices printed records, the KOSPI crash deepened to −31.3% and Hedgeye stayed short semis (DRAM) and South Korea (EWY). Global dispersion is widening beneath a placid US headline.",
+      r: "Index records can mask violent single-market and single-factor drawdowns. Keep the book long-short within sectors (e.g. long software versus short semis) rather than betting the beta."
+    }
+  ],
+  regime: {
+    label: "#Quad3 (August) — growth slowing, inflation accelerating",
+    note: "Hedgeye's favoured longs are Gold (its #1 Quad3 allocation), Healthcare (XLV), Software/Tech (XLK — explicitly not semis), REITs (XLRE) and Energy (XLE); the book is short Semis/DRAM and South Korea (EWY). Ranges below are Hedgeye's published immediate-term Risk Range™ Signals for 7 Aug 2026, sourced to the Early Look '#Quad3 Longs: Gold, Healthcare, etc.' (Keith McCullough) and the MOMO Tracker, both dated 7 Aug 2026.",
+    ranges: [
+      ["UST 10Y Yield", "4.59 – 4.74", "Bullish"],
+      ["High Yield (HYG)", "78.95 – 79.70", "Bullish"],
+      ["IG Corp Bonds (LQD)", "105.4 – 107.1", "Bearish"],
+      ["S&P 500 (SPX)", "7,375 – 7,826", "Bullish"],
+      ["Nasdaq Comp (COMPQ)", "24,441 – 26,701", "Bullish"],
+      ["Russell 2000 (RUT)", "2,901 – 3,058", "Bullish"],
+      ["Technology (XLK)", "174 – 190", "Bullish"],
+      ["Health Care (XLV)", "160 – 168", "Bullish"],
+      ["Real Estate (XLRE)", "44.40 – 46.20", "Bullish"],
+      ["Volatility (VIX)", "14.74 – 17.88", "Bearish"],
+      ["US Dollar (DXY)", "99.01 – 100.71", "Bearish"],
+      ["WTI Crude", "72.63 – 82.60", "Bearish"],
+      ["Natural Gas", "2.55 – 2.79", "Bearish"],
+      ["Gold (spot)", "4,103 – 4,331", "Bullish"],
+      ["Copper (spot)", "6.40 – 6.85", "Bullish"],
+      ["Silver (spot)", "57 – 66", "Neutral"]
+    ],
+    where: "The TREND is bullish across US equity benchmarks, but the tape is stretched: the Nasdaq closed 26,691 against the very top of its range (26,701), the S&P (7,758) sits near its 7,826 ceiling, and Hedgeye's MOMO Tracker flags 8 of 9 Risk Ranges with downside greater than upside. Gold has broken above the top of its stated range (4,331) — confirming the phase transition — while VIX (bearish TREND) and the dollar (bearish) are cooperating with risk. Net: bullish TREND, poor immediate-term reward/risk at these levels. Buy the low end of ranges and trim the high end; with indices pinned to their ceilings, add through Quad3 winners (gold, software, healthcare, REITs) on pullbacks rather than chasing the benchmark here."
+  },
+  mag7: [
+    { tk:"NVDA", n:"Nvidia", p:223.96, wk:"+12.9%", wkPct:12.9, cap:"≈$5.42T", pe:"34.1×" },
+    { tk:"AAPL", n:"Apple", p:313.33, wk:"+2.8%", wkPct:2.8, cap:"≈$4.60T", pe:"35.8×" },
+    { tk:"GOOGL", n:"Alphabet", p:354.30, wk:"+4.0%", wkPct:4.0, cap:"≈$4.29T", pe:"17.6×" },
+    { tk:"MSFT", n:"Microsoft", p:499.99, wk:"+11.1%", wkPct:11.1, cap:"≈$3.71T", pe:"27.8×" },
+    { tk:"AMZN", n:"Amazon", p:274.48, wk:"+3.6%", wkPct:3.6, cap:"≈$2.95T", pe:"21.8×" },
+    { tk:"META", n:"Meta", p:592.10, wk:"+8.9%", wkPct:8.9, cap:"≈$1.51T", pe:"22.0×" },
+    { tk:"TSLA", n:"Tesla", p:328.58, wk:"+6.1%", wkPct:6.1, cap:"≈$1.30T", pe:"≈279×" }
+  ],
+  mag7Read: "A software-and-silicon week. Microsoft (+11.1%) and Nvidia (+12.9%) did the heavy lifting, with Meta (+8.9%) and Tesla (+6.1%) joining the bounce; Apple (+2.8%) and Amazon (+3.6%) lagged. The YTD spread tells the real story — Nvidia (+20%), Amazon (+19%) and Apple (+15%) lead, while Meta (−10%) and Tesla (−27%) remain the group's problem children. Valuations are bifurcated: Alphabet screens cheapest at 17.6× and is the only 'value' name in the cohort; Tesla's ~279× keeps it in a category of one. Don't buy 'the Mag7' — buy the dispersion. The tape is rewarding earnings power (MSFT, NVDA) and re-rating a cheap compounder (GOOGL) while punishing story stocks (TSLA). Concentration risk is real: a handful of names still drive the bulk of index moves.",
+  sectors: [
+    { n:"Technology (XLK)", m:"≈+7.2%", pct:7.2, d:"Week's top sector, but led by software (MSFT +11.1%) and a chip bounce (NVDA +12.9%) — Hedgeye is long XLK and short semis/DRAM" },
+    { n:"Materials (XLB)", m:"≈+4.8%", pct:4.8, d:"Second-best on the real-asset bid alongside gold's +7.1% breakout and silver's +9.9%" },
+    { n:"Communication Svcs", m:"close behind", pct:4.0, d:"Third on the week (GOOGL +4.0%, META +8.9%); source gave ordering rather than a clean weekly %, so the bar is directional" },
+    { n:"Financials (XLF)", m:"14 new highs", pct:3.0, d:"Largest count of new highs in the index as the curve steepened; source gave the count, not a %, so the bar is directional" },
+    { n:"Real Estate (XLRE)", m:"rate-sensitive bid", pct:2.5, d:"Quad3 bond-proxy winner as yields fell; TREND bullish 44.40–46.20. Directional — no weekly % in source" },
+    { n:"Energy (XLE)", m:"laggard", pct:-2.0, d:"Lagged as Brent fell ~5% on Hormuz de-escalation hopes; source gave direction only" }
+  ],
+  sectorsRead: "Technology (~+7.2%) and Materials (~+4.8%) led, with Communication Services close behind and Financials contributing the largest count of new highs (14). Energy lagged as crude fell. The rotation fits the regime: money is broadening into rate-sensitive and real-asset-linked groups (materials, miners, REITs) even as software carries tech. Hedgeye's read is that leadership is rotating within #Quad3 toward Gold, Healthcare, Software, REITs and Energy — and away from Semis (short DRAM) and South Korea (short EWY). Play tech through software, not chips; add REITs and healthcare as the growth-slowing/dovish mix broadens participation. Data note: the source reported a clean weekly % only for Technology and Materials; the remaining bars are directional from the source's rank ordering and new-high counts.",
+  positioning: "Volatility collapsed alongside the melt-up: VIX ended at 14.9, down ~7% on the week and well below the ~20.7 late-July spike, with Hedgeye holding a bearish VIX TREND (14.74–17.88). Credit remains priced for perfection — IG OAS ≈77 bp (bottom-decile tight since the GFC) and HY OAS ≈2.7% (well inside the ~4.9% 20-year average), with new IG deals reportedly ~5x oversubscribed — and Hedgeye scores HYG a bullish TREND (78.95–79.70) versus a bearish LQD (105.4–107.1): spread and carry favoured over duration-heavy IG. Net read: calm is the commodity to buy. Sub-15 VIX and record-tight credit make hedges cheap into an extended tape and a data-dependent Fed — fund downside protection now, while it is on sale.",
+  corporate: [
+    "Microsoft: blowout quarter — Azure revenue +43% y/y and cloud past a $100B annual run-rate for the first time; shares extended the post-earnings surge to +11.1% on the week and the cleanest large-cap breakout of the tape.",
+    "AMD: beat and raised (revenue +50%, data-center +107%) but shares fell on an elevated bar, briefly rattling semis — the week's clearest 'good results, bad reaction' tell.",
+    "Palantir (PLTR): revenue ~$1.81B (+81% y/y), EPS +119% to ~$0.35 — a blowout that still sold off on 'agentic AI eats SaaS' fears.",
+    "SanDisk (SNDK): blowout FQ4; shares soared on the NAND/memory upcycle.",
+    "Shopify (SHOP): +16% on a 'monster quarter' — revenue +34% y/y to $3.58B, EPS $0.42 versus $0.40 estimated.",
+    "Eli Lilly (LLY): surged on continued GLP-1 demand.",
+    "Disney (DIS): raised its FY26 buyback target to ≥$9B and reiterated ~12% adjusted EPS growth, with parks strong. Uber and CVS also beat.",
+    "Nvidia (NVDA): rallied +12.9% into its 26 August print — the next big AI catalyst. China H20 licences remain in case-by-case review (25% import tariff, 50% volume cap)."
+  ],
+  macro: [
+    "US July payrolls (7 Aug): −23,000 versus +83k expected — the first outright drop in months; government payrolls −53k, unemployment 4.1%, average hourly earnings +3.2% y/y (slowest since May 2021). Net: the labour market is cracking — the dominant dovish catalyst of the week and the reason records printed.",
+    "US ISM Manufacturing, July (1 Aug): headline at its highest since May 2022 (robust activity), but prices and inflation worries described as 'worse than the pandemic era.' Net: growth-hot, inflation-hotter — textbook #Quad3 tension.",
+    "Fed policy: held at 3.50–3.75% at end-July under Chair Kevin Warsh after leaning toward a possible hike; post-jobs, hike odds collapsed. Net: the base case is a September hold, with a minority now pricing a cut.",
+    "Rates market: 2Y −9 bp to 4.19%, 10Y −10 bp to 4.65%, leaving 2s10s at +46 bp. Net: bonds are trading the growth scare, not the inflation problem — which is exactly the tension a hot July CPI would expose."
+  ],
+  geo: [
+    "Russia–Ukraine: Trump's ultimatum (50 days cut to 10) expired 8 Aug with no ceasefire. Envoy Steve Witkoff met Putin on 6 Aug, the US layered secondary sanctions on India over Russian-oil purchases (~7 Aug), and Trump held off further measures citing live talks. A Trump–Putin summit is expected soon (UAE floated as venue).",
+    "The Graham 'Sanctioning Russia Act of 2026' — up to 100% tariffs on buyers of Russian energy — cleared an 86–12 procedural vote but stalled over its tariff-authority provisions.",
+    "Middle East / oil: the Strait of Hormuz crisis (a legacy of the early-2026 US–Israel–Iran conflict) kept oil headline-driven. Iran and Oman are near a commercial-shipping framework and a US–Iran draft is circulating via Qatar, but Houthi attack claims (a Saudi tanker, 5 Aug) and fresh Hormuz tension gave crude a Friday bounce.",
+    "Prediction markets: Polymarket ~51% for a 25 bp September Fed cut and ~89% for zero cuts across full-year 2026; Kalshi ~65% for a September hold. The crowd sees the hike risk as gone but is not yet convinced of an easing cycle.",
+    "Read: oil de-escalation is now the disinflationary swing factor that would validate the dovish repricing, while Hormuz re-escalation is the one headline that puts the September hike back on the table. Two set-pieces loom in late August — a possible Trump–Putin summit and the Fed's Jackson Hole symposium, the next venue for Warsh to frame hold versus hike versus cut."
+  ],
+  ahead: {
+    published: "Sunday 9 August 2026",
+    weekOf: "Mon 10 August 2026",
+    pdf: "reports/2026-08-07-ahead.pdf",
+    pdfName: "Global Week Ahead_2026-08-09.pdf",
+    tldr: "One number owns the week: US CPI (July), Wed 12 Aug, 20:30 GMT+8. The Fed sat at 3.50–3.75% on 29 Jul and had been openly debating hikes against a ~4% inflation handle — until Friday's shock −23k July payrolls (with −103k of prior revisions) flipped the tape, cutting September hike odds to 42% and driving the S&P to a record 7,757.64. A hot core CPI revives the hike scare and hits duration and high-multiple tech; a soft one supercharges the 'Fed forced to ease on a cracking labour market' trade. PPI (Thu) and Retail Sales (Fri) complete an inflation-then-consumer gauntlet, and CoreWeave (Tue) stress-tests the AI trade. Hedgeye's map: #Quad3 — long Gold and Healthcare, with indices pinned at the top of their ranges (8 of 9 show downside greater than upside).",
+    setup: [
+      ["S&P 500", "7,757.64", "+0.62%", "Record close; upper third of the 7,375–7,826 range"],
+      ["Nasdaq Composite", "26,690.62", "+1.30%", "Pinned at the top of 24,441–26,701 — little room left"],
+      ["Dow Jones Ind.", "54,036.93", "+0.28%", "+151.83 pts; record territory"],
+      ["US 10Y yield", "≈4.60%", "−7 bps", "Eased on soft jobs; Hedgeye range 4.59–4.74 (bullish)"],
+      ["US 2Y yield", "≈4.15%", "lower", "Front-end richened as Sept hike odds fell to 42%"],
+      ["US Dollar (DXY)", "99.48", "−0.45%", "Soft; range 99.01–100.71 (bearish TREND)"],
+      ["Gold (spot)", "≈$4,350", "+2.6%", "Above the 4,331 range top; Hedgeye's #1 Quad3 long"],
+      ["Silver (spot)", "≈$64.3", "higher", "Range 57–66 (neutral) — near the top"],
+      ["Brent crude", "≈$83.5", "firmer", "Hormuz risk premium; watch a reopening"],
+      ["WTI crude", "≈$78.3", "firmer", "Range 72.63–82.60 (bearish TREND)"],
+      ["Bitcoin", "≈$64,900", "+1.0%", "Below the 200-day (≈$70,965) — laggard versus metals"],
+      ["VIX", "14.90", "−1.7%", "Near the floor of 14.74–17.88 — complacent into CPI"]
+    ],
+    setupNote: "Levels are Friday 7 Aug closes; risk ranges are Hedgeye's immediate-term signals from the 7 Aug Early Look. The 2Y is an estimate off the 5 Aug curve (2Y 4.18 / 10Y 4.63) adjusted for Friday's rally — confirm live before acting.",
+    themes: [
+      {
+        t: "CPI Wednesday is the whole week",
+        b: "Inflation has run sticky near a 4% handle (May CPI +4.2% y/y, a three-year high) even as the Fed holds. Core is the swing factor.",
+        w: "A firm core (roughly ≥0.3% m/m) puts hike odds back on and pressures long-duration and high-multiple tech; a soft core sends gold, healthcare and rate-sensitives higher. This is the binary."
+      },
+      {
+        t: "The jobs crack",
+        b: "July payrolls fell −23k, the prior two months were cut a combined −103k, and unemployment ticked to 4.1%. Growth-slowing plus firm-inflation is textbook #Quad3.",
+        w: "Thursday's jobless claims are the confirmation of a labour rollover. A stagflationary mix keeps Gold ranked above equity beta."
+      },
+      {
+        t: "AI / neocloud stress test",
+        b: "CoreWeave (Tue, post-close) is the tell for the whole AI-capex complex — revenue seen up ~111% to ≈$2.56B.",
+        w: "Backlog, customer concentration and financing costs are the lines to read. Nasdaq sits at the very top of its 24,441–26,701 range, so a disappointment has room to bite; a clean beat validates the melt-up."
+      },
+      {
+        t: "Gold's phase transition",
+        b: "Hedgeye flags a textbook bullish breakout across TRADE and TREND — gold is its #1 back-tested #Quad3 allocation, +2.6% Friday to ≈$4,350.",
+        w: "Whether spot holds the 4,103 range floor. Drivers: the Hormuz safe-haven bid and the real-yield path off CPI."
+      },
+      {
+        t: "Oil and the Strait of Hormuz",
+        b: "Brent ≈$83, WTI ≈$78 with a live geopolitical premium and reopening chatter.",
+        w: "A Hormuz reopening deflates the inflation scare (dovish for the CPI read-through); re-escalation spikes crude and revives hike fear. Hedgeye WTI range 72.63–82.60, bearish TREND."
+      },
+      {
+        t: "Positioning is stretched",
+        b: "8 of 9 major Hedgeye risk ranges show more downside to the low than upside to the high, and VIX at 14.9 sits near its range floor.",
+        w: "Complacency into a binary CPI. Optionality is cheap here — the tell to hedge is VIX pressing toward 17.9."
+      }
+    ],
+    calendar: [
+      ["Sun 9", "China CPI & PPI (Jul) 09:30 — consensus soft, confirm", "Deflation risk is the swing factor for China/HK risk appetite into Monday; PPI has been stuck in negative territory"],
+      ["Mon 10", "No tier-1 US data. China Jul credit/aggregate-financing due in the 10–15 Aug window (date floats — confirm)", "Markets digest Friday's jobs shock and the weekend China inflation print"],
+      ["Tue 11", "RBA decision + Statement on Monetary Policy 12:30; Germany ZEW expectations (Aug) 17:00; US NFIB small-business optimism (Jul) 18:00; CoreWeave post-close", "RBA hold at 4.35% expected — the SoMP forecasts drive AUD; NFIB is a labour/pricing-plans tell one day before CPI"],
+      ["Wed 12", "UK CPI (Jul) 14:00; US CPI (Jul) 20:30 ★ main event; Cisco post-close (date to confirm)", "The fulcrum. Hot core → hike scare back on, duration and high-multiple tech hit; soft core → gold, healthcare and rate-sensitives rip. Recent trend ~4% y/y"],
+      ["Thu 13", "UK Q2 GDP (prelim) 14:00; US PPI (Jul) 20:30; US initial jobless claims 20:30", "PPI confirms or refutes the CPI signal and feeds core-PCE nowcasts; claims are the highest-frequency labour tell post-payrolls"],
+      ["Fri 14", "US Retail Sales (Jul) 20:30; Empire State mfg (Aug, tentative) 20:30; import prices (Jul) 20:30; Industrial Production (Jul) 21:15; U. Michigan sentiment (Aug prelim) 22:00", "The consumer read after CPI/PPI — spending resilience versus a cracking labour market. UMich inflation expectations can move the Fed narrative into Jackson Hole"]
+    ],
+    cbs: [
+      ["RBA", "Tue 11 Aug, 12:30 — decision + quarterly Statement on Monetary Policy", "Hold at 4.35% expected", "Does the forecast set signal a cut later in 2026?"],
+      ["US Federal Reserve", "No meeting — held 29 Jul at 3.50–3.75%; next FOMC 15–16 Sep", "On hold", "Fed speakers likely around CPI (schedule unconfirmed); July minutes ~19 Aug and Jackson Hole ~20–22 Aug loom"],
+      ["RBNZ", "Next OCR ~20 Aug (next week, tentative)", "Not in this window", "On the radar for NZD"],
+      ["Prediction markets", "Live pricing, not a meeting", "57% probability of zero Fed cuts in 2026", "September hike odds fell to 42% from 58% on the jobs miss — CPI is what re-prices this"]
+    ],
+    earnings: [
+      ["Tue 11", "CoreWeave (CRWV) — post-close; Super Micro (SMCI) expected ~11 Aug (confirm)", "CRWV revenue seen up ~111% to ≈$2.56B — the single most important AI print of the week. Backlog, customer concentration and financing costs tell you whether the compute shortage is monetizable or just capex with extra steps"],
+      ["Wed 12–Thu 13", "Cisco (CSCO) — date disputed (Aug 12–13 per feeds; some list Aug 19 — confirm IR)", "Street wants mid-teens revenue growth on AI-networking orders with gross margin guided down ~2 pts y/y; consensus ≈$16.8B revenue, ≈$1.17 EPS"],
+      ["Thu 13–Fri 14", "Applied Materials (AMAT) and Deere (DE) — typically ~13–14 Aug, confirm dates", "AMAT frames foundry/memory capex; DE is the ag and industrial demand read"],
+      ["Looking past the week", "Walmart, Home Depot, Target ~19–21 Aug", "Next week brings the consumer. This week is the AI-capex verdict — keep Nasdaq's 26,701 ceiling in mind on any miss"]
+    ],
+    catalysts: [
+      "US July CPI, Wed 12 Aug 20:30 — the fulcrum of the week and the one print that re-prices the entire Fed path.",
+      "CoreWeave earnings, Tue 11 Aug post-close — the AI-capex bellwether, with the Nasdaq sitting on its range ceiling.",
+      "Wed 12 Aug is a loaded day: CPI coincides with a total solar eclipse (Greenland, Iceland, northern Spain, western Russia) and the Perseid peak. Markets care about the first.",
+      "Trade policy: US–China detente and tariff-truce headlines remain a live tape-driver; any deadline or extension news moves risk and the CNH. Specifics fluid — watch the wire.",
+      "Expiries: no monthly US equity OpEx this week (next is Fri 21 Aug), but weekly expiries cluster around CPI, adding intraday gamma.",
+      "Looming: China Jul activity data (industrial production, retail sales, FAI) via the NBS press conference Mon 17 Aug; Gamescom 26–30 Aug."
+    ],
+    regime: {
+      label: "#Quad3 — growth slowing, inflation accelerating",
+      note: "Favoured longs: Gold (#1), Healthcare (XLV), Software/Tech (XLK — not Semis), REITs (XLRE) and Energy. Long/short discipline within sectors. Semis/DRAM and South Korea (EWY) are on the short side — the KOSPI has crashed −31.3%. Source: Hedgeye Early Look, '#Quad3 Longs: Gold, Healthcare, etc.,' Keith McCullough, 7 Aug 2026.",
+      ranges: [
+        ["UST 10Y yield", "4.59 – 4.74", "Bullish"],
+        ["High Yield (HYG)", "78.95 – 79.70", "Bullish"],
+        ["IG Corp (LQD)", "105.4 – 107.1", "Bearish"],
+        ["S&P 500 (SPX)", "7,375 – 7,826", "Bullish"],
+        ["Nasdaq Comp (COMPQ)", "24,441 – 26,701", "Bullish"],
+        ["Russell 2000 (RUT)", "2,901 – 3,058", "Bullish"],
+        ["Tech (XLK)", "174 – 190", "Bullish"],
+        ["Healthcare (XLV)", "160 – 168", "Bullish"],
+        ["REITs (XLRE)", "44.40 – 46.20", "Bullish"],
+        ["Volatility (VIX)", "14.74 – 17.88", "Bearish"],
+        ["US Dollar (DXY)", "99.01 – 100.71", "Bearish"],
+        ["WTI Crude", "72.63 – 82.60", "Bearish"],
+        ["Natural Gas", "2.55 – 2.79", "Bearish"],
+        ["Gold (spot)", "4,103 – 4,331", "Bullish"],
+        ["Copper (spot)", "6.40 – 6.85", "Bullish"],
+        ["Silver (spot)", "57 – 66", "Neutral"]
+      ],
+      where: "The S&P (7,757.64) sits in the upper third of its range; the Nasdaq (26,690.62) is essentially at the ceiling (26,701); VIX (14.9) is near its floor; gold is at or above its top; the dollar is near its floor. That is a fully-invested, complacent tape. What would change the regime: a hot CPI that pushes the 10Y through 4.74 and revives hike bets would pressure the #Quad3 longs and squeeze the dollar higher; a sharper growth scare (claims spiking, a CoreWeave miss) tips the model toward #Quad4 — favouring Treasuries, USD and gold over equity beta. Until then the signal is: own the range, respect the ceiling. Tells to watch: VIX 17.9 = get defensive; UST 10Y 4.74 = duration pain; Gold 4,100 = trend support."
+    },
+    positioning: "Crowded: Mag7 and AI-capex (CoreWeave is the test) plus long gold and precious. Momentum is stretched — silver sits neutral at the top of 57–66. Stretched: indices at the top of their ranges (8 of 9 show downside greater than upside) and VIX at 14.9 near lows, which makes hedges cheap. The KOSPI's −31.3% crash is the reminder of how violent a single-market or semis unwind can be. Credit: HYG bullish (no stress yet), LQD bearish (duration and IG heavier) — high-yield spreads are the tell if CPI runs hot. Rates: 10Y ≈4.60% inside a bullish 4.59–4.74 (biased higher on yield), 2Y ≈4.15%, curve ~+45 bps; 4.74 is the pain line. FX: DXY 99.48 in a bearish range, EUR/USD ≈1.156 — a hot CPI is the obvious squeeze catalyst, and AUD keys off the RBA/SoMP.",
+    geo: [
+      "Iran / Strait of Hormuz: the oil swing factor — reopening chatter versus re-escalation runs straight into the CPI inflation channel.",
+      "Russia / Ukraine: the Trump administration is pushing a peace-deal track (summit chatter), having shifted off a ceasefire-first stance. Meaningful de-escalation would pressure oil and gold and add a risk-on impulse.",
+      "US–China trade: tariff-truce and detente talks remain a live catalyst; a deadline or extension moves risk and the CNH.",
+      "Odds: Polymarket ~57% for zero Fed cuts in 2026; September hike odds ~42%, down from 58% pre-jobs. South Korea (KOSPI −31.3%) is the contagion name to watch."
+    ],
+    asia: "Asia should open digesting two crosscurrents: a tailwind from Friday's Wall Street records and a softer dollar (helpful for EM/Asia FX and the reflation-hedge trade), against the drag from the weekend China CPI/PPI if deflation persists. Korea stays the fragile spot after the KOSPI's −31.3% crash and ongoing semis pressure; a firmer yen (weak DXY) is a mild headwind for Japanese exporters. Net: a mixed-to-firm open, with the China inflation print and the KOSPI as the intraday tells, precious-metals names bid, and AUD in focus into Tuesday's RBA. Respect Nasdaq's 26,701 ceiling on any gap-up.",
+    beyond: [
+      "Total solar eclipse — Wed 12 Aug. Totality crosses Greenland, Iceland and northern Spain (with western Russia) — the first total eclipse over Iceland and mainland Spain in generations. Same day as CPI; a different kind of shadow.",
+      "Perseid meteor shower — peak 12–13 Aug, near a New Moon this year, so dark-sky viewing is excellent midnight-to-dawn.",
+      "Gamescom — 26–30 Aug (Opening Night Live 25 Aug), Cologne. Exhibitor space sold out for the first time ever; a forward marker for the games complex.",
+      "Space: SpaceX's Falcon 9 Starlink cadence continues through the week — check live schedules for exact windows."
+    ]
+  },
+  recall: {
+    window: "Mon 3 Aug – Sun 9 Aug 2026",
+    readings: [
+      { t:"Chamath's AI investing guide - August 2026", d:"3 Aug", g:"Economics/Investing", u:"", x:"As of August 2026, Chamath Palihapitiya outlines his investment strategy regarding the artificial intelligence sector, categorizing the industry into six distinct layers. LPS (Land Power Shell) Palihapitiya identifies this as the most obvious and fastest path to achieving cash-on-cash returns. He anticipates that energized land will significantly increase in value as data centers face increasing pushback. Palihapitiya and his partner, Anita Vlall…" },
+      { t:"Can America retrain workers before AI leaves them behind?", d:"3 Aug", g:"Economics", u:"", x:"AI Displacement Risks and Economic Impact Kimberly Brady, a 53-year-old Californian, illustrates the difficulties of career transition; despite self-teaching opticianry and passing board exams, she could not secure employment in the field due to a lack of hands-on experience. Goldman Sachs estimates that approximately 10 million jobs could be displaced by AI over the next decade, with routine office work and entry-level white-collar positions fac…" }
+    ],
+    cards: [
+      { t:"[Untitled PDF — title characters lost on import]", g:"Economics/Commodities", u:"" }
+    ]
+  }
+}
 ];
