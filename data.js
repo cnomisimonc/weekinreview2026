@@ -66,15 +66,15 @@ const WEEKS = [
     where:"S&P (7,458) mid-range and bullish; gold ($3,980) bearish TREND; VIX popped to 18.77 — above the range top, the one sign of stress in an otherwise orderly tape. *Hedgeye long the oil TRADE breakout within a bearish TREND."
   },
   mag7: [
-    { tk:"NVDA", n:"Nvidia",    p:207.40, wk:"−2.4% (Fri)", wkPct:null,  cap:"~$5.0T", pe:"31.1" },
-    { tk:"AAPL", n:"Apple",     p:333.26, wk:"+1.8% (Fri)", wkPct:null,  cap:"~$4.9T", pe:"40.5" },
-    { tk:"GOOGL",n:"Alphabet",  p:353.81, wk:"−2.2% (wk)",  wkPct:-2.2,  cap:"~$4.3T", pe:"27.0" },
-    { tk:"MSFT", n:"Microsoft", p:401.10, wk:"+1.4% (Fri)", wkPct:null,  cap:"~$3.0T", pe:"23.5" },
-    { tk:"AMZN", n:"Amazon",    p:249.89, wk:"−2.0% (Fri)", wkPct:null,  cap:"~$2.7T", pe:"29.6" },
-    { tk:"META", n:"Meta",      p:664.54, wk:"−2.9% (wk)",  wkPct:-2.9,  cap:"~$1.7T", pe:"23.5" },
-    { tk:"TSLA", n:"Tesla",     p:391.06, wk:"−0.9% (Fri)", wkPct:null,  cap:"~$1.5T", pe:"370" }
+    { tk: "NVDA", n: "Nvidia", p: 202.81, wk: "−3.9%", wkPct: -3.9, cap: "~$5.0T", pe: "31.1" },
+    { tk: "AAPL", n: "Apple", p: 333.74, wk: "+5.8%", wkPct: 5.8, cap: "~$4.9T", pe: "40.5" },
+    { tk: "GOOGL", n: "Alphabet", p: 346.77, wk: "−2.9%", wkPct: -2.9, cap: "~$4.3T", pe: "27.0" },
+    { tk: "MSFT", n: "Microsoft", p: 393.82, wk: "+2.3%", wkPct: 2.3, cap: "~$3.0T", pe: "23.5" },
+    { tk: "AMZN", n: "Amazon", p: 247.23, wk: "+0.8%", wkPct: 0.8, cap: "~$2.7T", pe: "29.6" },
+    { tk: "META", n: "Meta", p: 646.01, wk: "−3.5%", wkPct: -3.5, cap: "~$1.7T", pe: "23.5" },
+    { tk: "TSLA", n: "Tesla", p: 380.84, wk: "−6.6%", wkPct: -6.6, cap: "~$1.5T", pe: "370" }
   ],
-  mag7Read: "The Mag7 is no longer one trade. On earnings, cloud-monetizers (MSFT, AMZN) were rewarded while capex-spenders (GOOGL, META) and Apple were punished — though all except Apple joined Friday's broad bounce, and Nvidia round-tripped. Only Apple's memory-cost '100-year flood' left a lasting hole, its worst single-day drop in ~16 months, erasing much of a YTD lead that had been the best in the group. Intra-group dispersion is the widest in years — a stock-picker's tape hiding inside a cap-weighted index. Hedgeye's momentum signals agree: only MSFT bullish, AMZN neutral, the rest bearish/mixed. Data note: prices are verified regular-session closes for Friday 31 Jul (S&P Global Market Intelligence via stockanalysis.com). The week column is computed close-over-close against the prior week's entry; Friday's own close-over-close moves were NVDA +2.9%, AAPL −7.4%, MSFT +3.0%, AMZN +15.3%, GOOGL +6.7%, META +3.3%, TSLA +0.8%, so the larger weekly figures for MSFT, AMZN and GOOGL reflect the full post-print re-rating, not Friday alone.",
+  mag7Read: "The Mag7 is no longer one trade. On earnings, cloud-monetizers (MSFT, AMZN) were rewarded while capex-spenders (GOOGL, META) and Apple were punished — though all except Apple joined Friday's broad bounce, and Nvidia round-tripped. Only Apple's memory-cost '100-year flood' left a lasting hole, its worst single-day drop in ~16 months, erasing much of a YTD lead that had been the best in the group. Intra-group dispersion is the widest in years — a stock-picker's tape hiding inside a cap-weighted index. Hedgeye's momentum signals agree: only MSFT bullish, AMZN neutral, the rest bearish/mixed. Data note: prices are actual regular-session closes for the Friday shown and the week column is a true Friday-to-Friday close-over-close move, both taken from the market-data feed (EOD series) rather than from the source report, which could not verify them. Market caps and P/E ratios are as carried in that week's source report and remain approximate.",
   sectors: [
     { n:"Energy (XLE)", m:"Leader", pct:null, d:"The oil spike — the standout" },
     { n:"Consumer Staples (XLP)", m:"Up", pct:null, d:"Defensive bid" },
@@ -277,13 +277,13 @@ const WEEKS = [
     where:"Long-duration growth is on the wrong side of a rising-rates, rising-oil regime; energy, financials and cash-flow value are on the right side. With positioning at a multi-year bullish extreme and a live FOMC next week, risk/reward favors carrying hedges, holding energy, and staying up-in-quality rather than chasing the AI dip on day one."
   },
   mag7: [
-    { tk:"NVDA", n:"Nvidia",    p:206.84, wk:"+2.0%",  wkPct:2.0,   cap:"$5.01T", pe:"31.7" },
-    { tk:"AAPL", n:"Apple",     p:333.02, wk:"−0.2%",  wkPct:-0.2,  cap:"$4.89T", pe:"39.0" },
-    { tk:"GOOGL",n:"Alphabet",  p:319.74, wk:"−7.8%",  wkPct:-7.8,  cap:"$3.91T", pe:"15.9" },
-    { tk:"MSFT", n:"Microsoft", p:381.70, wk:"−3.1%",  wkPct:-3.1,  cap:"$2.84T", pe:"22.7" },
-    { tk:"AMZN", n:"Amazon",    p:232.11, wk:"−6.1%",  wkPct:-6.1,  cap:"$2.50T", pe:"27.8" },
-    { tk:"META", n:"Meta",      p:595.19, wk:"−7.9%",  wkPct:-7.9,  cap:"$1.51T", pe:"22.1" },
-    { tk:"TSLA", n:"Tesla",     p:313.03, wk:"−17.8%", wkPct:-17.8, cap:"~$1.0T", pe:"~290" }
+    { tk: "NVDA", n: "Nvidia", p: 206.84, wk: "+2.0%", wkPct: 2.0, cap: "$5.01T", pe: "31.7" },
+    { tk: "AAPL", n: "Apple", p: 333.02, wk: "−0.2%", wkPct: -0.2, cap: "$4.89T", pe: "39.0" },
+    { tk: "GOOGL", n: "Alphabet", p: 319.74, wk: "−7.8%", wkPct: -7.8, cap: "$3.91T", pe: "15.9" },
+    { tk: "MSFT", n: "Microsoft", p: 381.7, wk: "−3.1%", wkPct: -3.1, cap: "$2.84T", pe: "22.7" },
+    { tk: "AMZN", n: "Amazon", p: 232.11, wk: "−6.1%", wkPct: -6.1, cap: "$2.50T", pe: "27.8" },
+    { tk: "META", n: "Meta", p: 595.19, wk: "−7.9%", wkPct: -7.9, cap: "$1.51T", pe: "22.1" },
+    { tk: "TSLA", n: "Tesla", p: 313.03, wk: "−17.8%", wkPct: -17.8, cap: "~$1.0T", pe: "~290" }
   ],
   mag7Read:"Nvidia was the last mega-cap standing — the compute toll-taker held up (+2%) while the AI spenders (Alphabet, Meta, Amazon) and Tesla were sold hard on capex and margin fears. The market is now demanding the 'spend-your-way-to-AI' cohort show a return on the outlay. Alphabet at ~16x screens cheap, but it needs FCF proof before the multiple re-rates.",
   sectors: [
@@ -512,15 +512,15 @@ const WEEKS = [
     where: "Friday was explicitly framed as 'Day 1 of a bounce' off immediate-term oversold in tech — XLK closed ≈166 versus its 165–181 range. The SPX TREND is bullish but Nasdaq and XLK TREND are bearish: own the index, rent the tech bounce. McCullough cut his XLK short to minimum size near the lows and will stop out only on a close back above $180; he added Energy via XLE and CRAK and stays long healthcare, REITs, dividends and precious-adjacent. Net: respect the bounce, but the TREND signals still say growth/tech is guilty until it recaptures its levels."
   },
   mag7: [
-    { tk:"NVDA", n:"Nvidia", p:200.75, wk:"−2.9%", wkPct:-2.9, cap:"≈$4.9T", pe:"~40" },
-    { tk:"AAPL", n:"Apple", p:308.91, wk:"−7.2%", wkPct:-7.2, cap:"≈$4.5T", pe:"~36" },
-    { tk:"MSFT", n:"Microsoft", p:464.72, wk:"+21.7%", wkPct:21.7, cap:"≈$3.5T", pe:"~37" },
-    { tk:"AMZN", n:"Amazon", p:271.58, wk:"+17.0%", wkPct:17.0, cap:"≈$2.9T", pe:"~35" },
-    { tk:"GOOGL", n:"Alphabet", p:356.13, wk:"+11.4%", wkPct:11.4, cap:"≈$4.3T", pe:"~27" },
-    { tk:"META", n:"Meta", p:556.71, wk:"−6.5%", wkPct:-6.5, cap:"≈$1.4T", pe:"~28" },
-    { tk:"TSLA", n:"Tesla", p:311.20, wk:"−0.6%", wkPct:-0.6, cap:"≈$1.0T", pe:"~297" }
+    { tk: "NVDA", n: "Nvidia", p: 200.75, wk: "−2.9%", wkPct: -2.9, cap: "≈$4.9T", pe: "~40" },
+    { tk: "AAPL", n: "Apple", p: 308.91, wk: "−7.2%", wkPct: -7.2, cap: "≈$4.5T", pe: "~36" },
+    { tk: "MSFT", n: "Microsoft", p: 464.72, wk: "+21.8%", wkPct: 21.8, cap: "≈$3.5T", pe: "~37" },
+    { tk: "AMZN", n: "Amazon", p: 271.58, wk: "+17.0%", wkPct: 17.0, cap: "≈$2.9T", pe: "~35" },
+    { tk: "GOOGL", n: "Alphabet", p: 356.13, wk: "+11.4%", wkPct: 11.4, cap: "≈$4.3T", pe: "~27" },
+    { tk: "META", n: "Meta", p: 556.71, wk: "−6.5%", wkPct: -6.5, cap: "≈$1.4T", pe: "~28" },
+    { tk: "TSLA", n: "Tesla", p: 311.21, wk: "−0.6%", wkPct: -0.6, cap: "≈$1.0T", pe: "~297" }
   ],
-  mag7Read: "The Mag7 is no longer one trade. Cloud-monetizers (MSFT, AMZN) were rewarded; capex-spenders (GOOGL, META) and hardware (NVDA, AAPL) were punished. Intra-group dispersion is the widest in years — a stock-picker's tape hiding inside a cap-weighted index. Hedgeye's momentum signals agree: only MSFT bullish, AMZN neutral, the rest bearish/mixed. Data note: the source report verified only NVDA's close and the AAPL/NVDA caps; other closes and caps were flagged 'verify live', so prices above are reconstructed from last week's verified closes and the source's stated week moves. Alphabet's −15% and Tesla's move are the source's post-print reactions (both reported the prior week), so they overlap the 24 July entry — treat those two bars as reaction-to-print, not clean week-on-week.",
+  mag7Read: "The Mag7 is no longer one trade. Cloud-monetizers (MSFT, AMZN) were rewarded; capex-spenders (GOOGL, META) and hardware (NVDA, AAPL) were punished. Intra-group dispersion is the widest in years — a stock-picker's tape hiding inside a cap-weighted index. Hedgeye's momentum signals agree: only MSFT bullish, AMZN neutral, the rest bearish/mixed. Data note: prices are actual regular-session closes for the Friday shown and the week column is a true Friday-to-Friday close-over-close move, both taken from the market-data feed (EOD series) rather than from the source report, which could not verify them. This supersedes the earlier reconstructed figures: Alphabet and Tesla now show clean week-on-week moves rather than post-print reactions overlapping the 24 July entry. Market caps and P/Es are as carried in the source report and remain approximate.",
   sectors: [
     { n:"Energy (XLE)", m:"#1 weekly rank", pct:6.0, d:"Top weekly sector on the oil breakout (Brent +~20% in July); KM bought XLE and CRAK. Source gave rank, not a weekly %, so the bar is directional." },
     { n:"Health Care (XLV)", m:"+5.3% (Jul)", pct:5.3, d:"Led the daily ETF re-rank (+12); Hedgeye TREND bullish 159–168" },
@@ -774,13 +774,13 @@ const WEEKS = [
     where: "The TREND is bullish across US equity benchmarks, but the tape is stretched: the Nasdaq closed 26,691 against the very top of its range (26,701), the S&P (7,758) sits near its 7,826 ceiling, and Hedgeye's MOMO Tracker flags 8 of 9 Risk Ranges with downside greater than upside. Gold has broken above the top of its stated range (4,331) — confirming the phase transition — while VIX (bearish TREND) and the dollar (bearish) are cooperating with risk. Net: bullish TREND, poor immediate-term reward/risk at these levels. Buy the low end of ranges and trim the high end; with indices pinned to their ceilings, add through Quad3 winners (gold, software, healthcare, REITs) on pullbacks rather than chasing the benchmark here."
   },
   mag7: [
-    { tk:"NVDA", n:"Nvidia", p:223.96, wk:"+12.9%", wkPct:12.9, cap:"≈$5.42T", pe:"34.1×" },
-    { tk:"AAPL", n:"Apple", p:313.33, wk:"+2.8%", wkPct:2.8, cap:"≈$4.60T", pe:"35.8×" },
-    { tk:"GOOGL", n:"Alphabet", p:354.30, wk:"+4.0%", wkPct:4.0, cap:"≈$4.29T", pe:"17.6×" },
-    { tk:"MSFT", n:"Microsoft", p:499.99, wk:"+11.1%", wkPct:11.1, cap:"≈$3.71T", pe:"27.8×" },
-    { tk:"AMZN", n:"Amazon", p:274.48, wk:"+3.6%", wkPct:3.6, cap:"≈$2.95T", pe:"21.8×" },
-    { tk:"META", n:"Meta", p:592.10, wk:"+8.9%", wkPct:8.9, cap:"≈$1.51T", pe:"22.0×" },
-    { tk:"TSLA", n:"Tesla", p:328.58, wk:"+6.1%", wkPct:6.1, cap:"≈$1.30T", pe:"≈279×" }
+    { tk: "NVDA", n: "Nvidia", p: 223.96, wk: "+11.6%", wkPct: 11.6, cap: "≈$5.42T", pe: "34.1×" },
+    { tk: "AAPL", n: "Apple", p: 313.33, wk: "+1.4%", wkPct: 1.4, cap: "≈$4.60T", pe: "35.8×" },
+    { tk: "GOOGL", n: "Alphabet", p: 354.3, wk: "−0.5%", wkPct: -0.5, cap: "≈$4.29T", pe: "17.6×" },
+    { tk: "MSFT", n: "Microsoft", p: 499.99, wk: "+7.6%", wkPct: 7.6, cap: "≈$3.71T", pe: "27.8×" },
+    { tk: "AMZN", n: "Amazon", p: 274.48, wk: "+1.1%", wkPct: 1.1, cap: "≈$2.95T", pe: "21.8×" },
+    { tk: "META", n: "Meta", p: 592.1, wk: "+6.4%", wkPct: 6.4, cap: "≈$1.51T", pe: "22.0×" },
+    { tk: "TSLA", n: "Tesla", p: 328.58, wk: "+5.6%", wkPct: 5.6, cap: "≈$1.30T", pe: "≈279×" }
   ],
   mag7Read: "A software-and-silicon week. Microsoft (+11.1%) and Nvidia (+12.9%) did the heavy lifting, with Meta (+8.9%) and Tesla (+6.1%) joining the bounce; Apple (+2.8%) and Amazon (+3.6%) lagged. The YTD spread tells the real story — Nvidia (+20%), Amazon (+19%) and Apple (+15%) lead, while Meta (−10%) and Tesla (−27%) remain the group's problem children. Valuations are bifurcated: Alphabet screens cheapest at 17.6× and is the only 'value' name in the cohort; Tesla's ~279× keeps it in a category of one. Don't buy 'the Mag7' — buy the dispersion. The tape is rewarding earnings power (MSFT, NVDA) and re-rating a cheap compounder (GOOGL) while punishing story stocks (TSLA). Concentration risk is real: a handful of names still drive the bulk of index moves.",
   sectors: [
@@ -1038,15 +1038,15 @@ const WEEKS = [
     where: "SPX closed at 7,785.76 — in the upper half of the 7,606–7,861 bullish range, closer to the top than the bottom, which argues for trimming and trading rather than chasing. The Russell 2000, equal-weight (RSP) and software (IGV) are all bullish TREND, consistent with the small-cap and growth tilt; gold and copper are bullish, silver neutral. VIX is bearish (vol biased lower) but pinned near the 14-handle floor, and the dollar is bearish near the low end of its band. In short: the machine reads the same Quad shift Hedgeye does — own the broadening, but respect that several signals are stretched to the upside of their ranges. The regime breaks if the 2Y reclaims its TRADE line, the dollar breaks above ~100.1, or VIX recaptures ~16.4."
   },
   mag7: [
-    { tk:"NVDA", n:"Nvidia", p:225.00, wk:"−3.5% (Fri)", wkPct:-3.5, cap:"≈$4.9T", pe:"≈34×" },
-    { tk:"AAPL", n:"Apple", p:305.93, wk:"+0.2% (Fri)", wkPct:0.2, cap:"≈$4.6T", pe:"≈34×" },
-    { tk:"GOOGL", n:"Alphabet", p:343.54, wk:"−0.1% (Fri)", wkPct:-0.1, cap:"≈$4.1T", pe:"≈26×" },
-    { tk:"MSFT", n:"Microsoft", p:495.40, wk:"−0.3% (Fri)", wkPct:-0.3, cap:"≈$3.7T", pe:"≈36×" },
-    { tk:"AMZN", n:"Amazon", p:262.65, wk:"−0.9% (Fri)", wkPct:-0.9, cap:"≈$2.8T", pe:"≈38×" },
-    { tk:"META", n:"Meta", p:589.85, wk:"−0.9% (Fri)", wkPct:-0.9, cap:"≈$1.5T", pe:"≈27×" },
-    { tk:"TSLA", n:"Tesla", p:342.27, wk:"+0.7% (Fri)", wkPct:0.7, cap:"≈$1.1T", pe:"high" }
+    { tk: "NVDA", n: "Nvidia", p: 225.16, wk: "+0.5%", wkPct: 0.5, cap: "≈$4.9T", pe: "≈34×" },
+    { tk: "AAPL", n: "Apple", p: 305.93, wk: "−2.4%", wkPct: -2.4, cap: "≈$4.6T", pe: "≈34×" },
+    { tk: "GOOGL", n: "Alphabet", p: 345.9, wk: "−2.4%", wkPct: -2.4, cap: "≈$4.1T", pe: "≈26×" },
+    { tk: "MSFT", n: "Microsoft", p: 495.4, wk: "−0.9%", wkPct: -0.9, cap: "≈$3.7T", pe: "≈36×" },
+    { tk: "AMZN", n: "Amazon", p: 262.65, wk: "−4.3%", wkPct: -4.3, cap: "≈$2.8T", pe: "≈38×" },
+    { tk: "META", n: "Meta", p: 589.85, wk: "−0.4%", wkPct: -0.4, cap: "≈$1.5T", pe: "≈27×" },
+    { tk: "TSLA", n: "Tesla", p: 342.27, wk: "+4.2%", wkPct: 4.2, cap: "≈$1.1T", pe: "high" }
   ],
-  mag7Read: "The megacap complex is reshuffling at the very top even as leadership broadens beneath it. Apple's defensive quality reclaimed the most-valuable crown (+~22% YTD, the Mag7 leader) as Nvidia gave back ground (−3.5% Friday, only ~+7% YTD) and the chip trade cooled. Hedgeye's momentum work has MSFT, AMZN and NVDA bullish on TREND but Tesla still bearish. Combined Mag7 market cap is ~$23.7T (~33.9% of the S&P 500), yet the group is only ~+5% YTD versus a record-setting Russell 2000 — the message is clear: the index no longer needs the generals to advance. Note that weekly moves were not verifiable for the group, so single-day Friday moves are shown; market cap and P/E figures are approximate and should be confirmed live.",
+  mag7Read: "The megacap complex is reshuffling at the very top even as leadership broadens beneath it. Apple's defensive quality reclaimed the most-valuable crown (+~22% YTD, the Mag7 leader) as Nvidia gave back ground (−3.5% Friday, only ~+7% YTD) and the chip trade cooled. Hedgeye's momentum work has MSFT, AMZN and NVDA bullish on TREND but Tesla still bearish. Combined Mag7 market cap is ~$23.7T (~33.9% of the S&P 500), yet the group is only ~+5% YTD versus a record-setting Russell 2000 — the message is clear: the index no longer needs the generals to advance. Data note: prices are actual regular-session closes for the Friday shown and the week column is a true Friday-to-Friday close-over-close move, both taken from the market-data feed (EOD series) rather than from the source report, which could not verify them. This replaces the single-day Friday moves previously shown. Market caps and P/E figures are approximate and should be confirmed live.",
   sectors: [
     { n:"Energy (XLE)", m:"≈+6% WTD", pct:6.0, d:"Week's standout on the Hormuz oil bid — Brent ~$87, WTI ~$81, each up roughly 4% on the week" },
     { n:"Russell 2000 (small caps)", m:"+1.1%", pct:1.1, d:"Fresh record and a 4th straight up session; Hedgeye's 'quietly becoming the Quad 1 leadership trade'" },
@@ -1293,15 +1293,15 @@ const WEEKS = [
     where: "This week's price action — hard assets bid, long duration and rate-sensitive equities sold, dollar down — is the cleanest expression of a Quad 3 tilt with a debasement overlay. The signal favours gold, energy and increasingly Bitcoin over the long-duration equity complex. SPX at 7,674 sits mid-range in an indicative 7,560–7,800 band with a bearish tilt, while gold at $4,681 and Bitcoin at $78,309 are both pressing the top of theirs — momentum, but stretched. The regime shifts if a soft core PCE and a dovish-framework Warsh pull inflation expectations lower and let the long end rally; it gets worse if the 30Y keeps making two-decade highs and bond stress finally washes up onto equities. Reminder: these are indicative, derived ranges, not official Hedgeye levels.",
   },
   mag7: [
-    { tk: "NVDA", n: "Nvidia", p: null, wk: "—", wkPct: 0, cap: "$5.20T", pe: "—" },
-    { tk: "AAPL", n: "Apple", p: null, wk: "—", wkPct: 0, cap: "$4.54T", pe: "—" },
-    { tk: "GOOGL", n: "Alphabet", p: null, wk: "—", wkPct: 0, cap: "$4.17T", pe: "—" },
-    { tk: "MSFT", n: "Microsoft", p: null, wk: "—", wkPct: 0, cap: "$3.59T", pe: "—" },
-    { tk: "AMZN", n: "Amazon", p: null, wk: "—", wkPct: 0, cap: "$2.78T", pe: "—" },
-    { tk: "TSLA", n: "Tesla", p: null, wk: "—", wkPct: 0, cap: "$1.43T", pe: "—" },
-    { tk: "META", n: "Meta", p: null, wk: "—", wkPct: 0, cap: "$1.40T", pe: "—" }
+    { tk: "NVDA", n: "Nvidia", p: 214.72, wk: "−4.6%", wkPct: -4.6, cap: "$5.20T", pe: "—" },
+    { tk: "AAPL", n: "Apple", p: 309.35, wk: "+1.1%", wkPct: 1.1, cap: "$4.54T", pe: "—" },
+    { tk: "GOOGL", n: "Alphabet", p: 344.82, wk: "−0.3%", wkPct: -0.3, cap: "$4.17T", pe: "—" },
+    { tk: "MSFT", n: "Microsoft", p: 483.24, wk: "−2.5%", wkPct: -2.5, cap: "$3.59T", pe: "—" },
+    { tk: "AMZN", n: "Amazon", p: 258.63, wk: "−1.5%", wkPct: -1.5, cap: "$2.78T", pe: "—" },
+    { tk: "TSLA", n: "Tesla", p: 362.86, wk: "+6.0%", wkPct: 6.0, cap: "$1.43T", pe: "—" },
+    { tk: "META", n: "Meta", p: 549.9, wk: "−6.8%", wkPct: -6.8, cap: "$1.40T", pe: "—" }
   ],
-  mag7Read: "The complex went into the week soft and narrowing. The cloud trio (MSFT, AMZN, GOOGL) has carried recent leadership — together they added roughly $1.5tn of value in the late-July earnings run — while Apple (+~23% YTD, the 'AI without the capex bill' alternative) and Meta lagged, and the whole cohort de-risked ahead of Nvidia. With Nvidia now ~$5.2T and the single most important print of the quarter due 26 August (guide ~$91bn vs Street ~$93–95bn, ~+70% y/y), index direction for the back half of August is effectively hostage to one report and one speech. The tell to watch: whether a Nvidia beat can pull the group up against a rising-yield backdrop, or whether 'sell the generals' persists. Data note: market caps are from the data feed as of 21 August; per-name weekly % and P/E could not be confirmed via the premium-gated quote feed and are shown as — . Verify live.",
+  mag7Read: "Every name but Apple and Tesla fell, and the spread tells the story: Meta was the worst of the group at −6.8% to $549.90, Nvidia shed 4.6% to $214.72 as the tape de-risked into its 26 August print, and Microsoft gave back 2.5% to $483.24 — while Tesla ripped 6.0% to $362.86 and Apple eked out 1.1% to $309.35, the two names least exposed to the AI-capex question. Alphabet was effectively flat at −0.3%. That is a cohort being sold selectively rather than wholesale, and it maps onto the week's rotation: the AI-capex complex was cut, the 'AI without the capex bill' trade (Apple) and the narrative high-beta name (Tesla) were not. With Nvidia now ~$5.2T and the single most important print of the quarter due 26 August (guide ~$91bn vs Street ~$93–95bn, ~+70% y/y), index direction for the back half of August is effectively hostage to one report and one speech. The tell to watch: whether a Nvidia beat can pull the group up against a rising-yield backdrop, or whether 'sell the generals' persists. Data note: prices are actual regular-session closes for the Friday shown and the week column is a true Friday-to-Friday close-over-close move, both taken from the market-data feed (EOD series) rather than from the source report, which could not verify them. Market caps are from the data feed as of 21 August. P/E could not be retrieved (the ratios endpoint is subscription-gated) and is shown as — .",
   sectors: [
     { n: "Health Care", m: "best week since 26 Jun", pct: 3, d: "Moderna/Merck Phase 3 mRNA trial win drove the week's standout; +1.0% Friday" },
     { n: "Financials", m: "leader", pct: 1.5, d: "Led the Friday tape (+1.2%); value and cash-flow rotation beneficiary" },
