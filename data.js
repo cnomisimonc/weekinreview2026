@@ -1210,4 +1210,279 @@ const WEEKS = [
     cards: []
   }
 }
+,
+{
+  id: "2026-08-21",
+  weekEnding: "Friday 21 August 2026",
+  published: "Saturday 22 August 2026",
+  pdf: "reports/2026-08-21.pdf",
+  pdfName: "Global Week in Review_2026-08-22.pdf",
+  tldr: "A hard-asset week wrapped in a soft-equity tape. Scott Bessent's move to at least double the Treasury's long-end buybacks (from a ~$2bn cap toward $4bn+) lit a fuse on 19 August: the dollar sank to ~98.7 (−1% on the week, ~−2.4% MTD), gold rose 5.5% to $4,680.6 in a fifth straight weekly gain, silver 6.8% to $69.53, Brent 6.6% to $94.39 — and above all Bitcoin ripped 24.4% to $78,309 as more than $2.7bn of shorts were liquidated. Meanwhile the S&P fell 1.4% to 7,674.37 and the Nasdaq 2.1% to 26,180.45, de-risking into Nvidia's 26 August print and Kevin Warsh's Jackson Hole debut on 28 August. The tell: long yields still crept higher (10Y 4.74%, +6bp; 30Y ~5.27%, near a two-decade high) even as debasement trades screamed — the market is buying scarcity and selling duration at the same time. Leadership narrowed and rotated: healthcare had its best week since late June on the Moderna/Merck Phase 3 mRNA win, financials led Friday, while tech, REITs (−2.4% Fri) and utilities (−2.0% Fri) were sold. That is rotation, not liquidation — and it is the equity market agreeing with the Quad 3 message from bonds and commodities.",
+  metrics: {
+    spx: 7674.37,
+    nasdaq: 26180.45,
+    dow: 53277.01,
+    us10y: 4.74,
+    us2y: 4.24,
+    dxy: 98.7,
+    gold: 4680.6,
+    silver: 69.53,
+    brent: 94.39,
+    wti: 86.5,
+    btc: 78309,
+    vix: 15.1
+  },
+  snapshot: [
+    ["S&P 500", "7,674.37", "−1.4%", "Friday +0.4% bounce, but a down week; Jackson Hole jitters plus a tech drag"],
+    ["Nasdaq Composite", "26,180.45", "−2.1%", "Growth and tech led the fade into next week's Nvidia print"],
+    ["Dow Jones Ind.", "53,277.01", "−0.8%", "Relative winner; value, financials and health bid"],
+    ["US 10Y Treasury", "4.74%", "+6 bp", "Treasury-buyback relief faded; supply and inflation angst into Jackson Hole"],
+    ["US 2Y Treasury", "4.24%", "+7 bp", "Front end repriced a touch more hawkish; hike risk lingers. 2s10s ≈+50 bp"],
+    ["Dollar (DXY)", "≈98.7", "≈−1%", "Sank post-buyback; roughly −2.4% month-to-date. Web-sourced approximation"],
+    ["Gold (spot)", "$4,680.6", "+5.5%", "Fifth straight weekly gain; central-bank buying and the debasement bid"],
+    ["Silver (spot)", "$69.53", "+6.8%", "Outran gold; monetary plus industrial demand"],
+    ["Brent crude", "$94.39", "+6.6%", "Strait of Hormuz supply shock; back above $90"],
+    ["WTI crude", "≈$86.5", "≈+5%", "Second straight weekly gain on Iran and Hormuz. Web-sourced approximation"],
+    ["Bitcoin", "$78,309", "+24.4%", "Short squeeze plus buyback liquidity and the CLARITY Act push; >$2.7bn of shorts liquidated"],
+    ["VIX", "15.1", "from 14.3", "Intraweek spike near 16 — still a low-vol tape despite the risk-asset chop"]
+  ],
+  themes: [
+    {
+      t: "① The buyback bazooka reset the whole tape",
+      b: "On 19 August, Treasury Secretary Bessent said the Treasury would at least double its long-end buybacks (10Y–30Y) from a ~$2bn cap toward $4bn+, an explicit move to pull multi-year-high borrowing costs down. Yields dropped, then round-tripped by Thursday — but the dollar stayed down and every debasement asset caught a bid.",
+      r: "This is fiscal-dominance price action. When the sovereign signals it will manage its own curve, hold gold, silver, miners and Bitcoin as the release valve. The equity index is the wrong instrument to express it."
+    },
+    {
+      t: "② Bitcoin's 24% squeeze was the week's loudest signal",
+      b: "BTC ran from ~$63k to ~$79.5k — its biggest surge since March — as more than $2.7bn of shorts were liquidated, helped by the buyback liquidity impulse, a White House digital-assets meeting, Trump's push for the CLARITY Act and pointed comments from Bessent. Ether jumped as much as 12% on the biggest day.",
+      r: "A liquidation-fuelled vertical move is real demand meeting no supply, but it is also fragile. Respect the trend, size for a 15–20% air-pocket, and treat $80k as the line traders are defending."
+    },
+    {
+      t: "③ Gold's fifth straight weekly gain is structural, not a trade",
+      b: "Gold notched a fifth consecutive weekly advance to ~$4,681, with silver outrunning it at +6.8%. The macro engine: record central-bank buying (Q2 official purchases ~288.9t, +62% y/y), a softening dollar, and July CPI at 3.4% keeping the real-rate math friendly to non-yielders.",
+      r: "Own the metals as ballast, not as a tactical punt. The buyer of size here is not a momentum fund — it is central banks, and they do not ring the register on a 5% pop."
+    },
+    {
+      t: "④ Equities went sideways-to-down, and leadership narrowed",
+      b: "The S&P slipped 1.4% and the Nasdaq 2.1%, with tech, REITs and utilities the laggards as long yields firmed. The offset was defensives and value: healthcare had its best week since late June after Moderna and Merck reported a successful late-stage mRNA trial, and financials led Friday.",
+      r: "A market that sells its generals into a marquee earnings print while bidding pharma and banks is de-risking, not capitulating. Rotation, not liquidation — favour the barbell of real assets plus quality value."
+    },
+    {
+      t: "⑤ The oil bid is a geopolitics tax, not a demand boom",
+      b: "Brent rose 6.6% and WTI about 5% in a second straight weekly gain, driven entirely by the ongoing Strait of Hormuz crisis. Iran has effectively throttled the strait since February, and Iran–Oman reopening talks remained unresolved into the weekend.",
+      r: "Higher oil here is a supply-shock cost, not a growth signal — stagflationary at the margin. It lifts energy revenues but taxes the consumer and complicates the Fed. Keep energy exposure, but pair it with health and staples ballast."
+    },
+    {
+      t: "⑥ All eyes shift to Jackson Hole and Nvidia",
+      b: "The tape spent the week de-risking ahead of two events: Nvidia's Q2 FY27 report on 26 August (guide ~$91bn vs Street ~$93–95bn, ~+70% y/y) and Kevin Warsh's first Jackson Hole keynote as Fed Chair on 28 August. Warsh has signalled structural, not near-term, remarks — and independence from what markets are pricing.",
+      r: "Two binary catalysts land inside four sessions. Carry less gross into them than you would like to; the debasement basket is the cleaner way to stay long risk without single-stock or single-speech headline exposure."
+    }
+  ],
+  regime: {
+    label: "Quad 3 reasserting — stagflationary tilt with a debasement overlay",
+    note: "Hedgeye's published 2026 process moved Quad 3 → Quad 2, and the Hormuz supply shock has been reasserting stagflationary #Quad3 dynamics: inflation sticky or re-accelerating, growth slowing, the Fed on hold or forced to consider hikes. Their framework flags that the 10Y's 3-month correlation to the S&P has turned negative — rising yields are now a headwind for equities, exactly what this week showed. Source: Hedgeye published macro commentary (2Q26 themes; 'Flation Now, Stag-On-A-Lag'; monthly Quads). Note: the risk ranges below are indicative levels derived from this week's price and realised volatility, not official Hedgeye Risk Range™ numbers — the live Hedgeye table could not be verified for this date. Treat as directional and verify on Hedgeye before acting.",
+    ranges: [
+      ["S&P 500", "7,560 – 7,800", "Bearish"],
+      ["Nasdaq Comp", "25,700 – 26,850", "Bearish"],
+      ["US 10Y Yield", "4.60 – 4.80", "Bullish (yield)"],
+      ["Gold (spot)", "4,420 – 4,760", "Bullish"],
+      ["Silver (spot)", "63.5 – 70.5", "Bullish"],
+      ["Brent crude", "88 – 96", "Bullish"],
+      ["Bitcoin", "64,000 – 81,000", "Bullish"]
+    ],
+    where: "This week's price action — hard assets bid, long duration and rate-sensitive equities sold, dollar down — is the cleanest expression of a Quad 3 tilt with a debasement overlay. The signal favours gold, energy and increasingly Bitcoin over the long-duration equity complex. SPX at 7,674 sits mid-range in an indicative 7,560–7,800 band with a bearish tilt, while gold at $4,681 and Bitcoin at $78,309 are both pressing the top of theirs — momentum, but stretched. The regime shifts if a soft core PCE and a dovish-framework Warsh pull inflation expectations lower and let the long end rally; it gets worse if the 30Y keeps making two-decade highs and bond stress finally washes up onto equities. Reminder: these are indicative, derived ranges, not official Hedgeye levels.",
+  },
+  mag7: [
+    { tk: "NVDA", n: "Nvidia", p: null, wk: "—", wkPct: 0, cap: "$5.20T", pe: "—" },
+    { tk: "AAPL", n: "Apple", p: null, wk: "—", wkPct: 0, cap: "$4.54T", pe: "—" },
+    { tk: "GOOGL", n: "Alphabet", p: null, wk: "—", wkPct: 0, cap: "$4.17T", pe: "—" },
+    { tk: "MSFT", n: "Microsoft", p: null, wk: "—", wkPct: 0, cap: "$3.59T", pe: "—" },
+    { tk: "AMZN", n: "Amazon", p: null, wk: "—", wkPct: 0, cap: "$2.78T", pe: "—" },
+    { tk: "TSLA", n: "Tesla", p: null, wk: "—", wkPct: 0, cap: "$1.43T", pe: "—" },
+    { tk: "META", n: "Meta", p: null, wk: "—", wkPct: 0, cap: "$1.40T", pe: "—" }
+  ],
+  mag7Read: "The complex went into the week soft and narrowing. The cloud trio (MSFT, AMZN, GOOGL) has carried recent leadership — together they added roughly $1.5tn of value in the late-July earnings run — while Apple (+~23% YTD, the 'AI without the capex bill' alternative) and Meta lagged, and the whole cohort de-risked ahead of Nvidia. With Nvidia now ~$5.2T and the single most important print of the quarter due 26 August (guide ~$91bn vs Street ~$93–95bn, ~+70% y/y), index direction for the back half of August is effectively hostage to one report and one speech. The tell to watch: whether a Nvidia beat can pull the group up against a rising-yield backdrop, or whether 'sell the generals' persists. Data note: market caps are from the data feed as of 21 August; per-name weekly % and P/E could not be confirmed via the premium-gated quote feed and are shown as — . Verify live.",
+  sectors: [
+    { n: "Health Care", m: "best week since 26 Jun", pct: 3, d: "Moderna/Merck Phase 3 mRNA trial win drove the week's standout; +1.0% Friday" },
+    { n: "Financials", m: "leader", pct: 1.5, d: "Led the Friday tape (+1.2%); value and cash-flow rotation beneficiary" },
+    { n: "Consumer (value/defensive)", m: "higher", pct: 1, d: "Defensive and value names bid as long-duration growth was sold. Directional from source ordering" },
+    { n: "Energy", m: "mixed", pct: 0.5, d: "The commodity ripped (Brent +6.6%) but energy equities gave back ground on Friday" },
+    { n: "Utilities", m: "−2.0% Fri", pct: -2, d: "Rate-sensitive corner hit as long yields firmed" },
+    { n: "Real Estate", m: "−2.4% Fri", pct: -2.4, d: "The week's worst rate-sensitive casualty" },
+    { n: "Technology", m: "laggard", pct: -2.5, d: "Sold into the Nvidia print; long-duration growth against a rising long end" }
+  ],
+  sectorsRead: "Leadership rotated out of long-duration growth and rate-sensitives into cash-flow value and hard-asset cyclicals. Healthcare had its best week since 26 June on the Moderna/Merck mRNA trial win, financials led Friday (+1.2%) alongside healthcare (+1.0%), and value and defensive consumer names were bid. On the other side, technology was the clear laggard, with real estate (−2.4% Friday) and utilities (−2.0% Friday) hit hardest as long yields firmed. Energy was the odd one out: the commodity ripped but energy equities gave back ground into Friday. This is the equity market agreeing with the Quad 3 and debasement message coming from bonds and commodities. Favour the barbell — real assets plus quality value, underweight the rate-sensitive long-duration book. Data note: sector detail is Friday 21 August (NASDAQ-listed average change); the weekly rotation is corroborated by the healthcare 'best week since June' read.",
+  positioning: "VIX held a low 14–16 band all week, closing 15.1 with an intraweek spike near 16 — a market that is rotating, not panicking. But realised vol in single stocks (crypto-levered names, miners, energy) ran far hotter than the index, a classic sign of dispersion under a calm surface. Credit gave no warning: high-yield and investment-grade spreads were stable with no widening into the equity softness, and the buyback signal is if anything spread-supportive at the long end. The rates picture is where the stress sits — the 10Y ended at 4.74% (+6bp) and the 2Y at 4.24% (+7bp), with the long end (20Y ~5.25%, 30Y ~5.27%) sticky near two-decade highs, reflecting a supply and inflation term premium the buyback can cap but not erase. Net read: low index vol plus stable credit plus violent commodity and crypto moves means you express risk through the debasement basket and dispersion, not through naked index beta. If you want equity upside into Nvidia, define it with options rather than paying up for spot into a binary — with VIX at 15 and three tier-one events in five sessions, optionality is cheap.",
+  corporate: [
+    "Moderna (MRNA) / Merck (MRK): reported a successful late-stage Phase 3 mRNA trial, driving healthcare to its best week since late June — the week's clearest single-sector catalyst.",
+    "Nvidia (NVDA): Q2 FY27 earnings set for 26 August (after the close, ~5:00pm ET). Management guided ~$91bn revenue vs Street ~$93–95bn, roughly +70% y/y. The quarter's marquee catalyst, and the single most important print for index direction into month-end.",
+    "Cloud complex: Microsoft, Amazon and Alphabet added ~$1.5tn of combined value in the late-July earnings run on strong cloud growth; that leadership carried into August even as the broader tape softened.",
+    "Crypto and policy: a White House digital-assets meeting, Trump's push for the CLARITY Act and Bessent's comments underpinned the Bitcoin squeeze — more than $2.7bn of shorts liquidated as BTC ran from ~$63k to ~$79.5k.",
+    "Apple (AAPL): continued to trade as the 'AI without the capex bill' alternative, up ~23% YTD, though it lagged the cloud names this cycle.",
+    "On deck: a heavy week — Nvidia (Wed 26 Aug), Marvell, Salesforce, CrowdStrike, Workday and Synopsys on the AI and software side; Dick's, Abercrombie, Kohl's, Best Buy, Dollar General and Dollar Tree on the consumer side after the Walmart miss."
+  ],
+  macro: [
+    "US July CPI (released 12 Aug, framing the week): +0.1% m/m and 3.4% y/y, down from 3.5%; core +0.2% m/m and 2.5% y/y. Energy fell 1.5% m/m but is up 14.7% y/y (gasoline +24.6% y/y). Net: headline is cooling, but the energy base effect and the fresh oil shock keep the inflation fight unfinished — supportive of gold, awkward for the 'hikes are done' camp.",
+    "US July retail sales: −0.6% m/m, the sharpest drop since May 2025 and well below the +0.1% consensus. Net: the consumer is softening — the growth half of the stagflation-lite mix.",
+    "US housing starts, permits and industrial production (18 Aug) were secondary; initial jobless claims (20 Aug) pointed to a still-resilient labour market. Net: soft consumer plus resilient labour plus sticky-ish inflation gives Warsh cover to stay data-dependent and non-committal at Jackson Hole.",
+    "July FOMC minutes (19 Aug) were parsed for the hike-versus-hold debate — the meeting's central question was not whether to cut but whether the next move is up.",
+    "Rates expectations: post-data, some desks trimmed September hike odds toward ~32%, while prediction markets were more hawkish — Polymarket and Kalshi readings clustered 45–57% for a 25bp hike versus ~42–51% for no change into the 16 September FOMC. Net: the dispersion is the story. A genuinely two-sided Fed facing an oil shock is a volatility engine — keep optionality and do not marry a single rate path."
+  ],
+  geo: [
+    "Strait of Hormuz crisis — the dominant driver of oil. Iran has effectively throttled the strait since February; Trump posted an image labelling it 'New US Territory', while Iran–Oman talks toward a management agreement were reported as close but unresolved into the weekend. Brent finished at $94.39, up 6.6% on the week.",
+    "Ukraine–Russia: Ukraine expanded strikes further into Russia, and a European government document alleged Russia is shipping drone components, ammunition and TNT to Iran via the Caspian — a direct link between the two theatres.",
+    "Regional realignment: a Saudi–Turkey–Pakistan mutual-defence pact signed 7 August drew White House praise as an 'important first step', a notable Middle East security shift.",
+    "Prediction markets: beyond the Fed, Polymarket's August WTI event and Fed-decision markets were the most actively traded macro contracts; the September Fed market's hawkish tilt (~45–57% hike) is the number to watch.",
+    "Read: the geopolitical map is an oil-price floor and a gold tailwind. As long as Hormuz is contested, fade dips in energy and keep a structural metals allocation. The risk to that view is a sudden Iran–Oman deal that reopens the strait and knocks $5–10 off crude overnight.",
+    "Next catalysts: Nvidia's Q2 FY27 print on 26 August, core PCE on 26 August, and Jackson Hole on 27–29 August with Chair Warsh's first keynote on Friday 28 August — 19 days before the 16 September FOMC."
+  ],
+  recall: {
+    "window": "Mon 17 Aug – Sun 23 Aug 2026",
+    "readings": [
+      {
+        "t": "Raoul Pal: The Economic Singularity Is Coming by 2030 — Here's How to Position Now",
+        "d": "21 Aug",
+        "g": "Economics/Investing",
+        "u": "https://www.youtube.com/watch?v=LzoyaoYKUns",
+        "x": "Intro Artificial intelligence is characterized as the most significant discovery in human history, representing an unstoppable force despite the difficulty of its development and implementation. The rapid expansion of artificial intelligence is absorbing liquidity, which is creating challenges within the cryptocurrency market. Current economic conditions are being compared to the 2008 financial crisis, resulting in substantial opportunity costs.…"
+      },
+      {
+        "t": "Solid_Ground_26_08_18_The Shock Of 26: “It’s The Political Economy, Stupid.’",
+        "d": "19 Aug",
+        "g": "Economics/Investing",
+        "u": "",
+        "x": "The Shock of 26 and Financial Repression Russell Napier, author of the newsletter The Solid Ground, asserts that the world is currently experiencing the \"Shock of 26,\" a period characterized by slowing economic growth in the developed world alongside rising bond yields. Napier identifies three primary drivers for the rise in bond yields: a temporary increase caused by higher oil prices, a structural shift involving competition for capital between…"
+      },
+      {
+        "t": "Is the Gold-Silver Ratio Relevant Today",
+        "d": "19 Aug",
+        "g": "Economics/Commodities",
+        "u": "",
+        "x": "Modern Relevance of the Gold-Silver Ratio The document explores the historical and modern relevance of the gold-silver ratio, noting that while these metals are not inherently money, they have historically functioned as such and remain monetary assets even under fiat currency regimes. The gold-silver ratio was considered a primary financial indicator from at least 3000 BCE through the 19th century, though its profile diminished following the aban…"
+      }
+    ],
+    "cards": []
+  },
+  ahead: {
+    published: "Sunday 23 August 2026",
+    weekOf: "Mon 24 August 2026",
+    pdf: "reports/2026-08-21-ahead.pdf",
+    pdfName: "Global Week Ahead_2026-08-23.pdf",
+    tldr: "A five-day gauntlet decides whether the summer AI rally survives contact with a stressed bond market. NVIDIA earnings (Wed after the close) and Fed Chair Warsh's Jackson Hole debut (Fri) bracket the week, with core PCE (Wed) in between — all against a Quad 3 backdrop of slowing growth and re-accelerating inflation as Brent holds above $90 on the Iran standoff and the 30Y yield sits near a two-decade high. Treasury has doubled long-dated buybacks to $4bn+ per operation to steady the tape, but duration supply lands all week: 2Y ($69bn Tue), 5Y ($70bn Wed), 7Y ($44bn Thu). Long-duration tech is the most exposed; gold, energy, defensives and equal-weight are where the regime points. VIX at 15.4 is cheap given three tier-one events in five sessions.",
+    setup: [
+      ["S&P 500", "7,674", "+0.4%", "3rd straight weekly loss; Hedgeye range 7,610–7,835"],
+      ["Nasdaq Comp.", "≈26,170", "+0.4%", "NVDA (Wed) is the week's swing factor. Approximate close — verify live"],
+      ["Dow Jones Ind.", "≈53,260", "+0.9%", "+~500pts Friday; snapped a 3-day skid. Approximate close — verify live"],
+      ["Russell 2000", "3,006", "+0.5%", "Small caps leading the bounce"],
+      ["US 10Y yield", "4.71%", "≈flat", "30Y at a ~2-decade high — long-end stress is the story"],
+      ["US 2Y yield", "4.24%", "+4 bp", "Bear-steepening; front end anchored"],
+      ["Dollar (DXY)", "98.8", "−0.3%", "~3-month low; yen and peso intervention chatter"],
+      ["Gold (spot)", "$4,645", "+1.6%", "Broke above the top of its risk range — momentum, but stretched"],
+      ["Silver (spot)", "$69", "−1.9%", "TREND still bullish (64–71)"],
+      ["WTI crude", "$86.5", "−0.3%", "2nd weekly gain; Iran premium intact"],
+      ["Brent crude", "$93.6", "−0.2%", ">$90 on Strait of Hormuz risk"],
+      ["Bitcoin", "$77,300", "+7.7%", "Treasury buybacks plus the CLARITY Act push"],
+      ["VIX", "15.4", "−3.7%", "Cheap into NVDA, PCE and Jackson Hole"]
+    ],
+    setupNote: "Levels are Friday 21 August closes with the day move shown; the S&P 500 close is confirmed, while Nasdaq and Dow are approximate closes reconciled from intraday and prior-session data. Risk ranges are Hedgeye immediate-term signals from the 21 August Early Look. Verify live prices and confirm scheduled times before acting.",
+    themes: [
+      {
+        t: "NVIDIA earnings (Wed, after the close) — the AI referendum",
+        b: "Guidance was framed at ~$91bn for the quarter; the Street is closer to $93–95bn. The read on the Blackwell ramp, the Rubin roadmap, data-centre demand and China is the single biggest driver of the week's tape.",
+        w: "Options imply a large post-print move. A beat-and-raise revives breadth; a soft data-centre or China line hits the whole complex. Semis (SNDK, MU, MRVL) are the tell."
+      },
+      {
+        t: "Jackson Hole — Warsh's debut (Fri)",
+        b: "Kevin Warsh's first keynote as Fed Chair, in office since 22 May. The 2026 theme is 'Financial Innovation — Implications for Payments and Policy'. He has flagged a big-picture framework talk and that the Fed is 'not constrained by market prices'.",
+        w: "Any hawkish-independence signal against a stagflationary backdrop. A framework-heavy speech that downplays near-term cuts would lift the dollar and pressure long-duration equities."
+      },
+      {
+        t: "The bond market is the boss",
+        b: "The 30Y yield sits near its highest in roughly two decades; Treasury doubled long-dated buybacks to $4bn+ per operation to steady the tape. Supply lands Tuesday (2Y, $69bn), Wednesday (5Y, $70bn) and Thursday (7Y, $44bn).",
+        w: "Auction tails or another leg up in the long end would override good news elsewhere — that is the mechanism that finally lets bond stress wash up to stocks."
+      },
+      {
+        t: "Core PCE (Wed)",
+        b: "Consensus is around +0.2% m/m with core y/y near 3.3%. With oil surging, an upside surprise validates the stagflation call and lifts hike odds.",
+        w: "A hot print plus a hawkish Warsh plus a strong NVDA is the messy good-news-is-bad-news combination; a soft print is the relief valve."
+      },
+      {
+        t: "Oil and Iran — the inflation impulse",
+        b: "Brent is above $90 on a reinstated blockade, threats of the 'toughest financial penalties in history' and an 'economic D-Day', with Strait of Hormuz risk unresolved. Energy is the transmission belt into CPI and PCE.",
+        w: "A run at $100 Brent would be an outright macro shock; XLE stays a regime-consistent long. Any de-escalation headline is the fade risk."
+      },
+      {
+        t: "Regime check — Quad 3",
+        b: "Growth slowing, inflation re-accelerating. That points to commodities, gold and silver, defensives (XLV) and equal-weight or value over crowded long-duration growth.",
+        w: "Leadership rotation. If gold and equal-weight (RSP) hold up while high-beta momentum keeps bleeding, the Quad 3 script is playing out."
+      }
+    ],
+    calendar: [
+      ["Mon 24", "US Chicago Fed National Activity Index (Jul). Asia and China quiet.", "Low-impact opener; a positioning day before the gauntlet"],
+      ["Tue 25", "US Consumer Confidence (Aug); New Home Sales (Jul); Case-Shiller 20-city (Jun); Richmond Fed. 2Y note auction $69bn (≈01:00 Wed GMT+8).", "The consumer read post-Walmart miss, plus the first supply test of a stressed curve"],
+      ["Wed 26", "US core PCE (Jul, cons. +0.2% m/m / ~3.3% y/y); Personal Income & Spending; Q2 GDP 2nd estimate. 5Y auction $70bn. NVIDIA after the close.", "The Fed's preferred inflation gauge and the AI bellwether land on the same day — the week's fulcrum"],
+      ["Thu 27", "US jobless claims; Advance Goods Trade (Jul); KC Fed Manufacturing. 7Y auction $44bn. Jackson Hole opens (evening ET).", "Labour tell, the final duration auction, and the symposium tone-setting"],
+      ["Fri 28", "Jackson Hole — Warsh keynote (Friday AM ET ≈ evening GMT+8); UMich final and inflation expectations. Japan: Tokyo CPI (Aug).", "The policy event of the week, with an Asia inflation cross-check"]
+    ],
+    cbs: [
+      ["US Federal Reserve", "No FOMC this week (next decision 15–16 Sep); the signal comes from Jackson Hole, 27–29 Aug", "On hold; Polymarket ~88.8% odds of zero Fed cuts in 2026, with September leaning no-change and a live hike tail", "Warsh's first keynote as Chair — how much does he downplay near-term cuts, and where is the daylight with the White House rate stance?"],
+      ["Kansas City Fed", "Jackson Hole Symposium — Thu 27 to Sat 29 Aug; keynote Fri 28 Aug", "Theme: 'Financial Innovation — Implications for Payments and Policy'", "The market's first real look at the Warsh framework, 19 days before the 16 September FOMC"],
+      ["US Treasury", "Buyback operations doubled to $4bn+; auctions 2Y Tue ($69bn), 5Y Wed ($70bn), 7Y Thu ($44bn)", "Buybacks capping the long end; heavy duration supply against it", "Can the buyback absorb the supply, or do auction tails push the 30Y to fresh two-decade highs?"],
+      ["Bank of Japan", "Tokyo CPI (Aug) on Fri 28 Aug", "No meeting; policy commentary only", "Yen-intervention chatter is live — USD/JPY into Tokyo CPI is the FX event of the week"]
+    ],
+    earnings: [
+      ["Wed 26", "NVIDIA (NVDA, after the close)", "The marquee print. Guide ~$91bn vs Street ~$93–95bn; Blackwell ramp, Rubin roadmap, data-centre demand and China are the swing factors"],
+      ["Through the week", "Salesforce (CRM), CrowdStrike (CRWD), Workday (WDAY), Autodesk (ADSK), Synopsys (SNPS), Okta, Veeva, Nutanix, Elastic, SentinelOne, HPQ", "The AI-spend and enterprise-software pulse around the Nvidia print"],
+      ["Thu 27", "Marvell (MRVL)", "The semis confirm-or-refute on whatever NVDA delivers"],
+      ["Through the week", "Dick's (DKS), Abercrombie (ANF), Kohl's (KSS), Williams-Sonoma (WSM), Ulta (ULTA), Dollar General (DG), Dollar Tree (DLTR), Best Buy (BBY), Burlington, Gap", "Post-Walmart-miss: is the consumer cracking, or were Walmart's soft comps company-specific?"],
+      ["Through the week", "Canadian banks (RY, TD, BNS, BMO, CM), Intuit (INTU), Zoom, Affirm (AFRM), Li Auto (LI), PDD", "Credit and consumer-finance read, plus the China consumer via LI and PDD"]
+    ],
+    catalysts: [
+      "NVIDIA Q2 FY27, Wed 26 Aug after the close — the week's dominant single-stock catalyst and the index's swing factor.",
+      "US core PCE, Wed 26 Aug — the Fed's preferred gauge, consensus ~+0.2% m/m and ~3.3% y/y core, landing the same day as NVDA.",
+      "Jackson Hole Symposium, Thu 27 to Sat 29 Aug — Warsh keynote Friday 28 August, his first as Chair.",
+      "Treasury auctions: 2Y ($69bn, Tue), 5Y ($70bn, Wed), 7Y ($44bn, Thu) — duration supply into a fragile long end.",
+      "Conferences: Jefferies Semis, IT Hardware & Comm Tech (25–26 Aug, Chicago); Stifel Tech Executive Summit (25–26 Aug, Deer Valley).",
+      "Crypto policy: the Senate push on the CLARITY Act market-structure bill — a live driver behind the Bitcoin surge.",
+      "Month-end Monday 31 Aug: pension and rebalancing flows build late week, with China's August PMIs the same day."
+    ],
+    regime: {
+      label: "#Quad 3 — growth slowing, inflation accelerating",
+      note: "Explicitly the frame in Hedgeye's recent Early Looks ('#Quad3 Bonds, Oil, Consumer…', 18 Aug). Source: Hedgeye Early Look, 'A Parable Of An Old Fisherman', 21 August 2026 (Sam Rahman). Ranges below are immediate-term.",
+      ranges: [
+        ["UST 10Y Yield", "4.64 – 4.74", "Bullish"],
+        ["High Yield (HYG)", "79.41 – 79.83", "Bullish"],
+        ["IG Corp (LQD)", "105.4 – 106.8", "Bearish"],
+        ["S&P 500 (SPX)", "7,610 – 7,835", "Bullish"],
+        ["Nasdaq Comp (COMPQ)", "25,813 – 26,798", "Bullish"],
+        ["Russell 2000 (RUT)", "2,976 – 3,073", "Bullish"],
+        ["Health Care (XLV)", "168 – 176", "Bullish"],
+        ["S&P Equal-Weight (RSP)", "219.0 – 225.0", "Bullish"],
+        ["Tech-Software (IGV)", "99.0 – 107.0", "Bullish"],
+        ["Volatility (VIX)", "13.90 – 16.54", "Bearish"],
+        ["US Dollar (DXY)", "98.24 – 99.91", "Bearish"],
+        ["WTI Crude", "81.25 – 87.92", "Bullish"],
+        ["Natural Gas", "2.62 – 2.91", "Bearish"],
+        ["Gold (spot)", "4,322 – 4,617", "Bullish"],
+        ["Copper (spot)", "6.46 – 6.70", "Bullish"],
+        ["Silver (spot)", "64 – 71", "Bullish"]
+      ],
+      where: "The map is Quad-3 constructive on hard assets — gold, silver, copper and WTI all bullish — plus defensives and equal-weight, and bearish on the dollar, on IG duration (LQD) and on volatility. In short: own the inflation, fade the dollar and long-duration IG. Gold has already broken above the top of its range, a momentum signal but also a stretched one. What would change it: the regime flips if growth data (PCE, confidence, claims) soften enough to pull inflation expectations lower — a shift toward Quad 4 — or if a hawkish Warsh plus a hot PCE drives the long end sharply higher and breaks the equity ranges to the downside. Tells: the 30Y yield, USD/JPY, gold, semis breadth and whether the high-beta momentum bleed stabilises."
+    },
+    positioning: "Crowded: mega-cap AI and semis into NVDA, plus the long-USD unwind. Hedgeye's high-beta momentum basket was collapsing (−7.3% day-on-day) on 20 August — momentum is being taken out. Stretched: long-duration tech against a rising long end, and gold above the top of its risk range. Volatility and credit: VIX ~15.4 is cheap given three tier-one events in five days, so optionality is inexpensive; credit is split, with HYG bullish and LQD bearish — high yield resilient, investment grade hurt by duration. Rates: 10Y 4.71% inside 4.64–4.74 with TREND up, 2Y 4.24%, a bear-steepener with the 30Y near a two-decade high. FX: DXY ~98.8 near a three-month low inside a bearish 98.24–99.91 band, with official yen and peso intervention talk in the mix; a hawkish Warsh is the dollar's upside catalyst. Tells to watch: the 30Y yield, USD/JPY, gold, semis breadth (SNDK, MU, MRVL), and whether the high-beta momentum bleed stabilises or accelerates.",
+    geo: [
+      "US–Iran is the dominant thread: a reinstated blockade, threats of the 'toughest financial penalties in history' and an 'economic D-Day', with Iran vowing a 'devastating' response and signing a preferential trade deal with Oman. The administration's stated aim is maximum economic pressure to avoid a large-scale kinetic restart.",
+      "Market channel: oil and the Strait of Hormuz. Any supply-disruption headline is an inflation and volatility catalyst; any de-escalation is the risk-on fade.",
+      "Prediction markets: Polymarket at roughly 88.8% for zero Fed cuts in 2026 reflects the oil-inflation bind. Also live: the Senate CLARITY Act crypto vote. Verify odds live.",
+      "Read: as long as Hormuz is contested, the oil floor and the gold tailwind both hold. The single biggest tail risk to the bullish-commodity view is a sudden Iran–Oman deal."
+    ],
+    asia: "Asia should open modestly firmer on Friday's Wall Street rebound and the Treasury-buyback backstop, but with conviction capped ahead of NVDA and Jackson Hole. KOSPI remains a Hedgeye favourite (KM's Top 3, 21 Aug), and Korean and Taiwanese semis will trade off the NVDA setup. Watch USD/JPY and the JGB long end — global bond stress is not just a US story — with gold and energy names bid and Chinese equities in focus into month-end and the 31 August PMIs. The Nikkei stays sensitive to yen-intervention talk. Note China's official August PMIs publish Monday 31 August, just outside this window but a key month-end marker.",
+    beyond: [
+      "US Open Tennis (New York): Fan Week 23–29 August; the main singles draw opens Sunday 30 August — billed as the longest edition in tournament history.",
+      "Games: Metal Gear Solid Master Collection Vol. 2 and Star Wars Zero Company (27 Aug); Elden Ring Tarnished Edition on Switch 2 and Captain Tsubasa II (28 Aug).",
+      "Film: a late-August theatrical slate including new horror and genre releases; confirm local dates.",
+      "Econ-culture: Jackson Hole doubles as the calendar's marquee gathering — the economics world's late-summer set piece."
+    ]
+  }
+}
 ];
