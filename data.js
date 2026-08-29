@@ -1484,5 +1484,246 @@ const WEEKS = [
       "Econ-culture: Jackson Hole doubles as the calendar's marquee gathering — the economics world's late-summer set piece."
     ]
   }
+},
+{
+  id: "2026-08-28",
+  weekEnding: "Friday 28 August 2026",
+  published: "Saturday 29 August 2026",
+  pdf: "reports/2026-08-28.pdf",
+  pdfName: "Global Week in Review_2026-08-29.pdf",
+  tldr: "Equities ground higher on a blockbuster NVIDIA print — but the tape's real story was a hawkish repricing. A firm July PCE (3.7% headline / 3.3% core) and a hawkish Chair Warsh at Jackson Hole pushed the 2-year yield up 10 bp to 4.34%, lifted the dollar to ~99.6, and knocked gold −3.2% and Brent −6.7%. Leadership rotated out of NVIDIA and semis into software and the rest of mega-cap (MSFT +6.3%, META +5.1%). Rate-cut hopes are gone; the market now prices hike risk into year-end. Beneath a complacent 14.4 VIX, it was the safe-haven and commodity trades that took the pain.",
+  metrics: {
+    spx: 7711.76,
+    nasdaq: 26402.42,
+    dow: 53559.99,
+    us10y: 4.73,
+    us2y: 4.34,
+    dxy: 99.6,
+    gold: 4529.9,
+    silver: 67.79,
+    brent: 88.1,
+    wti: 82.8,
+    btc: 77820,
+    vix: 14.43
+  },
+  snapshot: [
+    ["S&P 500", "7,711.76", "+0.5%", "Fourth up-week in five; grinding toward the 7,817 cycle high"],
+    ["Nasdaq Composite", "26,402.42", "+0.9%", "Led by software and mega-cap; semis wobbled into Friday"],
+    ["Dow Jones Ind.", "53,559.99", "+0.5%", "Quiet and steady; a three-day win streak mid-week"],
+    ["US 10Y Treasury", "4.73%", "−1 bp", "Flat on the week but ~9 bp off Tuesday's 4.64% low"],
+    ["US 2Y Treasury", "4.34%", "+10 bp", "Hawkish repricing; 2s10s flattened to ≈+39 bp"],
+    ["Dollar (DXY)", "≈99.6", "+0.7%", "Firmer post-Jackson Hole; EUR/USD −0.8% to 1.1582. Approximation"],
+    ["Gold (spot)", "$4,529.9", "−3.2%", "Violent Friday reversal (−2.9%) as real yields and the dollar rose"],
+    ["Silver (spot)", "$67.79", "−2.5%", "Followed gold lower; still above its 50-day"],
+    ["Brent crude", "$88.10", "−6.7%", "War premium bled out on Hormuz reopening hopes"],
+    ["WTI crude", "≈$82.8", "≈−6%", "Tracked Brent lower on de-escalation signals. Approximation"],
+    ["Bitcoin", "$77,820", "−0.7%", "Flat week, wild intraweek (73k–80k–78k); ~38% off the highs"],
+    ["VIX", "14.43", "−0.70 pt", "Complacent; no stress despite the commodity air-pocket"]
+  ],
+  themes: [
+    {
+      t: "① NVIDIA delivered — and the AI capex story got bigger, not smaller",
+      b: "Q2 revenue of $96.2bn (+106% y/y) with data-centre revenue a record $89.0bn (+117% y/y), non-GAAP EPS $2.22 and 75% gross margin. Guidance pointed to ~70% revenue growth next year, roughly double consensus, and CFO Kress flagged top-5 hyperscaler capex rising to ~$1.3tn in 2027 from ~$800bn in 2026. The stock jumped ~8% on the print, then gave back 4.6% on Friday.",
+      r: "The fundamental all-clear is intact; Friday's fade was positioning, not thesis. 'Sell-the-news' in NVDA is a rotation signal, not a top signal — stay long the AI complex but broaden beyond the one name."
+    },
+    {
+      t: "② Jackson Hole went hawkish — the Fed put is struck lower",
+      b: "Chair Kevin Warsh used the symposium to flag still-elevated inflation and pointedly declined to offer dovish forward guidance. No pivot, no comfort. Fed funds have sat at 3.50–3.75% since late 2025, and forwards now imply a year-end rate near 3.90% — i.e. the next move is as likely to be a hike as a cut.",
+      r: "Fade rate-cut trades. Favour quality balance sheets and cash-flow generation over long-duration hope stories, and keep duration short until the front end settles."
+    },
+    {
+      t: "③ Inflation is sticky exactly where it hurts — services",
+      b: "July PCE held at 3.7% headline and 3.3% core, both a touch hot at +0.2% m/m. Services prices re-accelerated to +0.3% while goods fell −0.1%. The last mile is not happening on schedule, and the services component is the one the Fed cannot dismiss as base effects or tariffs.",
+      r: "Real-asset hedges still make structural sense, but this week proved they are not immune to a hawkish-Fed plus strong-dollar squeeze. Own them for the cycle, not for the month."
+    },
+    {
+      t: "④ The safe-haven and commodity unwind was the week's biggest move",
+      b: "Gold fell 3.2% to $4,530 (−2.9% on Friday alone), silver 2.5% to $67.79 and Brent 6.7% to $88.10. Higher real yields, a firmer dollar and a fading Middle East war premium hit everything defensive and inflation-linked at the same time. Crude's fall was mostly geopolitical — hopes of a Strait of Hormuz reopening let the premium deflate.",
+      r: "Crowded reflation and haven longs got flushed. This is a positioning cleanse inside an intact uptrend, not a regime change — but respect the momentum break in metals near-term and size for two-way volatility."
+    },
+    {
+      t: "⑤ Leadership is broadening beyond the one chip name",
+      b: "Software (MSFT +6.3%), platforms (META +5.1%, AMZN +3.0%) and even Apple (+3.4%) outpaced NVIDIA (+1.3%), while Tesla lagged at −3.9%. Friday's rotation dumped rate-sensitives: REITs −3.1% and utilities −1.6%.",
+      r: "A healthier tape internally — breadth beyond one name is what sustains an index at highs. But watch the rate-sensitives: they are the tell if the 2Y keeps climbing."
+    },
+    {
+      t: "⑥ Growth is fine, not great — which is why the Fed can stay hawkish",
+      b: "Q2 GDP's second estimate held at +1.5% annualised, and initial jobless claims fell to 203k, below the 208k estimate. Resilient but sub-2%: soft enough to slow, firm enough to remove the Fed's excuse to ease.",
+      r: "A resilient-but-slowing economy plus sticky inflation is the textbook late-cycle setup. Own quality, keep duration short, and do not chase the most speculative cohort."
+    }
+  ],
+  regime: {
+    label: "Quad 3 with a hawkish-policy override — growth slowing, inflation sticky",
+    note: "This week's data — growth decelerating (Q2 GDP +1.5% and softening) with inflation sticky-to-firming (PCE services re-accelerating) — sits squarely in Hedgeye's Quad 3 neighbourhood. The twist is that Quad 3's classic playbook (gold first, bonds bid, long yields lower) was overridden by a hawkish Fed: a market pricing hikes crushed gold and lifted the front end. That policy overlay is the single most important variable to watch. Verification note: Hedgeye's proprietary daily Risk Ranges and its current-week Quad nowcast are subscriber-only and could not be independently verified for the week ending 28 August 2026. The regime read applies Hedgeye's published GIP framework to this week's verified data; the ranges below are desk-estimated from realised weekly highs and lows and 50-/200-day trend anchors — indicative, not official Hedgeye levels.",
+    ranges: [
+      ["S&P 500", "7,610 – 7,815", "Bullish"],
+      ["Nasdaq Comp", "25,900 – 26,700", "Bullish"],
+      ["US 10Y Yield", "4.58 – 4.78", "Bullish (yields higher)"],
+      ["Gold (spot)", "4,470 – 4,700", "Neutral / breaking"],
+      ["Silver (spot)", "66.5 – 72.0", "Neutral"],
+      ["Brent crude", "85 – 95", "Bearish"],
+      ["Bitcoin", "72,000 – 81,000", "Bearish"]
+    ],
+    where: "Indices sit above both their 50- and 200-day trend lines — the equity TREND is bullish and intact, with the S&P's 50-day at 7,558 and 200-day at 7,114 against a 7,712 close. The stress is in real assets and crypto: gold has snapped back toward its 200-day (4,595) from a 50-day of 4,228, and Bitcoin at $77,820 remains below both its 50-day (66.4k, now support) and its highs with a bearish TREND. Net: stay constructive on US large-cap equity, respect the broken momentum in metals, and keep the front end of the curve as the risk gauge. What changes it: a further 2Y grind higher would force a de-rating in the longest-duration equity pockets; a genuine labour-market crack would flip the Fed dovish and hand the metals back their bid. Reminder — these are indicative, desk-derived ranges, not official Hedgeye levels."
+  },
+  mag7: [
+    { tk: "NVDA", n: "Nvidia", p: 217.55, wk: "+1.3%", wkPct: 1.3, cap: "$5.27T", pe: "~27x" },
+    { tk: "AAPL", n: "Apple", p: 319.7, wk: "+3.3%", wkPct: 3.3, cap: "$4.70T", pe: "~36x" },
+    { tk: "GOOGL", n: "Alphabet", p: 346.59, wk: "+0.5%", wkPct: 0.5, cap: "$4.19T", pe: "~17x" },
+    { tk: "MSFT", n: "Microsoft", p: 513.53, wk: "+6.3%", wkPct: 6.3, cap: "$3.81T", pe: "~28x" },
+    { tk: "AMZN", n: "Amazon", p: 266.43, wk: "+3.0%", wkPct: 3.0, cap: "$2.87T", pe: "~21x" },
+    { tk: "TSLA", n: "Tesla", p: 348.75, wk: "−3.9%", wkPct: -3.9, cap: "$1.38T", pe: "~296x" },
+    { tk: "META", n: "Meta", p: 578.02, wk: "+5.1%", wkPct: 5.1, cap: "$1.47T", pe: "~22x" }
+  ],
+  mag7Read: "The tell this week was mega-cap broadening. Money left the crowded NVIDIA trade — up just 1.3% to $217.55 despite a blowout quarter, having run to $228 on Thursday before shedding 4.6% on Friday — and spread into Microsoft (+6.3% to $513.53, the week's leader), Meta (+5.1% to $578.02), Amazon (+3.0% to $266.43) and even Apple (+3.3% to $319.70, near its $344.57 52-week high). Alphabet was the quiet one at +0.5% to $346.59, and remains the cheapest of the group at ~17x. Tesla was the odd one out, −3.9% to $348.75 on the richest multiple in the cohort (~296x) and the thinnest earnings support. The index making highs while the single most-owned name underperforms is a healthy internal signal, not a warning — it is what breadth looks like when it arrives. Meta is still ~27% below its $790.80 high, which makes it the cheapest re-rating candidate if the ad cycle holds. Data note: prices are actual regular-session closes for Friday 28 August and the week column is a true Friday-to-Friday close-over-close move, both taken from the market-data feed (EOD series). Market caps and trailing P/E are as reported in the source document (P/E derived from TTM earnings yield) and are approximate.",
+  sectors: [
+    { n: "Communication Services", m: "+1.45% Fri", pct: 1.45, d: "Alphabet and Meta strength; the week's cleanest leadership" },
+    { n: "Consumer Cyclical", m: "+0.88% Fri", pct: 0.88, d: "Amazon-led; consumer resilient on low jobless claims" },
+    { n: "Consumer Defensive", m: "+0.43% Fri", pct: 0.43, d: "Mild bid — not a fear rotation" },
+    { n: "Basic Materials", m: "+0.17% Fri", pct: 0.17, d: "Held up despite the metals sell-off" },
+    { n: "Financials", m: "+0.01% Fri", pct: 0.01, d: "Flat; a steeper front end nets out" },
+    { n: "Industrials", m: "−0.49% Fri", pct: -0.49, d: "Gave back ground with higher yields" },
+    { n: "Technology", m: "−0.62% Fri", pct: -0.62, d: "Semis and NVDA dragged Friday even as software led the week" },
+    { n: "Healthcare", m: "−1.30% Fri", pct: -1.3, d: "Weak; no defensive haven bid this week" },
+    { n: "Energy", m: "−1.41% Fri", pct: -1.41, d: "Crude −6.7% on the week hit the complex" },
+    { n: "Utilities", m: "−1.63% Fri", pct: -1.63, d: "Rate-sensitive; hurt by the 2Y jump" },
+    { n: "Real Estate", m: "−3.12% Fri", pct: -3.12, d: "Biggest laggard — pure duration pain" }
+  ],
+  sectorsRead: "Leadership rotated toward growth and platforms and away from anything rate-sensitive. Friday 28 August's sector tape is the cleanest illustration: communication services +1.45% and consumer cyclical +0.88% at the top, real estate −3.12%, utilities −1.63% and energy −1.41% at the bottom. That is a rate-repricing day, not a growth scare — healthcare's −1.30% with no defensive bid confirms it. The Hedgeye-style tell: with the 2Y rising 10 bp on the week, own the balance-sheet-rich compounders and underweight REITs, utilities and long-duration defensives until the front end settles. Data note: the percentages shown are Friday 28 August sector moves as reported in the source document; the weekly rotation read (software and platforms leading, semis fading) is corroborated by the Mag7 spread.",
+  positioning: "VIX at 14.43, down 0.70 pt on the week and pinned in the low-14s — remarkably calm given gold fell ~3% and crude ~7% in the same five sessions. The volatility complex is treating the commodity air-pocket as idiosyncratic rather than systemic. Credit was orderly: high-yield and investment-grade spreads held near cycle tights with no notable widening, consistent with the low-VIX signal. The stress that does exist sits in rates — the 2Y up 10 bp to 4.34% against a 10Y flat at 4.73%, flattening 2s10s to roughly +39 bp, a market pricing less easing rather than more. Net read: positioning is calm-to-complacent. Equity vol is cheap insurance here — with a hawkish Fed and a 16 September FOMC ahead, owning some downside protection into event risk costs little. There is no fear in the tape to fade, but there is also little cushion if the 2Y keeps repricing. Express risk through quality and short duration rather than naked index beta.",
+  corporate: [
+    "NVIDIA (NVDA): Q2 FY27 revenue $96.2bn (+106% y/y, +18% q/q); data-centre revenue a record $89.0bn (+117% y/y); non-GAAP EPS $2.22; gross margin 75%. Guided ~70% revenue growth for the coming year, roughly double consensus. The quarter's headline event — the stock ran ~8% to $228 before giving back 4.6% on Friday.",
+    "Hyperscaler capex signal: management framed top-5 hyperscaler capex rising to ~$1.3tn in 2027 from ~$800bn in 2026, underwriting the whole AI-infrastructure chain — the single most important forward number in the print.",
+    "Chips and software also reported: Marvell (MRVL), CrowdStrike (CRWD) and Salesforce (CRM) rounded out a heavy AI-adjacent earnings slate.",
+    "AI-buildout politics: a two-week pullback in the AI trade was driven partly by local and political pushback against data-centre buildouts in Texas, Tennessee, Pennsylvania and New York — a swing factor for power, land and semi names.",
+    "Mega-cap divergence: Microsoft (+6.3%) and Meta (+5.1%) led while Tesla (−3.9%) lagged, keeping the 'broadening beyond NVDA' theme intact.",
+    "On deck: a light post-Q2 week carrying the AI bellwether — Broadcom (AVGO) reports Wednesday 2 September after the close, with consensus revenue ~$29.4bn and AI semis guided near $16bn (+200% y/y)."
+  ],
+  macro: [
+    "US July PCE (28 Aug): headline 3.7% y/y (+0.2% m/m, above the +0.1% estimate); core 3.3% y/y (+0.2% m/m). Services +0.3%, goods −0.1%. Net: inflation is sticky in services — the hawkish case for the Fed, and the proximate cause of the 2Y repricing.",
+    "US Q2 GDP, second estimate (26 Aug): +1.5% annualised, unchanged from the advance reading, with consumer, exports and investment up and government spending down. Net: resilient but sub-2% — soft enough to slow, firm enough for the Fed to hold hawkish.",
+    "US initial jobless claims (week to 23 Aug): 203k, down 4k and below the 208k estimate. Net: no crack in the labour market, which removes the Fed's excuse to cut.",
+    "Policy backdrop: Fed funds held at 3.50–3.75% since late 2025 (effective ~3.63%); Chair Warsh's hawkish Jackson Hole tone reinforced higher-for-longer. Forwards imply a ~3.90% year-end rate. Net: the next move is as likely to be a hike as a cut, and the whole rate-cut trade has been repriced out.",
+    "Prediction markets (Polymarket, late August): September FOMC 'no change' ~71%, a September hike ~40%, at least one 25 bp hike in 2026 ~67.5%. Net: the crowd, like the bond market, has abandoned the cut narrative."
+  ],
+  geo: [
+    "Strait of Hormuz and the Middle East: the strait remains effectively closed since the US/Israel–Iran conflict that began 28 February 2026 — roughly a fifth of global oil once transited it. This week, hopes of a reopening and de-escalation signals let crude's war premium deflate (Brent −6.7% to $88.10), even as sporadic shipping attacks and a UAE suspension of financial dealings with Iran kept tail risk alive. The EIA still sees regional output below pre-conflict levels until early 2027 and Brent averaging ~$87 in 2026.",
+    "Russia–Ukraine: still deadlocked in the roughly four-and-a-half-year war. Kyiv handed Washington fresh proposals and Presidents Trump and Zelensky discussed reviving talks, but Ukrainian intelligence said on 18 August that Russia shows no readiness for a ceasefire. No near-term breakthrough expected.",
+    "Read: two live tails — an oil re-spike if Hormuz talks fail, and a hawkish Fed surprise — both point the same way. Keep some energy and inflation optionality alongside short-duration ballast.",
+    "Next catalysts: China's official August PMIs on Monday 31 August, the US ISM double-header (manufacturing Tuesday, services Thursday), RBNZ and Bank of Canada decisions on Wednesday, Broadcom's print Wednesday after the close, and US August payrolls on Friday 4 September — the first read since July's shock −23k contraction."
+  ],
+  ahead: {
+    published: "Sunday 30 August 2026",
+    weekOf: "Mon 31 August 2026",
+    pdf: "reports/2026-08-28-ahead.pdf",
+    pdfName: "Global Week Ahead_2026-08-30.pdf",
+    tldr: "A quiet-looking calendar with a loud ending. The week builds through China PMIs (Mon–Thu), eurozone flash CPI (Tue) and the US ISM double-header (manufacturing Tue, services Thu), then two central-bank decisions on Wednesday (RBNZ and Bank of Canada). But everything routes to Friday's US August jobs report — the first read since July's shock −23k contraction. With Warsh's Fed leaning against inflation, a second soft payroll would slam the growth-scare and hike-risk narratives together. Broadcom (Wed after the close) is the AI bellwether inside it. Trade the data, and respect thin pre-Labor-Day liquidity into Friday.",
+    setup: [
+      ["S&P 500", "7,711.76", "−0.25%", "First winning week in three (+0.5%); futures soft after hawkish Warsh"],
+      ["Nasdaq Comp.", "26,402.42", "−0.52%", "Semis (NVDA, INTC) led the Friday slide; +0.9% on the week"],
+      ["Dow Jones Ind.", "53,559.99", "−0.02%", "Flat Friday (−9.45 pts); +0.5% on the week — the most resilient of the three"],
+      ["US 10Y yield", "4.66%", "+2 bp", "Backed up into Jackson Hole; the long end is the key tell"],
+      ["US 2Y yield", "4.19%", "+2 bp", "2s10s +47 bp; hike risk keeps the front end sticky"],
+      ["Dollar (DXY)", "99.71", "+0.3%", "Bounced off session lows; payrolls is the swing factor"],
+      ["Gold (spot)", "≈$4,460", "+1.8%", "Record vicinity; inflation-worry plus haven bid — confirm live"],
+      ["Silver (spot)", "≈$65.6", "+1.3%", "Riding gold; industrial and monetary tailwind"],
+      ["WTI crude", "$83.11", "−0.1%", "Geopolitical supply premium rebuilding"],
+      ["Brent crude", "$88.22", "−0.3%", "Hormuz and Russian-refinery strikes on the radar"],
+      ["Bitcoin", "≈$77,000", "−5%", "Broke from ~$81k; risk-off tell — watch $74k"]
+    ],
+    setupNote: "Levels are Friday 28 August closes with the day move shown. Index closes per CNBC/Yahoo/24-7 Wall St; UST yields per US Treasury (26 August official, which is why they differ slightly from the Week in Review's 28 August marks); DXY, gold, silver, oil and Bitcoin per Trading Economics / Convex / RIO Times (28 August). Gold and Bitcoin prints varied across venues — confirm live before acting.",
+    themes: [
+      {
+        t: "Payrolls Friday — the growth scare meets a hawkish Fed",
+        b: "July stunned with a reported −23k in nonfarm payrolls versus consensus near +80k, with prior months revised lower; unemployment sits at ~4.2%. August is the swing print: stabilisation keeps the soft landing alive, a second negative number forces the market to reconcile a slowing labour market with a Fed Chair who has just said inflation is running too high.",
+        w: "A weak headline that also carries hot average hourly earnings is the worst mix for duration and equities — it validates Quad 3. Barbell quality and defensives with gold, and keep dry powder for the knee-jerk into a thin pre-holiday tape."
+      },
+      {
+        t: "The Warsh Fed and a live September hike",
+        b: "Post-Jackson Hole, Fed-funds pricing swung to roughly 57% odds of a September hike (CNBC), even as Polymarket showed ~68% no-change and ~31% +25 bp for the 16 September FOMC. Either way the cut narrative is dead for now, and most economist forecasts push the next cut into 2027.",
+        w: "This is a rates-up, dollar-supported regime until the data break it. Long-duration Treasuries and unprofitable growth are the pressure points; financials and cash-flow compounders screen better."
+      },
+      {
+        t: "Long-end yields at the 5.25% regime line",
+        b: "The 30Y closed at 5.18% and the 20Y at 5.17%, pressing Hedgeye's 5.25% 'regime-switch' threshold. A decisive break above it has historically flipped the correlation regime and hit multiples.",
+        w: "Every ISM prices-paid print and the average-hourly-earnings line feeds the long end. A 30Y through 5.25% is the signal to de-gross duration-sensitive equities — long-duration tech, REITs and utilities."
+      },
+      {
+        t: "China's pulse — four PMIs in four days",
+        b: "Official manufacturing PMI has hovered at or below 50 (49.2 last). This week stacks the NBS reading (Mon), Caixin manufacturing (Tue) and Caixin services (Thu). China momentum sets the tone for AUD/NZD, copper and the broader reflation debate.",
+        w: "A cluster above 50 revives the commodity-reflation trade (miners, energy, EM FX). Sub-50 across the board pressures AUD, NZD and industrial metals into the Asia opens."
+      },
+      {
+        t: "Broadcom carries the AI tape",
+        b: "AVGO reports Wednesday after the US close. Consensus is revenue ~$29.4bn and non-GAAP EPS ~$3.24, roughly double year-on-year, with AI semiconductor revenue guided near $16bn (+200% y/y) — now more than half of revenue. After Friday's semis wobble it is the single biggest single-stock catalyst of the week.",
+        w: "Custom-ASIC backlog and the AI-revenue guide are the tells. A beat-and-raise steadies the Nasdaq and Asia tech (TSMC, SK Hynix); a soft AI number re-opens the semis drawdown."
+      },
+      {
+        t: "Energy's geopolitical bid",
+        b: "Ukrainian drone strikes on Russian refineries (Ryazan hit 27 August) and Strait of Hormuz and Red Sea tension are rebuilding a supply premium just as the Bank of Canada flags oil as a policy complication. Brent holds ~$88 and WTI ~$83.",
+        w: "An energy spike is stagflation fuel in a Quad 3 tape — bullish energy equities, bearish rate-sensitives. Watch the OPEC+ meeting expected Sunday 6 September as next-weekend risk."
+      }
+    ],
+    calendar: [
+      ["Mon 31", "China NBS manufacturing and non-manufacturing PMI (Aug), 09:30 — manufacturing prior 49.2. Germany flash CPI/HICP (Aug), 20:00 — prior +2.8% y/y.", "First read on China momentum; sub-50 pressures the yuan and commodity FX. Germany is the curtain-raiser for Tuesday's euro-area flash"],
+      ["Tue 1", "Caixin China manufacturing PMI (Aug), 09:45 — prior 50.9. Germany retail sales (Jul), 14:00. Eurozone flash HICP (Aug) incl. core, 17:00 — prior headline +2.9%, core +2.5%. US ISM Manufacturing (Aug), 22:00 — prior 55.6.", "Sticky euro-area core keeps the ECB on hold; the ISM prices-paid sub-index is the week's first inflation tell"],
+      ["Wed 2", "Australia Q2 GDP, 09:30. RBNZ cash-rate decision, 10:00 (2.50%) and press conference, 11:00. US ADP private payrolls (Aug), 20:15 — prior +44k. Bank of Canada decision, 21:45 (2.25%) and press conference, 22:30. Broadcom Q3 after the US close.", "Two central banks, the payrolls preview and the AI bellwether all land on the same day — the week's fulcrum"],
+      ["Thu 3", "Australia trade balance (Jul), 09:30. Caixin China services PMI (Aug), 09:45 — prior 50.1. Switzerland CPI (Aug) 14:30 and Q2 GDP 15:00. BoE Inflation Report / MPC hearings, 16:30. US ISM Services (Aug), 22:00 — prior 54.1.", "Services is the swing factor for China growth; US ISM services covers ~80% of GDP and is the pre-payrolls inflation tell"],
+      ["Fri 4", "Eurozone retail sales (Jul), 17:00. Canada employment (Aug), 20:30 — unemployment prior ~6.4%. US NONFARM PAYROLLS (Aug) plus unemployment and average hourly earnings, 20:30.", "The event. July printed −23k with unemployment ~4.2%; a second contraction collides with a Fed leaning hawkish, into thin pre-holiday liquidity"]
+    ],
+    cbs: [
+      ["RBNZ", "Cash-rate decision, Wed 2 Sep 10:00 (press conference 11:00)", "Rate at 2.50% after a surprise July hike — the first since Nov 2025; another +25 bp is live, a hawkish hold the alternative", "Does re-accelerating inflation force a second consecutive hike? NZD-positive on a hike"],
+      ["Bank of Canada", "Decision, Wed 2 Sep 21:45 (Macklem press conference 22:30)", "Rate at 2.25%; a hold is the base case given the oil-price complication", "How does Macklem balance growth softness against imported energy inflation?"],
+      ["Bank of England", "MPC Inflation Report hearings in Parliament, Thu 3 Sep 16:30", "Not a decision — testimony only", "A hawkish tone on sticky UK inflation supports sterling"],
+      ["US Federal Reserve", "No meeting this week; next decision 16 September", "Post-Warsh pricing: ~57% September-hike odds (CNBC) versus Polymarket's ~31% +25 bp and ~68% hold", "Every US data point this week feeds the September call — the cut narrative is already dead"],
+      ["ECB", "Next decision expected ~10–11 September", "Tuesday's flash CPI is the key input", "A hot core print keeps the ECB firmly on hold"]
+    ],
+    earnings: [
+      ["Wed 2", "Broadcom (AVGO, after the close)", "Consensus revenue ~$29.4bn and non-GAAP EPS ~$3.24 (roughly 2x y/y); AI semis guided ~$16bn (+200% y/y), now more than half of revenue. Sustained AI backlog, custom-ASIC traction and a clean raise are what the market wants"],
+      ["Tue 1", "NIO (NIO, pre-open)", "EPS estimate −$0.07. Deliveries, gross-margin trajectory and cash burn amid the China EV price war"],
+      ["Thu 3", "DocuSign (DOCU, after the close)", "EPS estimate $1.09 on revenue ~$867m. Billings and net retention are the tells on software demand"],
+      ["Through the week", "Enterprise-software and hardware tail names around Tue–Wed", "A light post-Q2 slate — confirm the live earnings calendar"]
+    ],
+    catalysts: [
+      "US August nonfarm payrolls, Friday 4 September — the week's capstone and the first read since July's −23k shock.",
+      "US ISM Manufacturing (Tue) and ISM Services (Thu) — the prices-paid sub-indices are the inflation tells ahead of payrolls.",
+      "China PMI cluster, Monday through Thursday — NBS manufacturing, Caixin manufacturing and Caixin services.",
+      "Eurozone flash HICP, Tuesday — the key input into the ~10–11 September ECB decision.",
+      "Broadcom Q3, Wednesday after the close — the AI read-through for the Nasdaq and Asia semis.",
+      "Central banks: RBNZ and Bank of Canada, both Wednesday.",
+      "Liquidity and seasonality: US markets are open all week (Labor Day is Mon 7 Sep), but Friday's payrolls lands into thin pre-holiday liquidity, amplifying the move.",
+      "OPEC+ output meeting expected Sunday 6 September — position energy before Friday's close."
+    ],
+    regime: {
+      label: "#Quad 3 — growth slowing, inflation accelerating",
+      note: "The pivot from Quad 1 dates to mid-February 2026. In Quad 3 the winners are gold, energy, commodities and defensives; the losers are long-duration bonds and unprofitable growth. The Dollar–S&P inverse correlation that defined the regime has been breaking down, which Hedgeye flags as a late-cycle tell. Ranges below are analytically derived and anchored to Friday closes and Hedgeye's public Quad-3 commentary (late August 2026) — the live Hedgeye Risk Range™ product was not accessible in this run. Confirm exact bands and TREND signals before acting.",
+      ranges: [
+        ["S&P 500", "7,585 – 7,825", "Bullish"],
+        ["Nasdaq Comp", "25,900 – 26,850", "Bullish"],
+        ["UST 10Y Yield", "4.55 – 4.80", "Bullish (yields higher)"],
+        ["US Dollar (DXY)", "98.9 – 100.6", "Neutral"],
+        ["Gold (spot)", "4,300 – 4,660", "Bullish"],
+        ["Silver (spot)", "61.5 – 68.0", "Bullish"],
+        ["WTI Crude", "79 – 86", "Neutral"],
+        ["Brent Crude", "84 – 91", "Neutral"],
+        ["Bitcoin", "73,500 – 88,000", "Bearish"]
+      ],
+      where: "Quad 3 holds while the inflation gauges — ISM prices-paid, average hourly earnings, the flash CPIs — stay firm and the long end presses higher. Reference marks: S&P 7,712 mid-range, 10Y 4.66%, DXY 99.71, gold ~$4,460 near the top of its band, Bitcoin ~$77,000 in the lower half of a bearish range. What would change it: payrolls collapsing hard enough to flip the Fed dovish would rotate the map toward a growth-scare Quad 4; conversely a decisive 30Y break above 5.25% would trigger a broader multiple de-rate. Constructive into mid-September, then respect the seasonal fade."
+    },
+    positioning: "Crowded and stretched: gold and silver are extended after a record run — right regime, but stretched, and expect sharp two-way moves around payrolls. AI semis remain a crowded long that wobbled on Friday; Broadcom is the referendum. Duration: long Treasuries are the consensus pain trade if inflation prints hot, with the 30Y at 5.18% the tell — underweight long-duration equities (long-duration tech, REITs, utilities) until the long end settles. Vol and credit: the Friday risk-off and a thin pre-holiday Friday argue for a firmer vol bid into payrolls; credit spreads have been benign, so watch for any widening as the first crack. Owning optionality into Friday is cheap insurance. The tells to watch: (1) ISM prices-paid and average hourly earnings for inflation; (2) the 30Y versus 5.25%; (3) Broadcom's AI guide for the Nasdaq; (4) China PMIs for AUD/NZD and copper; (5) Bitcoin at $74k as the risk-appetite thermometer.",
+    geo: [
+      "Energy supply-shock risk: Ukrainian drone strikes on Russian refineries (Ryazan hit 27 August) are described as the most severe refining crisis in years; combined with Strait of Hormuz and Red Sea tension and Iran–Oman passage talks, the oil supply premium is rebuilding.",
+      "Trade and tariffs: Washington has doubled tariffs on India over Russian-oil purchases, with the risk of similar action on China — the largest buyer of Russian crude — a potential shock to global flows and a fresh inflation impulse.",
+      "Fed independence: the Warsh-led Fed and its inflation-first framing keep policy-credibility questions live for the dollar and the long end.",
+      "Prediction markets (Polymarket): 16 September FOMC ~68% hold, ~31% +25 bp, ~1% cut; year-end hike odds have been rising, with most economists now seeing no cut before 2027. Confirm live odds before acting."
+    ],
+    asia: "Asia likely opens cautious-to-mixed. The backdrop: a softer Friday Wall Street led by semis, a hawkish-Warsh bid to the dollar and US yields, and gold near records. The first hard tell is China's NBS PMI at 09:30 HKT on Monday — a sub-50 cluster pressures AUD, NZD and Chinese equities, while a surprise back above 50 supports miners and the reflation trade. Watch Asia semis (TSMC, SK Hynix, Samsung) to follow through on Friday's NVDA and INTC weakness, and the yen and JGB complex for spillover from higher US long-end yields. Gold's strength is a tailwind for Australian and Chinese miners. Expect thin conviction until Tuesday's ISM and, ultimately, Friday's payrolls.",
+    beyond: [
+      "US Open tennis (New York): quarter- and semi-finals run through the week at Flushing Meadows; the women's final is Sat 12 September and the men's Sun 13 September.",
+      "Formula 1 — Italian Grand Prix at Monza: race weekend building to Sunday 6 September, a marquee tifosi event and a read on luxury and auto sponsorship sentiment.",
+      "Apple: the annual iPhone event is expected the following week (~8–9 September; iPhone 18 line and a rumoured foldable 'iPhone Ultra') — date unconfirmed, but a supply-chain and Asia-tech catalyst on the horizon.",
+      "Sport and calendar: US college football week 1 is under way and the NFL season kicks off Thursday 10 September. US Labor Day is Monday 7 September — markets trade normally this week."
+    ]
+  }
 }
 ];
