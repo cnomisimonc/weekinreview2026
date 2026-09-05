@@ -1612,6 +1612,19 @@ const WEEKS = [
     "Read: two live tails — an oil re-spike if Hormuz talks fail, and a hawkish Fed surprise — both point the same way. Keep some energy and inflation optionality alongside short-duration ballast.",
     "Next catalysts: China's official August PMIs on Monday 31 August, the US ISM double-header (manufacturing Tuesday, services Thursday), RBNZ and Bank of Canada decisions on Wednesday, Broadcom's print Wednesday after the close, and US August payrolls on Friday 4 September — the first read since July's shock −23k contraction."
   ],
+  recall: {
+    "window": "Mon 24 Aug – Sun 30 Aug 2026",
+    "readings": [
+      {
+        "t": "Dario Defends Himself, Datacenter Panic, AI Doomer Trap, Senate Toss-Up",
+        "d": "28 Aug",
+        "g": "Technology/AI",
+        "u": "https://www.youtube.com/watch?v=Sij_v-mcZXQ",
+        "x": "Besties are back! The podcast features the return of the core group — Chamath Palihapitiya, Jason Calacanis, David Sacks and David Friedberg — assembled to work through a long and contentious list of topics. Dario's two-part essay: regulatory capture, doomerism, and the data center backlash Dario Amodei of Anthropic responded to claims made by Gavin Baker that the company internally believed it would eventually be the world's only private AI…"
+      }
+    ],
+    "cards": []
+  },
   ahead: {
     published: "Sunday 30 August 2026",
     weekOf: "Mon 31 August 2026",
