@@ -103,7 +103,9 @@
       <span id="viewTabs">
         <button class="vtab active" data-v="review">In Review</button>
         <button class="vtab" data-v="ahead">Week Ahead</button>
-        <button class="vtab" data-v="recall">Recall</button>
+        <!-- Recall tab hidden 2026-09-12 at user's request; data retained in data.js.
+             To re-enable, delete the style="display:none" on this button and the mobile one below. -->
+        <button class="vtab" data-v="recall" style="display:none;">Recall</button>
       </span>
       <label for="weekSel" style="color:var(--dim);font-size:13px;margin-right:8px;">Week ending</label>
       <select id="weekSel"></select>
@@ -213,7 +215,8 @@
   <div id="mobileBar">
     <button class="mtab active" data-v="review">Review</button>
     <button class="mtab" data-v="ahead">Ahead</button>
-    <button class="mtab" data-v="recall">Recall</button>
+    <!-- Recall tab hidden 2026-09-12 — see note in the desktop tab bar above. -->
+    <button class="mtab" data-v="recall" style="display:none;">Recall</button>
     <a id="mPdfBtn" class="mico" href="#" download title="Download PDF">⬇</a>
     <button id="mThemeBtn" class="mico" title="Toggle light/dark">☀️</button>
   </div>
