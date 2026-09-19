@@ -2630,6 +2630,289 @@ const WEEKS = [
     "Prediction markets: Polymarket/Robinhood markets on 2026 Fed rate cuts and DXY/BTC ranges were active, but direct odds could not be independently verified this run and are omitted rather than guessed.",
     "UN General Assembly: high-level week convenes in New York with the Middle East conflict and energy security topping the agenda; expect diplomatic headlines that move the oil tape.",
     "Read: own the geopolitical risk premium via energy rather than trading headlines. The asymmetry is to the upside in oil while Gulf supply is impaired; any credible de-escalation or pipeline restart is the fastest path to relief for equities and bonds alike. Atlantic hurricane season adds a second potential supply-shock tail for Gulf energy infrastructure."
-  ]
+  ],
+  ahead: {
+    "published": "Sunday 20 September 2026",
+    "weekOf": "Mon 21 September 2026",
+    "pdf": "reports/2026-09-18-ahead.pdf",
+    "pdfName": "Global Week Ahead_2026-09-20.pdf",
+    "tldr": "The market is repricing a Fed that just hiked into elevated inflation (to 3.75−4.00%) with a hawkish dot plot pointing to one more in 2026. The week is defined by Wednesday's global flash PMIs, a central-bank super-Thursday (Norges, Riksbank, SNB, Banxico) alongside the Xi−Trump summit in Washington, and month-end US data (durable goods, final Q2 GDP and the PCE inflation print). Watch the 10-year's 5% line − it is the fulcrum for equity multiples, the dollar and gold.",
+    "setup": [
+      [
+        "S&P 500",
+        "7,650.50",
+        "+0.17%",
+        "Off 5% highs; futures soft on yield spike"
+      ],
+      [
+        "Nasdaq Comp",
+        "26,522.55",
+        "+0.39%",
+        "Only major index up on the week; AI/semis carry"
+      ],
+      [
+        "Dow Jones",
+        "51,682.64",
+        "−0.18%",
+        "Worst week since March; rate-sensitives lag"
+      ],
+      [
+        "US 10Y yield",
+        "~4.94%",
+        "eased",
+        "Touched ~5.00% intraweek; 5% is the pain line"
+      ],
+      [
+        "US 2Y yield",
+        "~4.73%",
+        "eased",
+        "Curve still flat; Fed at 3.75−4.00%"
+      ],
+      [
+        "Dollar (DXY)",
+        "~100.5",
+        "firm",
+        "Firm on hawkish dots; watch 101"
+      ],
+      [
+        "Gold",
+        "$4,368.60",
+        "+0.60%",
+        "Record close; eyeing $4,400"
+      ],
+      [
+        "Silver",
+        "$67.18",
+        "+3.02%",
+        "13-year high; real-yield vs hedge tug"
+      ],
+      [
+        "Brent crude",
+        "$103.87",
+        "−0.9%",
+        "Saudi pipeline restart eased supply fear"
+      ],
+      [
+        "WTI crude",
+        "$100.30",
+        "−1.6%",
+        "$100 line the tell for inflation feed-through"
+      ],
+      [
+        "Bitcoin",
+        "~$80,000",
+        "+5%",
+        "Rebound from $75k post-Fed / Clarity Act"
+      ]
+    ],
+    "setupNote": "Levels are Friday 18 September session closes with the day move shown; futures and Asia-open reads are directional − verify live before acting. A hawkish Fed set the tape: the Dow logged its worst week since March and a third straight weekly loss, the Nasdaq eked out a weekly gain, the 10Y flirted with 5% (19-year highs) before softer oil pulled it back, and gold and silver printed a record and a 13-year high respectively.",
+    "themes": [
+      {
+        "t": "The hawkish Fed and the march toward 5% on the 10-year",
+        "b": "The FOMC hiked 25 bp to 3.75−4.00% (unanimous) on 16 September − its first increase since 2023 − and the dot plot showed 16 of 18 officials expecting another hike this year. Chair Warsh framed it as “discipline, not a decision.” Goldman now pencils in an October move; ~55% is priced for an Oct 28 hike.",
+        "w": "Duration and rate-sensitives stay on the back foot. A clean break of 5.00% on the 10Y is the multiple-compression trigger for equities."
+      },
+      {
+        "t": "Wednesday's global flash PMIs − the growth-pulse check",
+        "b": "September prelim S&P Global PMIs land across the US, euro zone and UK on Wednesday (Japan Thursday). EZ composite has been resilient (~52.0); UK ~52.5; Japan mfg ~54.8. The question is whether activity holds despite higher energy prices and the yield back-up.",
+        "w": "A soft services read would revive the growth-scare / stagflation debate right as the Fed leans hawkish − a bad mix for cyclicals, good for gold."
+      },
+      {
+        "t": "The Xi−Trump summit (Thu) − trade truce on the line",
+        "b": "Presidents Xi and Trump meet in Washington on 24 September for their second summit this year. Agenda: extending the tariff truce, Chinese ag/Boeing purchases, US access to rare earths and critical minerals, tech-export relief, plus Taiwan and Iran.",
+        "w": "Any truce extension or minerals deal is risk-on for semis, materials and China proxies; a stumble hits the Hang Seng and the AUD. Headline-driven − keep size modest into Thursday."
+      },
+      {
+        "t": "The precious-metals melt-up − record gold, 13-year-high silver",
+        "b": "Gold closed at a record $4,368.60 and silver at $67.18, extending a post-Fed recovery as softer oil dragged yields off the highs. The metals are the market's inflation-hedge / real-asset expression against a Fed hiking into sticky prices.",
+        "w": "Gold's $4,400 and silver's $68 are the breakout tells; miners (and Aussie names) are leveraged. A sharp real-yield jump is the main risk to the trade."
+      },
+      {
+        "t": "Oil near $100 and live Middle-East supply risk",
+        "b": "Brent ~$104 / WTI ~$100 eased as Saudi Arabia moved to resume East-West pipeline flows, but Houthi/Yemen and US−Iran frictions keep a supply premium in the tape. Oil is the swing factor for the inflation narrative − and thus yields.",
+        "w": "Sustained WTI above $100 re-tightens the inflation screws and pressures central banks to stay hawkish. Watch API (Tue) / EIA (Wed) inventories."
+      },
+      {
+        "t": "Central-bank super-Thursday",
+        "b": "Norges Bank, the Riksbank, the SNB and Banxico all decide Thursday, following the BoJ's hike to 1.25% and the BoE's hold at 3.75%. The global rates backdrop is tilting hawkish, not dovish.",
+        "w": "Norges is a genuine 50/50 (hike vs hold) − the FX-vol event. SNB, Riksbank and Banxico are expected on hold. A synchronised hawkish lean underpins the dollar."
+      }
+    ],
+    "calendar": [
+      [
+        "Mon 21",
+        "Japan market holiday (Respect for the Aged Day). 09:15 China 1-yr and 5-yr Loan Prime Rate, 3.00% / 3.50% hold expected. Late: US Chicago Fed National Activity Index (Aug).",
+        "Thin Asian liquidity with no Nikkei/JGB cash session; a 16th straight LPR hold is the base case − a cut would signal growth worry"
+      ],
+      [
+        "Tue 22",
+        "22:00 US Richmond Fed manufacturing (Sep; some calendars Wed − confirm). US Q2 current account. API crude inventories overnight.",
+        "Regional factory pulse and a light US day ahead of the PMI cluster"
+      ],
+      [
+        "Wed 23",
+        "16:00 EZ flash composite PMI (Sep, ~52.0 prior). 16:30 UK flash composite PMI (~52.5). 21:45 US S&P Global flash PMIs (Sep). Midweek SARB decision (~52% priced for +25 bp; Tue/Wed − confirm). 22:30 US EIA crude inventories.",
+        "Global flash PMI day − the week's cleanest macro data cluster; can activity hold through higher energy prices and the yield back-up?"
+      ],
+      [
+        "Thu 24",
+        "07:30 Japan flash PMI (Sep, mfg ~54.8). 09:30 Australia jobs (Aug; +20k, u/e 4.5%). 15:30 Riksbank (hold 1.75%) and SNB (hold). 16:00 Norges Bank (50/50) and German Ifo (Sep). Daytime Xi−Trump summit, Washington. Evening Banxico (hold 6.50%). Canada retail sales (Aug).",
+        "Central-bank super-Thursday plus the Xi summit − FX-vol and headline risk concentrated in one session; RBA ~96% priced to hike, so jobs colour it"
+      ],
+      [
+        "Fri 25",
+        "China Mid-Autumn Festival holiday. 20:30 US durable goods (Aug), final Q2 GDP and initial jobless claims. 22:00 US existing home sales (Aug). TBC US PCE price index (Aug) − some calendars show Fri 25, others early week of 28 Sep; confirm live.",
+        "US month-end data with the marquee PCE inflation read possibly landing; housing under the 5%-yield squeeze; thinner regional liquidity with the mainland shut"
+      ]
+    ],
+    "cbs": [
+      [
+        "China (PBoC LPR)",
+        "Mon 21 Sep, ~09:15 GMT+8. 1-yr 3.00% / 5-yr 3.50%",
+        "Hold − 16th consecutive",
+        "Is Beijing leaning on liquidity rather than broad cuts, and would a surprise cut signal growth worry?"
+      ],
+      [
+        "SARB (South Africa)",
+        "Midweek − Tue/Wed, confirm day",
+        "~52% priced for +25 bp; split MPC",
+        "Inflation above band versus soft growth − credibility at stake"
+      ],
+      [
+        "Riksbank",
+        "Thu 24 Sep, ~15:30 GMT+8. Rate 1.75%",
+        "Hold; SEB sees ~60% odds of a hike within three meetings",
+        "Does cooler CPI keep the hike-bias signalling muted?"
+      ],
+      [
+        "Swiss National Bank",
+        "Thu 24 Sep, ~15:30 GMT+8",
+        "Hold − inflation inside the 0−2% band",
+        "Does the 2027 hike debate open in the guidance?"
+      ],
+      [
+        "Norges Bank",
+        "Thu 24 Sep, ~16:00 GMT+8",
+        "Coin-flip hike vs hold − a “close call” per Danske/SEB",
+        "Mixed CPI versus soft growth − the FX-vol event of the day for NOK"
+      ],
+      [
+        "Banxico",
+        "Thu 24 Sep, evening GMT+8. Rate 6.50%",
+        "Hold; no near-term cuts",
+        "Is sticky services inflation enough to keep the door to cuts shut into Q4?"
+      ],
+      [
+        "US Federal Reserve (context)",
+        "Next decision Oct 28. Band 3.75−4.00% after the 16 Sep hike",
+        "~55% priced for +25 bp; Goldman expects an October hike",
+        "Does month-end data (PMIs, PCE) harden or soften the case for a second hike?"
+      ],
+      [
+        "BoJ / BoE (recap)",
+        "Last week: BoJ +25 bp to 1.25%; BoE hold at 3.75%",
+        "Global rates backdrop tilting hawkish, not dovish",
+        "Watch USD/JPY after the BoJ move and Gilts into the PMI"
+      ]
+    ],
+    "earnings": [
+      [
+        "Tue 22",
+        "AutoZone (AZO, pre-open) − Q4 FY26; THOR Industries and MillerKnoll (pre-open)",
+        "AZO revenue exp +7.5% to $6.71B, EPS $54.14 − consumer resilience; THOR/MillerKnoll for big-ticket discretionary demand under high rates"
+      ],
+      [
+        "Tue 22",
+        "KB Home (KBH) and Worthington (after-close)",
+        "Housing orders and margins as yields near 5% − the cleanest rates-sensitivity read of the week"
+      ],
+      [
+        "Wed 23",
+        "Paychex (PAYX, ~21:30 GMT+8) and Cintas (CTAS, ~22:00)",
+        "SMB hiring/payroll pulse and employment-linked demand − a broad-economy read"
+      ],
+      [
+        "Midweek",
+        "General Mills (GIS); Carnival (CCL, date to confirm)",
+        "Staples volumes versus pricing as the defensive tell; cruise bookings and pricing for consumer-experience spend"
+      ]
+    ],
+    "catalysts": [
+      "Xi−Trump summit, Thursday 24 September, Washington − tariff-truce extension, rare-earth/minerals access, Boeing/ag purchases and Taiwan all in scope; headline risk for semis, materials and China proxies.",
+      "Global flash PMIs, Wednesday 23 September − the week's cleanest macro data cluster and the growth-pulse check into a hawkish Fed.",
+      "Central-bank super-Thursday − Norges Bank (50/50), Riksbank, SNB and Banxico, with SARB midweek; a synchronised hawkish lean underpins the dollar.",
+      "US month-end data, Friday 25 September − durable goods, final Q2 GDP, claims and possibly the August PCE print (confirm date).",
+      "UN General Assembly high-level week (22−25 Sep), New York − Middle East front-and-centre; Iran's Pezeshkian slated for 23 September.",
+      "US government funding: shutdown averted − a stopgap funds through 11 December, so the 1 October deadline is off the table.",
+      "Quad-witching just passed (Fri 18 Sep) − dealer gamma has reset; expect more two-way trade and less pinning.",
+      "Holidays bookend the week − Japan shut Monday, China's Mid-Autumn Festival Friday − thinning Asian liquidity."
+    ],
+    "regime": {
+      "label": "Quad 2 tilting toward Quad 3 − activity solid, inflation re-accelerating, Fed hiking",
+      "note": "Hedgeye's live GIP/Quad nowcast and proprietary Risk Range figures were not retrievable at publication and should be confirmed on the subscriber platform. On the growth/inflation map the data argue for a Quad 2 read tilting toward Quad 3 − activity still solid, inflation elevated and re-accelerating, and a Fed that has resumed hiking. That regime historically favours real assets (gold, energy, TIPS) and pressures long-duration equities and bonds. The ranges below are house-derived immediate-term levels around Friday's closes for orientation only − they are NOT Hedgeye's subscriber numbers.",
+      "ranges": [
+        [
+          "S&P 500",
+          "7,480 − 7,720",
+          "Bullish, late"
+        ],
+        [
+          "Nasdaq Comp",
+          "25,800 − 26,750",
+          "Bullish"
+        ],
+        [
+          "US 10Y Yield",
+          "4.78 − 5.02",
+          "Higher"
+        ],
+        [
+          "Dollar (DXY)",
+          "99.4 − 101.0",
+          "Higher"
+        ],
+        [
+          "Gold",
+          "4,210 − 4,430",
+          "Bullish"
+        ],
+        [
+          "Silver",
+          "61.5 − 68.5",
+          "Bullish"
+        ],
+        [
+          "Brent crude",
+          "99 − 108",
+          "Neutral / higher"
+        ],
+        [
+          "WTI crude",
+          "96 − 105",
+          "Neutral / higher"
+        ],
+        [
+          "Bitcoin",
+          "73,000 − 86,000",
+          "Neutral"
+        ]
+      ],
+      "where": "We are in a hawkish-Fed, rising-real-yield, real-asset-bid regime. It flips risk-off if the 10Y breaks and holds above 5% (multiple compression) or if a flash-PMI miss turns the story into a growth scare. It softens (risk-on) only on a dovish surprise, an oil roll-over that drags yields lower, or a decisive Xi−Trump trade breakthrough."
+    },
+    "positioning": "Crowded: precious-metals momentum and AI/semis − the Nasdaq's weekly outperformance masks a narrow tape. Stretched: long gold/silver into records and short duration as the 10Y presses 5%. Vol: the VIX has firmed with the drawdown and yield spike − confirm the live level − and the post-quad-witching gamma reset argues for wider intraday swings. Credit: watch high-yield spreads for the first cracks if the 10Y clears 5% − the cleanest early-warning tell. The one tell is the 5% 10-year: above and held, multiples compress and the dollar/gold trade sharpens; rejected, risk gets a relief bid.",
+    "geo": [
+      "US−China: the Xi−Trump summit (Thursday) is the marquee event − truce, minerals, tech and Taiwan all in scope. A truce extension or minerals deal is risk-on for semis and materials; a stumble hits the Hang Seng and the AUD.",
+      "Middle East: Houthi/Yemen, Saudi supply and US−Iran frictions keep an oil-supply premium in the tape; UN General Assembly week will amplify headlines, with Iran's Pezeshkian slated for 23 September.",
+      "Russia/Ukraine: dual-use goods flows feature on the US−China agenda − a secondary-sanctions wildcard for the summit.",
+      "Prediction markets: Polymarket/CME put ~55% on an Oct 28 Fed hike versus ~50% hold. A US government shutdown is off the table for now, with funding through 11 December. Verify live odds."
+    ],
+    "asia": "Asia opens thin and cautious: Japan is shut Monday (Respect for the Aged Day), so there is no Nikkei/JGB cash session to anchor the region. The read is defensive − a hawkish Fed and a 10Y near 5% keep the dollar firm and pressure Asian FX, while record gold and silver are a tailwind for Australian miners. China's LPR (~09:15) should be a non-event (hold). Watch USD/JPY after the BoJ's hike to 1.25%, the AUD into Thursday's jobs report, and Hang Seng / mainland sentiment into the Xi−Trump summit and the Mid-Autumn close on Friday. Intraday tells: the 10Y direction and oil.",
+    "beyond": [
+      "Space: SpaceX Starship Flight 14 is targeted for ~22 September, aiming for its first orbital mission plus a Starlink V3 deployment − schedule slips are common, so confirm.",
+      "Diplomacy: UN General Assembly high-level week (22−25 September), New York − ~130 world leaders, with the general debate opening 22 September.",
+      "Skills: the 48th WorldSkills Competition runs in Shanghai (22−27 September) with 1,400+ competitors from 70+ regions.",
+      "Holidays: Mid-Autumn Festival across China and much of Asia (~25 September) and Japan's Respect for the Aged Day (Monday 21 September) − both regional market holidays."
+    ]
+  }
 }
 ];
