@@ -2914,5 +2914,652 @@ const WEEKS = [
       "Holidays: Mid-Autumn Festival across China and much of Asia (~25 September) and Japan's Respect for the Aged Day (Monday 21 September) − both regional market holidays."
     ]
   }
+},
+{
+  "id": "2026-09-25",
+  "weekEnding": "Friday 25 September 2026",
+  "published": "Saturday 26 September 2026",
+  "pdf": "reports/2026-09-25.pdf",
+  "pdfName": "Global Week in Review_2026-09-26.pdf",
+  "tldr": "The bond market broke 5% and equities did not care − yet. The 10-year hit 5.225% intraday (highest since 2007) and the 30-year 5.50% (highest since 2004) after a five-year-high flash PMI (58.4) and the second-largest 5-year auction tail on record; two Fed officials said another hike is coming. The S&P still gained +1.2% and the Nasdaq +2.1% because Meta (+12.9%), Microsoft (+4.5%) and a semiconductor squeeze (SOXX +7.4%, AMD past $1 trillion) re-rated the AI-agent trade. Beneath the surface it was a narrow tape: small caps fell, utilities and REITs were sold, credit ETFs slipped. Oil eased into the weekend (WTI $92.41) on reports of a phased US−Iran deal to reopen Hormuz, Xi’s state visit produced a tariff-truce extension to 10 January and little else, and the dollar posted its best two weeks in six months while gold lost another 2%. Next week is the real test: PCE (Wed), ISM (Thu), payrolls (Fri), Micron (Tue) and quarter-end.",
+  "metrics": {
+    "spx": 7743.41,
+    "nasdaq": 27068.72,
+    "dow": 51828.62,
+    "us10y": 5.17,
+    "us2y": 4.86,
+    "dxy": 101.03,
+    "gold": 4285,
+    "silver": 64.29,
+    "brent": 104.32,
+    "wti": 92.41,
+    "btc": 83916,
+    "vix": 14.88
+  },
+  "snapshot": [
+    [
+      "S&P 500",
+      "7,743.41",
+      "+1.2%",
+      "Mon/Tue closes of 7,764−7,765 were the week’s high; Friday 0.9% below the 7,816.70 record. Three up-days, two down; light volume into quarter-end"
+    ],
+    [
+      "Nasdaq Composite",
+      "27,068.72",
+      "+2.1%",
+      "Meta and semis did the work; Tuesday close 27,244 was within 0.2% of the 27,288.79 high"
+    ],
+    [
+      "Dow Jones Ind.",
+      "51,828.62",
+      "+0.3%",
+      "Snapped a three-week losing streak on Friday’s +479 pt session; still 5.3% off its 54,744 high"
+    ],
+    [
+      "Russell 2000",
+      "2,837.55",
+      "−0.8%",
+      "Small caps lost to rates; 7.6% below the 3,069.71 high. Hedgeye TREND bearish"
+    ],
+    [
+      "US 10Y Treasury",
+      "5.17%",
+      "+17 bp",
+      "Intraday 5.225% Thursday − highest since July 2007. Driven by PMI, oil and an ugly 5Y auction"
+    ],
+    [
+      "US 2Y Treasury",
+      "4.86%",
+      "≈ +15−20 bp",
+      "Curve bear-steepened; 2s10s ≈ 31 bp. Friday-to-Friday 2Y change not independently confirmed"
+    ],
+    [
+      "US 30Y Treasury",
+      "5.49%",
+      "higher",
+      "Touched 5.50% − highest since 2004. Long end led the sell-off"
+    ],
+    [
+      "Dollar (DXY)",
+      "101.03",
+      "+0.8%",
+      "Two-month high; best two-week gain in six months (+1.9%). 52-week high 101.80 within reach"
+    ],
+    [
+      "Gold (spot)",
+      "$4,285",
+      "−2.3%",
+      "Futures 4,424.9 → 4,321.2. Now 23% below the $5,599 peak; real yields and the dollar are the headwind. TREND neutral"
+    ],
+    [
+      "Silver (spot)",
+      "$64.29",
+      "−3.5%",
+      "Futures 67.15 → 64.80; gold/silver ratio 66.8. Physical bid on dips but TREND bearish"
+    ],
+    [
+      "Brent crude",
+      "$104.32",
+      "+0.4%",
+      "Front-month settle; AP/Yahoo quoted sub-$99 Friday − could not reconcile, verify the contract. Brent−WTI spread $12.68, widest since May"
+    ],
+    [
+      "WTI crude",
+      "$92.41",
+      "−3.8%",
+      "Fell on Reuters reports of a phased US−Iran Hormuz deal; US diesel-export restriction talk widened the spread"
+    ],
+    [
+      "Bitcoin",
+      "$83,916",
+      "+3.8%",
+      "Monday high $87,397 (best since January) on a record $999m single-day ETF inflow; faded as flows slowed to $191m by Thursday"
+    ],
+    [
+      "VIX",
+      "14.88",
+      "flat",
+      "14.81 → 14.87; MOVE +26% against a flat VIX is the widest divergence of the year"
+    ]
+  ],
+  "themes": [
+    {
+      "t": "① Five per cent is no longer a forecast − it is the price",
+      "b": "The 10-year went from 5.00% to 5.17% (intraday 5.225%), the 5-year cleared 5.033% at Wednesday’s $70bn auction with a 3.1 bp tail (second-largest on record for the tenor; indirects fell to 54% from 62%, dealers ate ~$11bn), and Thursday’s 7-year also tailed. NY Fed’s Williams called another hike by year-end “a reasonable way of thinking about it”; Governor Barr said “further policy adjustments are likely to be needed”. Polymarket prices a 25 bp hike on 27−28 October at 67%; CME-based reads after Williams were nearer 77%. The MOVE index rose 26% on the week to 96.",
+      "r": "Duration stays a short on TREND, but the tactical top of the range arrived Friday: Hedgeye covered 50−100 bp of its TLT/LQD/HYG shorts at 5.21 on the 10-year and said it will reload higher. With a 5% risk-free rate the equity multiple only holds for names with visible earnings acceleration; everything financed with leverage − REITs, utilities, private equity, small caps − is the funding leg."
+    },
+    {
+      "t": "② Growth is accelerating, not slowing − which is why yields are rising",
+      "b": "The S&P Global flash composite PMI printed 58.4 (manufacturing 57.0 vs 53.6 expected, services 58.7 vs 56.0), the fastest output growth in over five years, with employment growth the strongest since June 2022 and input costs rising at the steepest rate since October 2022. Jobless claims fell to 197k; core capital-goods orders rose +1.6% (vs +0.8%); Q3 GDP trackers sit at 3−5%. The consumer is the exception: Michigan sentiment fell to 48.1, a four-month low, with one-year inflation expectations at 4.6% as petrol nears $4.50 and diesel hits a record.",
+      "r": "Textbook #Quad2 (growth up, inflation up); Hedgeye’s US inflation nowcast rose another 27 bp. Own pricing power and inflation beneficiaries (energy, refiners, industrials with backlog, health-care AI), short the rate-sensitive laggards. The bear case is not recession − it is that the Fed has to hike into a 5% ten-year."
+    },
+    {
+      "t": "③ The AI trade rotated from GPUs to agents − and to the CPUs that run them",
+      "b": "Meta added roughly $200bn of market value on Monday alone (+11.4%) after its Muse personal agent topped the iOS download charts; Wells Fargo lifted its target to $796 and Zuckerberg said Muse stays free and takes a small fee from transactions with Walmart, Best Buy, Sephora, Expedia and Instacart plugged in. Microsoft (+4.5%) merged consumer and enterprise Copilot into one agentic product with usage-based billing; Oppenheimer went to $570. Intel (+13%), Arm and AMD (+12.6%, first close above a $1 trillion cap) rallied on server-CPU demand for agents, and Akamai signed an $11.6bn, seven-year CPU-compute contract with Anthropic. Nvidia was flat under 17x forward earnings, a decade low; Oracle fell −7% after invoking force majeure on its 2.45 GW Project Jupiter site.",
+      "r": "Leadership inside AI is migrating to monetisation (agents, software, CPUs) and away from pure capex beneficiaries. The crack to watch is financing: Oracle spent $28.5bn of capex last quarter with −$5bn free cash flow, and its cost of capital just went up with everyone else’s. Hedgeye flipped Meta from short to long on signal and keeps Microsoft near the top of its buy list; software Signal Strength names (OKTA, SNOW, TEAM, NET, GTLB) remain the expression."
+    },
+    {
+      "t": "④ Oil: the Hormuz premium is leaking out of the front, not the structure",
+      "b": "WTI fell −3.8% to $92.41 after Reuters reported US and Iranian negotiators discussing a phased deal − Hormuz transit in exchange for lifting the US blockade and access to ~$12bn of frozen assets − with Witkoff meeting Araghchi in New York. Brent held near $104 because the physical side got worse: Saudi Arabia intercepted Houthi missiles, an Iranian adviser threatened the Indian Ocean, and the 4 mb/d East-West pipeline has been shut since the 10 September drone strikes. Only 13 vessels crossed Hormuz on Thursday. The Brent−WTI spread at $12.68 is the widest since May.",
+      "r": "Energy longs are a range trade now: Hedgeye keeps Brent (BNO) bullish TREND with ~$97 as the level that must break, added tankers (BWET) and holds refiners (CRAK) on the crack-spread. Polymarket puts “Hormuz traffic normal by 31 December” at only 24% and “blockade ended by 31 December” at 62% − the market believes in a deal but not in normal flows. Petrol at $4.50 is what is showing up in consumer sentiment."
+    },
+    {
+      "t": "⑤ Xi in Washington: pageantry, a truce extension, no chips",
+      "b": "The 23−25 September state visit produced a two-month extension of the tariff truce to 10 January 2027, a proposed US−China “Board of Trade”, an AI dialogue channel (Greer: a “red phone”) and two pandas for Atlanta. Nothing on soybeans, Boeing, rare earths, fentanyl, TikTok or export controls; “no change” on Taiwan; Trump told Xi Chinese satellite support for Iran was “unacceptable”. USTR promised trade details on Monday. Korea’s KOSPI reclaimed 7,000 as memory-chip exports ran +351% y/y in the first 20 days of September.",
+      "r": "A November tail risk is deferred, not removed. Nvidia’s guidance still assumes zero China data-centre revenue, so any licensing thaw is optionality worth ~7% of forecasts − not a base case. Memory remains the cleanest way to own the AI capex cycle in Asia; Micron reports Tuesday."
+    },
+    {
+      "t": "⑥ Dollar up, gold down, bitcoin up with the dollar",
+      "b": "DXY gained +0.8% to 101.03 (best two-week run in six months), the euro slipped below 1.14 and the yen touched 158.84 before recovering to 157.28. Gold lost −2.3% and silver −3.5% on real yields; gold is now 23% off its peak. Bitcoin gained +3.8% to $83,916 with $2.8bn of six-day ETF inflows and its 15-day correlation to the dollar flipped to +0.68.",
+      "r": "Hedgeye’s framing: swap “units of gold for units of bitcoin” while the dollar signal is bullish − gold sits below minimum position size on a neutral TREND, bitcoin and ether were bought again on Thursday’s dip. A 5% nominal yield with a strong dollar is the worst regime for non-yielding metals; do not average down until TRADE and TREND turn."
+    }
+  ],
+  "regime": {
+    "label": "Quad 2 − growth accelerating, inflation accelerating (“#Quad2 Crushing It”)",
+    "note": "Hedgeye’s GIP model has September in #Quad2 (moved from Quad 3 in August; July was Quad 4). Friday’s Early Look “#Quad2 Crushing It!” (25 Sep, Keith McCullough) is the live risk-range set until Monday evening’s note. Published Quad path (US Monthly Quad Forecast, 25 Sep): Sep-26 2 → Oct 2 → Nov 1 → Dec 2 → Jan-27 2 → Feb 4 → Mar 1 → Apr 1 → May 4 → Jun 3 → Jul 2; the February and May Quad 4 prints are what the “2027 bloodbath” commentary refers to. Ranges below are Hedgeye’s immediate-term Risk Range™ signals from the 25 September Early Look, measured on the series Hedgeye names (spot metals, continuous energy contracts, cash 10Y). Monday’s Early Look could not be retrieved (Cloudflare interstitial), so no band-on-band diff is shown.",
+    "ranges": [
+      [
+        "10Y UST yield",
+        "4.93 − 5.21%",
+        "Bullish (yields)"
+      ],
+      [
+        "High Yield (HYG)",
+        "77.75 − 78.73",
+        "Bearish"
+      ],
+      [
+        "IG Credit (LQD)",
+        "103.0 − 105.0",
+        "Bearish"
+      ],
+      [
+        "S&P 500",
+        "7,546 − 7,797",
+        "Bullish"
+      ],
+      [
+        "Nasdaq Comp",
+        "26,397 − 27,500",
+        "Bullish"
+      ],
+      [
+        "Russell 2000",
+        "2,812 − 2,894",
+        "Bearish"
+      ],
+      [
+        "Health Care (XLV)",
+        "166 − 172",
+        "Bullish"
+      ],
+      [
+        "Energy (XLE)",
+        "61.07 − 65.99",
+        "Bullish"
+      ],
+      [
+        "VIX",
+        "14.21 − 17.84",
+        "Bearish"
+      ],
+      [
+        "Dollar (DXY)",
+        "99.98 − 101.65",
+        "Bullish"
+      ],
+      [
+        "WTI (continuous)",
+        "87.96 − 107.99",
+        "Bullish"
+      ],
+      [
+        "Natural gas",
+        "2.89 − 3.33",
+        "Bullish"
+      ],
+      [
+        "Gold (spot)",
+        "4,224 − 4,383",
+        "Neutral"
+      ],
+      [
+        "Copper (spot)",
+        "6.40 − 6.79",
+        "Bullish"
+      ],
+      [
+        "Silver (spot)",
+        "61 − 65",
+        "Bearish"
+      ]
+    ],
+    "where": "10Y at 85% of its band (covered part of the bond shorts here); HYG and LQD at 11% − on the floor, oversold; S&P at 79% (“selling on green” into the top), Nasdaq mid-band at 61%, Russell 31% (short, partially covered); XLV 78% (core long); XLE 20% − near the floor, buy-the-dip zone; VIX 18%, low end of the investable bucket; DXY 63%; WTI 22%, lower quartile; gold 38%, below-minimum position; silver 82%, near the top of a bearish band. Keith’s Friday shift was to book gains, not change the thesis: covered 50−100 bp of TLT/LQD/HYG shorts, covered more than half of Real-Time Alert shorts as the S&P approached its highs, then redeployed − GitLab and Best Buy added, more bitcoin, ether and Block bought, Brent and refiners kept, Colombia exited, gold held below minimum. Fresh short in Consumer Discretionary (XLY) Tuesday; ETF Pro added Cybersecurity (BUG), dropped LVHI, JOET and UFO. Named risks: the 1-month/3-month vol relationship near a tipping point for systematic flows, and bond vol at bone-rattling levels."
+  },
+  "mag7": [
+    {
+      "tk": "NVDA",
+      "n": "Nvidia",
+      "p": 225.07,
+      "wk": "+1.3%",
+      "wkPct": 1.3,
+      "cap": "$5.42T",
+      "pe": "28.5x"
+    },
+    {
+      "tk": "AAPL",
+      "n": "Apple",
+      "p": 341.07,
+      "wk": "+1.5%",
+      "wkPct": 1.5,
+      "cap": "$4.98T",
+      "pe": "39.1x"
+    },
+    {
+      "tk": "GOOGL",
+      "n": "Alphabet",
+      "p": 343.92,
+      "wk": "−1.6%",
+      "wkPct": -1.6,
+      "cap": "$4.19T",
+      "pe": "17.3x"
+    },
+    {
+      "tk": "MSFT",
+      "n": "Microsoft",
+      "p": 516.17,
+      "wk": "+4.5%",
+      "wkPct": 4.5,
+      "cap": "$3.83T",
+      "pe": "28.8x"
+    },
+    {
+      "tk": "AMZN",
+      "n": "Amazon",
+      "p": 249.67,
+      "wk": "−1.6%",
+      "wkPct": -1.6,
+      "cap": "$2.69T",
+      "pe": "20.1x"
+    },
+    {
+      "tk": "TSLA",
+      "n": "Tesla",
+      "p": 372.11,
+      "wk": "+2.2%",
+      "wkPct": 2.2,
+      "cap": "$1.47T",
+      "pe": "346x"
+    },
+    {
+      "tk": "META",
+      "n": "Meta",
+      "p": 751.66,
+      "wk": "+12.9%",
+      "wkPct": 12.9,
+      "cap": "$1.92T",
+      "pe": "28.3x"
+    }
+  ],
+  "mag7Read": "The seven added roughly $440bn of value on the week, most of it Meta (+12.9% to $751.66, ~$220bn) and Microsoft (+4.5% to $516.17, ~$165bn) − the two names with a new agent-monetisation story − while the capex-heavy trio went sideways to down: Alphabet −1.6% to $343.92 (−3.7% Wednesday on a new AI antitrust suit and EU data fines), Amazon −1.6% to $249.67 (no news − the funding leg of the rotation) and Nvidia +1.3% to $225.07 (flat in a semis melt-up, forward P/E under 17x, a decade low). Apple +1.5% to $341.07 was the quiet defensive megacap within 1% of its high; Tesla +2.2% to $372.11 into the 1 October Roadster reveal. That is the market saying it will now pay for AI revenue lines, not AI cost lines. Hedgeye’s signal is long Meta after a short-to-long flip and Microsoft is near the top of Keith’s buy list. Watch Friday’s Meta reversal (−3.3% from Thursday’s 777.59 close and 779.82 52-week high) as the first test of whether the Muse re-rating holds through quarter-end. Data note: prices and weekly moves are Friday 25 Sep vs Friday 18 Sep close-over-close from the FMP end-of-day feed; market caps and trailing P/Es are from the source report’s TradingView capture and are approximate.",
+  "sectors": [
+    {
+      "n": "Technology",
+      "m": "+3.5% wk",
+      "pct": 3.5,
+      "d": "Semis (SOXX +7.4%) and Microsoft; within 1.3% of the 52-week high"
+    },
+    {
+      "n": "Communication Svcs",
+      "m": "+1.9% wk",
+      "pct": 1.9,
+      "d": "Meta did all of it; Alphabet a drag"
+    },
+    {
+      "n": "Health Care",
+      "m": "+1.4% wk",
+      "pct": 1.4,
+      "d": "Hedgeye core long; health-care AI basket +18.8% in a month"
+    },
+    {
+      "n": "Industrials",
+      "m": "+0.4% wk",
+      "pct": 0.4,
+      "d": "Caterpillar +2.0% Friday; Hedgeye short − partially covered"
+    },
+    {
+      "n": "Cons. Discretionary",
+      "m": "−0.2% wk",
+      "pct": -0.2,
+      "d": "New Hedgeye short (Tue). Tesla up, Amazon and Nike down"
+    },
+    {
+      "n": "Materials",
+      "m": "−0.4% wk",
+      "pct": -0.4,
+      "d": "Copper firm, gold miners soft"
+    },
+    {
+      "n": "Cons. Staples",
+      "m": "−0.9% wk",
+      "pct": -0.9,
+      "d": "Costco +3.1% on the print; rest sold as bond proxies"
+    },
+    {
+      "n": "Financials",
+      "m": "−1.8% wk",
+      "pct": -1.8,
+      "d": "Banks lower despite a steeper curve; GS/MS/BAC on Hedgeye’s short list"
+    },
+    {
+      "n": "Real Estate",
+      "m": "−2.3% wk",
+      "pct": -2.3,
+      "d": "5% ten-year; second-worst sector"
+    },
+    {
+      "n": "Energy",
+      "m": "−3.5% wk",
+      "pct": -3.5,
+      "d": "Crude −3.8%; now at the floor of a bullish Hedgeye range (61.07)"
+    },
+    {
+      "n": "Utilities",
+      "m": "−3.9% wk",
+      "pct": -3.9,
+      "d": "Hedgeye’s biggest sector short; −13% in a month, 52-week low 39.12"
+    }
+  ],
+  "sectorsRead": "Leaders: semiconductors (SOXX +7.4%, AMD/Intel/Arm), software, Meta, health care. Laggards: utilities, energy, REITs, financials, small caps (IWM ≈ −1%), long bonds. The barbell is long health care and AI winners (health-care AI, software, Meta/Microsoft, bitcoin/ether as “Quad 2 commodities”) against short rate-sensitive laggards (utilities, REITs, industrials, Russell 2000, IG/HY duration) − and on Friday the process started harvesting the shorts and adding to longs (GitLab, Best Buy, cybersecurity via BUG) because the bond move had reached the top of its range. Energy stays bullish TREND despite the week: the sector ETF is at the bottom of its band, which in the process is where you add, not sell. Breadth was narrow: Thursday’s flat S&P had 65% of constituents down and equal-weight RSP fell −0.6% against cap-weight +1.2%.",
+  "positioning": "VIX 14.87 (14.81 → 14.87 on the week; Thursday close 15.67). Equity vol refused to follow bond vol: MOVE +26% against a flat VIX is the widest divergence of the year; VIX is bearish TREND and inside the investable bucket (14.21−17.84), 52-week low 13.38. Gamma: SPX dealer gamma is back modestly positive (Tier1Alpha throttle 2.67 vs 10-day realised vol 11.7) − dips get bought mechanically, but the 1-month/3-month vol relationship is near the tipping point that turns systematic flows negative again, hence “selling on green”. Credit: HYG −0.9% to 77.86 (52-week low 77.67), LQD −1.4% to 103.21, TLT −2.6% − spreads are not blowing out; the ETFs are falling with duration, and at the floor of their Hedgeye ranges argued for the tactical covers that happened Friday; PFIX +9.8%. Prediction markets: October hike 67% (Polymarket); ceasefire holds through 30 Sep 87%; Hormuz normal by year-end 24%. Net: low equity vol, high bond vol, positive gamma and narrow breadth is a regime that grinds higher until a catalyst − next week supplies three (PCE, ISM, payrolls). Cheap index puts are the sensible overlay; the better expression of the risk is short the rate-sensitives, not short the index.",
+  "corporate": [
+    "Meta (META, +12.9%): Muse, launched under two weeks ago, passed ChatGPT and Claude on iOS downloads; Monday +11.4% on 48m shares (157% of average) with Wells Fargo to $796 from $640. Meta Connect (23−24 Sep): Muse stays free, monetised by a small fee from transactions through Walmart, Best Buy, Gap, Sephora, Wayfair, Expedia and Instacart; $349 camera-free Ray-Ban audio glasses and a $1,299 headset. Reports 28 Oct.",
+    "Microsoft (MSFT, +4.5%): consumer and workplace Copilot merged into one enterprise app − chat with task delegation, GitHub-based tools for non-coders and “Autopilot” background agents − fixed subscriptions for chat, pay-as-you-go for agent work. Oppenheimer to $570 (Outperform). Reports 27 Oct.",
+    "Costco (COST, +3.1%): FQ4 revenue $95.72bn (+11%; est. $94.97bn), EPS $6.75 (est. $6.54) including 15c of tariff refunds, comps +9.4%, above-consensus membership fee income; FY EPS $20.76 on $303bn revenue. CFO: members “very resilient”.",
+    "Akamai (AKAM, +9.0% wk; spiked 15−17% after hours Thursday): $11.6bn, seven-year CPU-compute contract with Anthropic, expandable to ~$20bn; warrants over ~5% of the company at $111.33. Guides $150−300m revenue in 2027 rising to ~$1.7bn a year by end-2028; ~$5.5bn capacity build.",
+    "Oracle (ORCL, −7.1%): force-majeure notice to Blue Owl over Project Jupiter, the 2.45 GW New Mexico data centre, after the gas pipeline for its fuel cells missed a summer deadline (now February) and an air-permit decision slipped to 23 Nov. Context: capex $28.5bn last quarter (vs $8.5bn), free cash flow −$5bn.",
+    "AMD (+12.6%) / Intel (+13.3%) / Arm: AMD closed above a $1 trillion cap for the first time (record 639); Intel +10% Monday on reports of SK Hynix exploring a deal and server-CPU demand for agents; BofA raised its 2030 chip-market estimate to $3.2tn from $2.7tn. Applied Materials +9.1%, Micron +6.5% into Tuesday’s print.",
+    "MGM Resorts (−10% Thu): Barry Diller’s People Inc. withdrew its $18bn bid for the rest of MGM after the Caesars buyout approval; keeps its 27% stake.",
+    "Alphabet (−1.6%): −3.7% Wednesday after being named in a new antitrust suit over its AI business practices, alongside European data-protection fines; failed to hold $360.",
+    "Tesla (+2.2%): Roadster reveal 1 October ($5k deposit, >$250k price; talk of SpaceX cold-gas thrusters); Semi event 24 Sep. Darden fell on an FQ1 miss; Accenture −6.6% and Nike −1.4% ahead of prints around 1 Oct.",
+    "Next week: Carnival and CarMax (Tue 29), Micron (Tue 30 after close; consensus revenue ~$50.4bn, EPS ~$30.90, all eyes on the FQ1 guide and HBM4), Nike and Accenture (~1 Oct, unconfirmed), Starship Flight 14 (Mon), Tesla Roadster (Thu). Quarter-end Wednesday."
+  ],
+  "macro": [
+    "US S&P Global flash PMI (Wed 23): composite 58.4 (prior 56.0), manufacturing 57.0 (cons. 53.6), services 58.7 (cons. 56.0). Employment strongest since June 2022; input costs steepest since October 2022; output growing at the fastest rate in over five years (~5% annualised) with “severe supply chain bottlenecks”. Net: the single most important print of the week − it took the 10-year through 5.10% and put October on the table. Growth and inflation accelerating together is Quad 2.",
+    "Michigan sentiment, Sep final (Fri): 48.1 (cons. 47.8, Aug 51.7); expectations 46.3 (−10%), current 50.9; 1-yr inflation expectations 4.6% (from 4.0%), 5-yr 3.4%. Net: the consumer is paying the oil bill − watch for a services-spending wobble in next week’s personal spending (cons. +0.9%).",
+    "Durable goods, Aug (Fri): headline 0.0% (cons. −0.3%, prior +0.9% rev.); core capital goods orders +1.6% (cons. +0.8%); core shipments +0.6%. Jobless claims 197k (cons. 201k); continuing 1.72m. Richmond Fed −2, Kansas City 14. Net: capex is not rolling over − some tariff pre-buying, but it feeds the 3−5% Q3 GDP tracks; labour is tight.",
+    "Auctions & Fed speak: 5Y $70bn at 5.033% (tail 3.1 bp, bid-to-cover 2.21), 7Y also tailed. Williams (Thu, London) − another hike by year-end “reasonable”; the Fed under Chair Warsh no longer pre-signals. Barr (Wed) − “further policy adjustments are likely to be needed”; 16 of 18 dots see at least one more hike this year. Net: a second hike on 27−28 October is the base case (67−77% priced). The Fed is chasing a 5% ten-year, not leading it. Supply, not just inflation, is now in the yield.",
+    "Rates & credit: 2Y 4.86%, 5Y 4.99%, 10Y 5.17%, 30Y 5.49% − a bear-steepener. Europe is worse: Bund 10Y highest since 2011 (above 3.3%), French 10Y highest since 2008, OAT−Bund spread above 90 bp (widest since 2012); the ECB hiked to 2.50% on 10 September with October live. MOVE 96.0 (+26% w/w).",
+    "Currencies: DXY 101.03 +0.8% (101.80 52-week high next; Hedgeye range top 101.65, bullish TREND). EUR/USD 1.1391 −0.8%; GBP/USD 1.3243 −0.9%; AUD/USD 0.7025 −1.2% as Australian yields spiked and manufacturing PMI fell to 49.3. USD/JPY 157.28 +0.3% after 158.84 Thursday − intervention talk is back. USD/KRW 1,355 (won +1.7%) on chip-export flows; USD/CNH 6.719 steady through the summit.",
+    "Commodities & crypto: WTI $92.41 −3.8%, Brent $104.32 +0.4%; RBOB −4.4% Friday to $3.19; US diesel at an all-time high; natural gas $3.20 (bullish, range 2.89−3.33). Gold $4,285 −2.3%, silver $64.29 −3.5%, platinum $1,779, copper $6.67/lb (~+2.5%, bullish TREND − the one metal trading on growth). BTC $83,916 +3.8%, ETH $2,688 (≈ +3%); spot BTC ETFs took $999m Monday (2026 record), $715m Tuesday, then $347m and $191m; ~$650−920m of shorts liquidated in the Monday squeeze.",
+    "Europe & UK flash PMIs (Wed): Eurozone manufacturing 52.7, services 53.0 (cons. 51.5, highest in nearly a year); France manufacturing 50.3, services 51.4 (cons. 48.3); UK manufacturing 52.0, services 51.7 (three-month low with accelerating prices). Net: same Quad, weaker growth engine, ECB already hiking; peripheral spreads are where the stress shows first − Hedgeye short Germany and Switzerland on bounces.",
+    "Asia: China LPRs unchanged for a 16th month; Shanghai ≈ +0.3% w/w, Hang Seng ≈ −0.9% − the summit produced no stimulus and no chips. Japan flash manufacturing PMI 54.1 (cons. 55.0), services 51.6; Nikkei 66,364 with the yen weak. Korea memory-chip exports $21.5bn in the first 20 days of September (+351% y/y), KOSPI back above 7,000; Samsung +5% on a Goldman 490,000-won target. Australia manufacturing PMI 49.3, first contraction since March. Net: Asia is bifurcating into memory exporters (Korea, Taiwan, Japan equipment) and oil importers with rising yields (Australia, India − both Hedgeye shorts).",
+    "Next week (GMT+8): Tue 29 Sep 22:00 CB consumer confidence, JOLTS · Wed 30 Sep 20:15 ADP (cons. +70k), 20:30 GDP Q2 third estimate (cons. 1.6%), PCE (Aug), personal income/spending (+0.5%/+0.9%), 21:45 Chicago PMI (cons. 51.2) · Thu 1 Oct 20:30 claims (cons. 199k), 22:00 ISM manufacturing (cons. 55.0) · Fri 2 Oct 20:30 payrolls (cons. +100k, unemployment 4.1%; prior +162k). Government funded to 11 December; midterms 3 November."
+  ],
+  "geo": [
+    "▲ Iran / Hormuz: Reuters (Thu) − US and Iranian negotiators in New York (Witkoff−Araghchi) discussing a phased deal: Hormuz reopened in exchange for lifting the US naval blockade (in place since 12 April) and access to ~$12bn of frozen assets; Araghchi floated reopening within seven days if conditions are met. Obstacles: neither side wants to move first, Iran wants Lebanon and Yemen included, Israel says another strike on Natanz is “only a matter of time”. Dennis Ross puts a pre-midterm deal at 30%. Background: war began 28 February; Pakistan-brokered ceasefire has held since 8 April; Hormuz effectively closed to Western traffic since 4 May.",
+    "▼ Gulf escalation: Saudi Arabia intercepted Houthi missiles Thursday; an Iranian military adviser threatened to widen the conflict to the Indian Ocean; the 4 mb/d East-West pipeline remains shut after the 10 September drone strikes, with reopening talks reported. 13 Hormuz and 27 Bab al-Mandeb crossings Thursday.",
+    "◆ Prediction markets (Polymarket, Sat morning): US−Iran ceasefire continues through 30 Sep 87%; Israel−Iran ceasefire through 31 Oct 85%; blockade ended by 31 Dec 62% (by 31 Mar 77%); Hormuz traffic normal by 31 Oct 9%, by 31 Dec 24%; final nuclear deal by year-end 13%; US invasion before 2027 14%; regime falls before 2027 7%. Fed 25 bp hike 27−28 Oct 67%.",
+    "◆ US−China: state visit 23−25 Sep. Delivered: truce extension to 10 Jan 2027, a proposed Board of Trade, an AI dialogue channel with a follow-up within a month, a Chinese commitment to end satellite-imagery support for Iran, two pandas. Not delivered: soybeans, Boeing, rare earths, fentanyl, TikTok, export controls, Taiwan (“no change”). USTR to publish details Monday; Bessent confirmed the truce runs two months past 10 November.",
+    "◆ Russia−Ukraine: Zelensky (Fri) said the US proposed trilateral technical-level talks in the UAE within ~10 days; the Kremlin said a meeting “could happen soon”; Putin said all proposals are on the table but Russia “must weigh its interests”.",
+    "◆ Washington: shutdown risk for 1 October removed − the stopgap funds government to 11 December. Fed Chair Warsh’s first hike is three weeks old; the Fed has dropped pre-meeting guidance. UNGA High-Level Week (22−25 Sep) was Guterres’s last.",
+    "Read: The market is pricing a deal that ends the blockade but not one that normalises Hormuz − that is the right distinction and it is why Brent holds $100 while WTI slides. Position for a lower geopolitical premium at the front of the curve and a persistent physical premium in the spread and in refining margins.",
+    "Beyond the markets: Starship Flight 14 Monday 28 Sep (window 20:15 GMT+8) − first orbital attempt, ~six laps and deployment of 26 Starlink V3 satellites. The Atlantic still has no hurricane in 2026, a satellite-era record for latest first hurricane − no Gulf threat to refining while diesel is at a record. Nobel announcements begin the first week of October. Sport: NFL’s first game in Rio on Sunday; WNBA playoffs open 27 Sep; no Ryder Cup this year (Adare Manor 2027)."
+  ],
+  "ahead": {
+    "published": "Sunday 27 September 2026",
+    "weekOf": "Mon 28 September 2026",
+    "pdf": "reports/2026-09-25-ahead.pdf",
+    "pdfName": "Global Week Ahead_2026-09-27.pdf",
+    "tldr": "Records into a yield storm. Stocks keep printing highs while the 10Y presses ~5.1% and a hawkish, hiking-biased Fed (Chair Warsh) has markets pricing a 64% chance of a 25 bp HIKE at the 29 Oct FOMC and zero cuts in 2026. The week’s hinge is Friday’s U.S. jobs report (2 Oct) − a hot number validates higher-for-longer and tests equity resilience; a soft one is the bulls’ relief valve. Overlay month-/quarter-end rebalancing, China PMIs into Golden Week, and a live Strait of Hormuz oil bid.",
+    "setup": [
+      [
+        "S&P 500",
+        "7,742.09",
+        "+0.49%",
+        "Record-zone; YTD high 7,816"
+      ],
+      [
+        "Nasdaq Comp",
+        "27,068.72",
+        "+0.48%",
+        "Mega-cap/AI bid intact"
+      ],
+      [
+        "Dow Jones",
+        "51,828.62",
+        "+0.93%",
+        "+478.64 pts on the day"
+      ],
+      [
+        "US 10Y yield",
+        "~5.11%",
+        "higher",
+        "Near 19-yr highs − the tell"
+      ],
+      [
+        "US 2Y yield",
+        "~4.85%",
+        "higher",
+        "Curve steep, hawkish Fed"
+      ],
+      [
+        "Dollar (DXY)",
+        "101.02",
+        "−0.22%",
+        "Two-month high zone; watch 101.8"
+      ],
+      [
+        "Gold",
+        "$4,293/oz",
+        "+0.43%",
+        "Bid on Iran risk"
+      ],
+      [
+        "Silver",
+        "$64.04/oz",
+        "+0.33%",
+        "Leads metals, record zone"
+      ],
+      [
+        "Brent crude",
+        "~$106/bbl",
+        "easier",
+        "Hormuz still blockaded"
+      ],
+      [
+        "WTI crude",
+        "~$91/bbl",
+        "−3%",
+        "Fell on Hormuz diplomacy"
+      ],
+      [
+        "Bitcoin",
+        "$83,916",
+        "−0.20%",
+        "Off Jan high 126,296"
+      ]
+    ],
+    "setupNote": "Levels are Friday 25 September U.S. cash-session closes with the day move shown; the read into Monday’s Asia open is directional − verify live before acting. U.S. equities finished higher and booked a winning week even as Treasury yields surged − the 10Y sits near 19-year highs, yet an orderly climb kept dip-buyers in control. Yields per U.S. Treasury (23 Sep print); Friday close little changed to marginally higher.",
+    "themes": [
+      {
+        "t": "Payrolls Friday is the whole week",
+        "b": "The 2 Oct jobs report lands into a market that no longer expects cuts. Unemployment is seen holding 4.1%. With cuts off the table and a hike partly priced, the reaction function is asymmetric: the bar for a dovish surprise is low, the bar for a hawkish one already half-cleared.",
+        "w": "A payrolls beat + hot wages pushes the 10Y toward the 5.15−5.25% zone and pressures long-duration/high-multiple tech; a miss is the only clean catalyst for yields to back off and for rate-sensitives (homebuilders, small caps, REITs) to bounce."
+      },
+      {
+        "t": "Higher-for-longer vs. the consumer",
+        "b": "The 30-year fixed mortgage has leapt to 7.45%, a two-year-plus high, just as wage growth stagnates and AI-displacement fears build. Tuesday’s Consumer Confidence and JOLTS openings are the first tells on whether the consumer is cracking.",
+        "w": "Weak confidence + falling openings = the soft-landing narrative frays. Pair long staples/utilities against discretionary if the data disappoints."
+      },
+      {
+        "t": "Month- and quarter-end rebalancing",
+        "b": "Wednesday 30 Sep is quarter-end. After a strong Q3 for equities and a bond sell-off, pension/target-date rebalancing flows skew toward selling stocks, buying bonds into the close − a mechanical, not fundamental, crosscurrent.",
+        "w": "Don’t over-read a 29−30 Sep equity wobble or a yield dip; flows can reverse 1−2 Oct. Liquidity thins around the prints."
+      },
+      {
+        "t": "Oil & the Strait of Hormuz",
+        "b": "WTI fell ~3% to ~$91 Friday on reports Iran and Oman agreed a temporary shipping route − but the U.S. naval blockade must lift first. Brent still ~$106. The conflict (since 28 Feb) keeps a war premium in crude and a bid under gold ($4,293) and silver ($64).",
+        "w": "Any concrete de-escalation headline is worth $5−$10 to the downside in crude and a risk-on impulse; a breakdown re-arms the energy/defense/precious-metals trade. Binary − size accordingly."
+      },
+      {
+        "t": "China PMIs into a shut market",
+        "b": "China’s NBS PMIs (Wed 30 Sep) and Caixin manufacturing bracket the start of Golden Week (mainland shut 1−8 Oct). Q3 Caixin manufacturing was 50.9 (from 51.7), with soft domestic demand the drag.",
+        "w": "A sub-50 print revives stimulus hopes and lifts commodities/HK proxies; with the mainland closed, the reaction concentrates in Hong Kong, AUD, copper and ADRs. Thin liquidity all week in Asia."
+      },
+      {
+        "t": "Quarter-turn positioning & the vol setup",
+        "b": "VIX sits ~15.7 (Hedgeye’s “investable” 9−19 bucket) despite record yields − complacency, or justified resilience. New quarter = fresh risk budgets and potential for a momentum unwind if payrolls surprises.",
+        "w": "Cheap convexity: with VIX <16 into a jobs print and an FOMC hike priced, hedges/1−2 month puts on the QQQ are inexpensive insurance against a yield-driven air-pocket."
+      }
+    ],
+    "calendar": [
+      [
+        "Mon 28",
+        "US: quiet start − regional Fed activity indices, Fed speakers; no tier-1 data. Asia: positioning day before China PMIs; Japan cash flows ahead of quarter-end. Starship Flight 14 window opens 20:15 GMT+8.",
+        "A low-data Monday lets Friday’s yield surge and month-end flows set the tone. Tape-read, don’t chase"
+      ],
+      [
+        "Tue 29",
+        "22:00 US Consumer Confidence (Sep), JOLTS job openings (Aug), FHFA / Case-Shiller home prices. Corporate: Carnival (CCL) and CarMax report.",
+        "The labor-demand and confidence combo is the pre-payrolls appetizer. Soft JOLTS + weak confidence = growth-scare setup into Friday"
+      ],
+      [
+        "Wed 30 − quarter-end",
+        "09:30 China NBS Manufacturing & Non-Mfg PMI (Sep), Caixin Manufacturing PMI − last prints before Golden Week. Japan BoJ Tankan (Q3), retail sales, industrial production. German & Spanish flash CPI (Sep). 20:15 US ADP (cons. +70k), 20:30 Q2 GDP final (cons. 1.6%), PCE (Aug), personal income/spending, 21:45 Chicago PMI, pending home sales. Micron (MU) after the close.",
+        "The single densest data day. China PMIs steer commodities/HK; Tankan steers JPY and the BoJ path; German CPI frames Friday’s euro-area print. Rebalancing flows peak into the close"
+      ],
+      [
+        "Thu 1 Oct",
+        "20:30 US jobless claims (cons. 199k), Challenger job cuts; 22:00 ISM Manufacturing (cons. 55.0), S&P Global final PMI, construction spending; auto sales. Euro-area flash CPI (Sep) and unemployment; Swiss CPI. China Golden Week begins − mainland closed 1−8 Oct (HK trades). Nike (a/c); Tesla Roadster reveal.",
+        "ISM prices-paid is a live inflation tell into payrolls; a hot euro-area CPI keeps the ECB hawkish and supports the euro. Thin Asian liquidity with China out"
+      ],
+      [
+        "Fri 2 Oct − the main event",
+        "20:30 US nonfarm payrolls (Sep; cons. +100k), unemployment rate (cons. 4.1%), average hourly earnings. Corporate: quarter kicks off; pre-bank-earnings positioning.",
+        "The month’s most market-moving scheduled release, now filtered through a hiking-biased Fed. Beat = higher-for-longer confirmed, yields up, growth/duration under pressure; miss = the bulls’ relief valve and a yield reprieve"
+      ]
+    ],
+    "cbs": [
+      [
+        "US Federal Reserve",
+        "No meeting − next FOMC 28−29 Oct. Band 3.75−4.00% after the 16 Sep hike",
+        "~64% priced for a 25 bp hike on 29 Oct; zero cuts in 2026 (Polymarket). Chair Warsh hawkish; headline PCE seen ~3.7%, core ~3.4%",
+        "Does any Fed speaker lean explicitly toward a hike − the week’s biggest rates risk?"
+      ],
+      [
+        "ECB",
+        "Speakers through the week as euro-area CPI lands (Thu/Fri); rate 2.50% after the 10 Sep hike",
+        "On hold, data-dependent; October live per markets",
+        "Does a hot flash CPI harden the case for another move?"
+      ],
+      [
+        "Bank of Japan",
+        "Tankan (Wed 30 Sep) is the key input; no decision this week",
+        "Normalisation debate live with JPY soft (USD/JPY ~157)",
+        "Does a strong Tankan plus a weak yen bring intervention rhetoric back?"
+      ],
+      [
+        "PBoC / China",
+        "NBS and Caixin PMIs Wed 30 Sep before Golden Week (1−8 Oct)",
+        "No policy move expected; LPRs held for a 16th month",
+        "Does a sub-50 PMI revive stimulus hopes with the mainland shut?"
+      ]
+    ],
+    "earnings": [
+      [
+        "Tue 29",
+        "Carnival (CCL, cons. EPS $1.35); CarMax (KMX); Paychex (PAYX, Tue−Wed)",
+        "Booking curve and consumer travel demand; used-car credit; SMB hiring pulse two days before payrolls"
+      ],
+      [
+        "Wed 30",
+        "Micron (MU, after close; cons. revenue ~$50.4bn, EPS ~$30.90); Conagra (CAG)",
+        "FQ1 guide and HBM4 volume − the memory super-cycle read; staples volume vs price and input-cost relief"
+      ],
+      [
+        "Thu 1 Oct",
+        "Nike (NKE, after close; cons. EPS $0.44); Accenture (ACN, ~1 Oct, unconfirmed)",
+        "China turn, DTC margins and inventory − guidance matters more than the print; Accenture as the AI-disruption-in-services tell"
+      ]
+    ],
+    "catalysts": [
+      "Payrolls, Friday 2 October − the month’s most market-moving scheduled release, filtered through a hiking-biased Fed; the 10Y’s 5.25% line is the trigger.",
+      "Quarter-end (Wed 30 Sep): index rebalancing, window-dressing and Q4 risk-budget resets; flows skew to selling stocks/buying bonds into the close and can reverse 1−2 Oct.",
+      "China PMIs (Wed) then Golden Week (1−8 Oct): mainland shut; reaction funnels to HK, ADRs, AUD, copper.",
+      "Hormuz diplomacy: any move to lift the U.S. blockade / implement the Iran−Oman route is a live, binary oil catalyst worth $5−$10 in crude.",
+      "OPEC+: a ministerial/output decision is expected in early October (date to confirm) − a weekend headline risk for Monday crude.",
+      "Micron (Tue/Wed after close), Nike (Thu), Tesla Roadster reveal (Thu 1 Oct), Starship Flight 14 (Mon).",
+      "U.S. funding: NOT a risk this week − the stopgap funds the government through 11 Dec; the shutdown fight is pushed past the November midterms.",
+      "USTR to publish US−China summit trade details Monday; tariff truce extended to 10 January 2027."
+    ],
+    "regime": {
+      "label": "Quad 2/3 tension − growth still firm, inflation re-accelerating, Fed hiking-biased",
+      "note": "The source Week Ahead reads the backdrop as Quad 3 territory (growth stable-to-slowing while inflation re-accelerates on the energy shock, tariffs and AI capex), whereas Hedgeye’s own published September call in Friday’s Review is #Quad2 (growth and inflation both accelerating). Either way the regime favours real assets (gold, silver, energy), commodities and cash over long-duration bonds and rate-sensitive growth. The live Hedgeye subscriber risk ranges could not be pulled for this Week Ahead (connector not authorised); the ranges below are an immediate-term range map built in the Hedgeye style from verified price, volume and volatility data (25 Sep). Treat as directional; confirm against the current Early Look / Macro Show.",
+      "ranges": [
+        [
+          "S&P 500",
+          "7,655 − 7,815",
+          "Bullish"
+        ],
+        [
+          "Nasdaq Comp",
+          "26,750 − 27,290",
+          "Bullish"
+        ],
+        [
+          "US 10Y Yield",
+          "4.92 − 5.22",
+          "Bullish (yields↑)"
+        ],
+        [
+          "Gold",
+          "4,180 − 4,385",
+          "Bullish"
+        ],
+        [
+          "Silver",
+          "61.0 − 66.5",
+          "Bullish"
+        ],
+        [
+          "WTI crude",
+          "86 − 97",
+          "Neutral / Bullish"
+        ],
+        [
+          "Bitcoin",
+          "80,000 − 88,500",
+          "Neutral"
+        ],
+        [
+          "Dollar (DXY)",
+          "100.3 − 102.1",
+          "Neutral"
+        ],
+        [
+          "VIX",
+          "13.5 − 19.8",
+          "Bearish (chop risk)"
+        ]
+      ],
+      "where": "We sit at the top of equity ranges and the top of the yield range simultaneously − the tension of the whole tape. The regime breaks bearish for risk if the 10Y closes above ~5.25% or VIX pops through 20 on a hot payrolls; it softens (bullish for duration) only on a clear payrolls miss that reopens the door to eventual cuts."
+    },
+    "positioning": "Crowded: mega-cap/AI leadership and record-index length into quarter-end; long gold/silver momentum. Stretched: short-duration complacency − VIX <16 with the 10Y at 5.1% is an uneasy pairing; rate-sensitives (homebuilders at 7.45% mortgages, REITs, small caps) are pressured. Credit/vol: equity vol subdued; watch MOVE (rate vol) as the truer stress gauge given the yield surge. Tells to watch: (1) 10Y 5.25% break; (2) VIX 20 breach; (3) mega-cap breadth thinning as the index makes highs; (4) gold/silver failing to hold record zones = risk-appetite rotation. Any two together = de-risk.",
+    "geo": [
+      "U.S.−Iran / Strait of Hormuz: conflict since 28 Feb; strait effectively blockaded (~2 vessels/day vs ~125 pre-war). An Iran−Oman temporary-route deal is on the table, contingent on the U.S. lifting its naval blockade; Tehran is pushing a 7-day reopening plan before the November midterms. De-escalation = lower oil, risk-on, gold gives back; escalation = the energy/defense/gold trade re-arms.",
+      "US−China: the Xi state visit delivered a tariff-truce extension to 10 Jan 2027, a proposed Board of Trade and an AI dialogue channel, but nothing on chips, soybeans, Boeing or rare earths; USTR publishes details Monday.",
+      "Prediction markets: Polymarket ~64% for a 25 bp Fed hike on 29 Oct; 97% zero cuts in 2026 − the cleanest live gauge of the rates risk.",
+      "U.S. politics: November midterms in view; the funding fight is deferred to 11 Dec, keeping fiscal noise low near-term. OPEC+ output decision expected in early October."
+    ],
+    "asia": "Asia should open steady-to-firm, taking the baton from Wall Street’s winning week, but with two overhangs: the 10Y near 5.1% (a headwind for expensive Asian tech/growth) and thin liquidity as China counts down to Golden Week. Japan trades all week with quarter-end flows and a soft yen into Wednesday’s Tankan; Hong Kong carries the China reaction once the mainland shuts on Thursday. Intraday tells: (1) where the 10Y sits at the Tokyo open; (2) USD/JPY − a push toward multi-decade weak levels invites intervention chatter; (3) Hong Kong tech vs. the Nasdaq gap; (4) crude’s reaction to any weekend OPEC+/Hormuz headline.",
+    "beyond": [
+      "Space: SpaceX Starship Flight 14 targeting its first orbital mission and 26 Starlink V3 satellites ~28 Sep (pending regulatory sign-off); Crew-13 and CRS-35 to the ISS on deck for October.",
+      "Sport: NFL Week 4 rolls through Monday 28 Sep; the Presidents Cup wrapped 27 Sep at Medinah. No Ryder Cup in 2026 (next 2027, Adare Manor).",
+      "Screen & culture: 2 Oct releases include a Donnie Darko 25th-anniversary re-release plus a slate of indie/limited titles.",
+      "On the horizon: IMF/World Bank Annual Meetings 12−18 Oct (Bangkok) and Q3 bank earnings mid-October − the next macro set-pieces after payrolls. Nobel announcements begin the first week of October."
+    ]
+  }
 }
 ];
+
